@@ -1,0 +1,36 @@
+.news {
+  & .vacancy-article-header-wrapper {
+    border: none;
+    padding-bottom: 10px;
+  }
+  &-news {
+    padding-bottom: 72px;
+  }
+  & .otzyv-more-btn{
+    margin-bottom: 120px;
+  }
+  & .home-news-content-item-7{
+    background-image: url(../../images/main/news/item-7.jpg);
+    background-size: cover;
+  }
+  & .home-news-content-item-8{
+    background-image: url(../../images/main/news/item-8.jpg);
+    background-size: cover;
+  }
+  & .home-news-content-item-9{
+    background-image: url(../../images/main/news/item-9.jpg);
+    background-size: cover;
+  }
+  & .home-news-content-item-10{
+    background-image: url(../../images/main/news/item-10.jpg);
+    background-size: cover;
+  }
+  & .home-news-content-item-11{
+    background-image: url(../../images/main/news/item-11.jpg);
+    background-size: cover;
+  }
+  & .home-news-content-item-12{
+    background-image: url(../../images/main/news/item-12.jpg);
+    background-size: cover;
+  }
+}

@@ -1,0 +1,43 @@
+.popup-contacts{
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10001;
+  &-closer {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    top: -70px;
+    cursor: pointer;
+    @media(max-width: 767px){
+      right: 15px;
+      top: -55px;
+    }
+  }
+  & .home{
+    &-feedback{
+      position: relative;
+      margin-top: 120px;
+      &-flex{
+        background-color: #1B1B1C;
+        &-left{
+          &-form {
+            margin-top: 0px;
+          }
+        }
+        &-right {
+          &-img {
+            max-width: 600px;
+            max-height: 561px;
+          }
+        }
+      }
+    }
+  }
+}
+.js-popup-contacts-watch{
+  cursor: pointer;
+}

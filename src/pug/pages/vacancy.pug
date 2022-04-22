@@ -1,0 +1,75 @@
+vacancy.vacancy
+  .home
+    .home-nav.home-wrapper
+      a(href="/index.html").home-nav-prev Главная
+      img(src="images/services/header-arrow.svg").home-nav-arrow 
+      a(href="/company.html").home-nav-prev Компания
+      img(src="images/services/header-arrow.svg").home-nav-arrow 
+      a(href="/vacancy.html").home-nav-actual Вакансии
+  .vacancy
+    .vacancy-header
+      .vacancy-header-title Вакансии
+      .vacancy-header-subtitle Открытые вакансии
+    .vacancy-flex
+      .vacancy-flex-item
+        .vacancy-flex-item-title Ведущий инженер по&nbsp;георазработке месторождений
+        a(href="#").vacancy-flex-item-btn Подробнее&nbsp;&nbsp;&rarr;
+      .vacancy-flex-item
+        .vacancy-flex-item-title Помощник главного инженера
+        a(href="#").vacancy-flex-item-btn Подробнее&nbsp;&nbsp;&rarr;
+      .vacancy-flex-item
+        .vacancy-flex-item-title Инженер-помощник главного маркшейдера
+        a(href="#").vacancy-flex-item-btn Подробнее&nbsp;&nbsp;&rarr;
+
+    .vacancy-advantages
+      .vacancy-advantages-title Преимущества работы в&nbsp;нашей компании
+      .vacancy-advantages-box
+        .vacancy-advantages-box-left 
+          .vacancy-advantages-box-left-top
+          .vacancy-advantages-box-left-bot
+            .vacancy-advantages-box-left-bot-title Мнение каждого сотрудника имеет значение
+            .vacancy-advantages-box-left-bot-text Работа в&nbsp;небольшом коллективе дает возможность каждому сотрднику лично участвовать в&nbsp;развитии компании и&nbsp;принимать ключевые решения
+        
+        .vacancy-advantages-box-right
+          .vacancy-advantages-box-right-item
+            .vacancy-advantages-box-right-item-top
+            .vacancy-advantages-box-right-item-bot
+              .vacancy-advantages-box-right-item-bot-title Нам есть чему научить новых специалистов
+              .vacancy-advantages-box-right-item-bot-text Наличие колосального опыта позволяет нашим действующим сотрудникам эффективно передавать знания и&nbsp;навыки. Мы&nbsp;верим, что совместные усилия всех сотрудников позволят компании достигать больших целей и&nbsp;решать самые сложные задачи.
+
+          .vacancy-advantages-box-right-item
+            .vacancy-advantages-box-right-item-top
+            .vacancy-advantages-box-right-item-bot
+              .vacancy-advantages-box-right-item-bot-title Мы&nbsp;пользуемся доверием у&nbsp;лидеров рынка
+              .vacancy-advantages-box-right-item-bot-text Опыт и&nbsp;имя на&nbsp;рынке позволяет нашей компании единовременно разрабатывать до&nbsp;3-ех крупных проектов, работа над которыми будет приносить профессиональное удовлетворение и&nbsp;гордость за&nbsp;собственный труд
+
+          .vacancy-advantages-box-right-item
+            .vacancy-advantages-box-right-item-top
+            .vacancy-advantages-box-right-item-bot
+              .vacancy-advantages-box-right-item-bot-title Мы&nbsp;ставим людей на&nbsp;первое место
+              .vacancy-advantages-box-right-item-bot-text Мы&nbsp;считаем наших сотрудников и&nbsp;их&nbsp;личные качества нашим самым большим достоянием, поэтому вкладываем в&nbsp;их&nbsp;обучение значительные средства и&nbsp;обеспечиваем профессиональный рост. Благодаря этому многие члены нашей комнды работют с&nbsp;нами уже более 10&nbsp;лет.
+
+  .home-feedback 
+    .home-feedback-flex
+      .home-feedback-flex-left
+        .home-feedback-flex-left-desc Не&nbsp;нашли подходящую вакансию?
+        .home-feedback-flex-left-title Отправьте нам свое резюме и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
+        form.home-feedback-flex-left-form
+          input(placeholder="Ваше имя*" name="name").home-feedback-flex-left-form-name
+          label.home-feedback-flex-left-form-lable 
+            .home-feedback-flex-left-form-lable-text Резюме*
+            input(placeholder="Резюме*" type="file" id="file" name="file" multiple).home-feedback-flex-left-form-docs
+            img(src="images/vacancy/form-file.svg" alt="").home-feedback-flex-left-form-lable-img
+          input(placeholder="Телефон*" name="tel").home-feedback-flex-left-form-tel
+          input(placeholder="E-mail*" name="email").home-feedback-flex-left-form-mail
+          input(placeholder="Ваше сообщение" name="messange").home-feedback-flex-left-form-mail
+          .home-feedback-flex-left-form-rules
+            input(type="checkbox" value="0").home-feedback-flex-left-form-rules-checkbox#form-checkbox
+            .home-feedback-flex-left-form-rules-text Согласен на обработку 
+              a(href="#") персональных данных
+          #login-form-submit.home-feedback-flex-left-form-btn Отправить заявку&nbsp;&nbsp;&rarr;
+          input(type="submit" value="post" formmethod="post").home-feedback-flex-left-form-btn-post#login-form-submit-post
+      .home-feedback-flex-right
+        img(src="images/vacancy/form.jpg").home-feedback-flex-right-img
+
+

@@ -1,0 +1,84 @@
+services.home 
+  .home-nav.home-wrapper
+    a(href="/index.html").home-nav-prev Главная
+    img(src="images/services/header-arrow.svg").home-nav-arrow 
+    a(href="/services.html").home-nav-actual Услуги
+
+  .home-service
+    .home-service-wrapper
+      .home-service-header
+        .home-service-header-title Услуги
+        .home-service-header-desc
+      .home-service-block
+        .home-service-block-item
+          img(src="images/main/service/item-1.svg").home-service-block-item-logo
+          .home-service-block-item-text Маркшейдерское обслуживание
+          a(href="#").home-service-block-item-btn Подробнее&nbsp;&nbsp;&rarr;
+
+        .home-service-block-item
+          img(src="images/main/service/item-2.svg").home-service-block-item-logo
+          .home-service-block-item-text Разведка полезныех ископаемых
+          a(href="#").home-service-block-item-btn Подробнее&nbsp;&nbsp;&rarr;  
+
+        .home-service-block-item
+          img(src="images/main/service/item-3.svg").home-service-block-item-logo
+          .home-service-block-item-text Составление проектно-технической докуентации для разработки месторождений
+          a(href="#").home-service-block-item-btn Подробнее&nbsp;&nbsp;&rarr;
+
+        .home-service-block-item
+          img(src="images/main/service/item-4.svg").home-service-block-item-logo
+          .home-service-block-item-text Проведение независимой оценки деятельности недропользователей
+          a(href="#").home-service-block-item-btn Подробнее&nbsp;&nbsp;&rarr;
+
+        .home-service-block-item
+          img(src="images/main/service/item-5.svg").home-service-block-item-logo
+          .home-service-block-item-text Геологическое сопровождение проектов
+          a(href="#").home-service-block-item-btn Подробнее&nbsp;&nbsp;&rarr;
+
+        .home-service-block-item
+          img(src="images/main/service/item-6.svg").home-service-block-item-logo
+          .home-service-block-item-text Составление пакета документов для оформление лицензии недропользования
+          a(href="#").home-service-block-item-btn Подробнее&nbsp;&nbsp;&rarr;
+
+  .home-proposal.home-wrapper
+    .home-proposal-title Специальные предложения
+    .slider-wrapper
+      .slider 
+        .home-proposal-item
+          .home-proposal-item-content
+            a(href="#").home-proposal-item-title Маркшейдерский замер объёма
+            .home-proposal-item-sum От 25 000 руб.
+
+        .home-proposal-item
+          .home-proposal-item-content
+            a(href="#").home-proposal-item-title Составление проекта на&nbsp;геологическое изучение и&nbsp;разведку месторождений общераспространённых полезных ископаемых
+            .home-proposal-item-sum От 180 000 руб.
+
+        .home-proposal-item
+          .home-proposal-item-content
+            a(href="#").home-proposal-item-title Составление технического проекта разработки месторождений общераспространенных полезных ископаемых
+            .home-proposal-item-sum От 450 000 руб.
+
+        .home-proposal-item
+          .home-proposal-item-content
+            a(href="#").home-proposal-item-title Составление квартальной отчётности по форме: 2-гр и 7-гр
+            .home-proposal-item-sum От 15 000 руб.
+
+  .vacancy
+    .home-feedback
+      .home-feedback-flex 
+        .home-feedback-flex-left
+          .home-feedback-flex-left-desc Не&nbsp;нашли подходящую вакансию?
+          .home-feedback-flex-left-title Отправьте нам свое резюме и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
+          form.home-feedback-flex-left-form
+            input(placeholder="Имя*" name="name").home-feedback-flex-left-form-name
+            input(placeholder="Телефон*" name="tel").home-feedback-flex-left-form-tel
+            input(placeholder="E-mail*" name="email").home-feedback-flex-left-form-mail
+            .home-feedback-flex-left-form-rules
+              input(type="checkbox" value="0").home-feedback-flex-left-form-rules-checkbox#form-checkbox
+              .home-feedback-flex-left-form-rules-text Согласен на обработку 
+                a(href="#") персональных данных
+            #login-form-submit.home-feedback-flex-left-form-btn Отправить заявку&nbsp;&nbsp;&rarr;
+            input(type="submit" value="post" formmethod="post").home-feedback-flex-left-form-btn-post#login-form-submit-post
+        .home-feedback-flex-right
+          img(src="images/services/services-from.png").home-feedback-flex-right-img

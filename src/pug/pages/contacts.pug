@@ -1,0 +1,41 @@
+contacts.contacts
+  .home
+    .home-nav.home-wrapper
+      a(href="/index.html").home-nav-prev Главная
+      img(src="images/services/header-arrow.svg").home-nav-arrow 
+      a(href="/otzyv.html").home-nav-actual Контакты
+  .vacancy
+    .vacancy-article-header-wrapper
+      .vacancy-article-header
+        .vacancy-article-header-left
+          .vacancy-article-header-left-title Контакты
+        .vacancy-article-header-right
+          .vacancy-article-header-right-text Мы&nbsp;открыты к&nbsp;диалогу и&nbsp;работаем над любыми интересными для нас проектами
+          .vacancy-article-header-right-contact ул. Суворова, д. 80 офис 27
+            |
+            br
+            |#[a(href="mailto:contact@markgeoprojekt.ru") contact@markgeoprojekt.ru]
+            |
+            br
+            |#[a(href="tel:88003555555") 8 800 355-55-55]
+
+  .contacts-map#map.js-map
+
+  .vacancy
+    .home-feedback
+      .home-feedback-flex 
+        .home-feedback-flex-left
+          .home-feedback-flex-left-desc Не&nbsp;нашли подходящую вакансию?
+          .home-feedback-flex-left-title Отправьте нам свое резюме и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
+          form.home-feedback-flex-left-form
+            input(placeholder="Имя*" name="name").home-feedback-flex-left-form-name
+            input(placeholder="Телефон*" name="tel").home-feedback-flex-left-form-tel
+            input(placeholder="E-mail*" name="email").home-feedback-flex-left-form-mail
+            .home-feedback-flex-left-form-rules
+              input(type="checkbox" value="0").home-feedback-flex-left-form-rules-checkbox#form-checkbox
+              .home-feedback-flex-left-form-rules-text Согласен на обработку 
+                a(href="#") персональных данных
+            #login-form-submit.home-feedback-flex-left-form-btn Отправить заявку&nbsp;&nbsp;&rarr;
+            input(type="submit" value="post" formmethod="post").home-feedback-flex-left-form-btn-post#login-form-submit-post
+        .home-feedback-flex-right
+          img(src="images/services/services-from.png").home-feedback-flex-right-img

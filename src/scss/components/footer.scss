@@ -1,0 +1,133 @@
+footer {
+	position: relative;
+	z-index: 200;
+	display: block;
+}
+.footer {
+	position: relative;
+	display: block;
+	margin-top: auto;
+	width: 100%;
+	background-color: #1B1B1C;
+	z-index: 200;
+	&-mob{
+		display: none;
+		@media(max-width: 1023px){
+			border-top: 1px solid #4C4C4E;
+			position: relative;
+			z-index: 200;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			width: 100%;
+			padding: 15px;
+		}
+		@media(max-width: 500px){
+			flex-direction: column;
+			align-items: baseline;
+		}
+		&-item {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 14px;
+			color: #727272;
+			padding: 24px 20px 0 0;
+
+			&-title {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 14px;
+				color: #FFFFFF;
+			}
+		}
+	}
+	@media(max-width: 1023px){
+		display: none;
+	}
+	&-wrapper {
+		max-width: 1440px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	&-top {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid #4C4C4E;
+		border-bottom: 1px solid #4C4C4E;
+
+		&-left {
+			display: flex;
+			&-item {
+				padding: 32px 75px;
+				border-left: 1px solid #4C4C4E;
+				border-right: 1px solid #4C4C4E;
+			}
+		}
+		&-right {
+			display: flex;
+			max-width: 450px;
+			width: 100%;
+			justify-content: space-between;
+			margin-right: 75px;
+			align-items: center;
+			&-item {
+				font-size: 14px;
+				line-height: 140%;
+				color: #FFFFFF;
+
+				&-btn {
+					color: #D7592A;
+				}
+			}
+		}
+	}
+	&-bot {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1440px;
+		margin: 0 auto;
+		display: flex;
+		padding: 64px 75px;
+		justify-content: space-between;
+
+		&-left {
+			align-items: center;
+			display: flex;
+			&-item {
+				margin-right: 32px;
+				white-space: nowrap;
+				font-size: 14px;
+				line-height: 14px;
+				color: #727272;
+				text-decoration: none;
+				&-title {
+					margin-right: 40px;
+					color: #FFFFFF;
+				}
+				
+			}
+		}
+		&-right {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&-item {
+				display: flex;
+				flex-wrap: nowrap;
+				align-items: center;
+				font-size: 14px;
+				line-height: 140%;
+				color: #727272;
+
+				&-btn {
+					color: #fff;
+					padding: 4px 8px;
+					background: #232325;
+					border-radius: 2px;
+				}
+			}
+		}
+	}
+}

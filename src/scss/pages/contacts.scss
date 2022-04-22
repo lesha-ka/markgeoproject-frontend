@@ -1,0 +1,49 @@
+.contacts {
+  & .vacancy-article-header{
+    @media(max-width: 1023px) {
+      flex-direction: row;
+    }
+    @media(max-width: 767px){
+      flex-direction: column;
+    }
+    &-wrapper {
+      border: none;
+    }
+    &-right {
+      &-text {
+        @media(max-width: 1023px) {
+          margin-top: 0px;
+        }
+        @media(max-width: 767px){
+          margin-top: 20px;
+        }
+      }
+      &-contact{
+        margin-top: 60px;
+        display: block;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 145%;
+        color: #FFFFFF;
+        @media(max-width: 1023px){
+          margin-top: 32px;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 145%;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  &-map {
+    display: block;
+    position: relative;
+    width: calc(100% - 32px);
+    height: 600px;
+    max-width: 1285px;
+    margin: 0 auto;
+    @media(max-width: 1023px){
+      height: 420px;
+    }
+  }
+}

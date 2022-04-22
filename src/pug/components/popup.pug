@@ -1,0 +1,20 @@
+.popup-contacts  
+  .vacancy
+    .home-feedback
+      .home-feedback-flex 
+        img(src="images/popup/closer.svg").popup-contacts-closer
+        .home-feedback-flex-left
+          .home-feedback-flex-left-desc Свяжитесь с нами
+          .home-feedback-flex-left-title Мы перезвоним вам в течение одного дня
+          form.home-feedback-flex-left-form
+            input(placeholder="Имя*" name="name").home-feedback-flex-left-form-name
+            input(placeholder="Телефон*" name="tel").home-feedback-flex-left-form-tel
+            input(placeholder="E-mail*" name="email").home-feedback-flex-left-form-mail
+            .home-feedback-flex-left-form-rules
+              input(type="checkbox" value="0").home-feedback-flex-left-form-rules-checkbox#form-checkbox
+              .home-feedback-flex-left-form-rules-text Согласен на обработку 
+                a(href="#") персональных данных
+            #login-form-submit.home-feedback-flex-left-form-btn Отправить заявку&nbsp;&nbsp;&rarr;
+            input(type="submit" value="post" formmethod="post").home-feedback-flex-left-form-btn-post#login-form-submit-post
+        .home-feedback-flex-right
+          img(src="images/services/services-from.png").home-feedback-flex-right-img
