@@ -7,9 +7,12 @@
   background-color: #262626;
   background-image: linear-gradient(to right, #D7592A, #D7592A);
   background-repeat: no-repeat;
-  background-size: 0 100%;
+  background-size: 100% 100%;
   transition: background-size .4s ease-in-out;
   margin-right: 12px;
+  &.is-active {
+    animation: timeSlider 8s linear;
+  }
   &-first {
     color: #fff;
     font-size: 18px;
@@ -20,5 +23,13 @@
     color: #fff;
     font-size: 18px;
     line-height: 18px;
+  }
+}
+@keyframes timeSlider {
+  0% {
+    background-size: 0% 100%; 
+  }
+  100% {
+    background-size: 100% 100%; 
   }
 }

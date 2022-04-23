@@ -1,3 +1,6 @@
+body {
+	overflow: hidden;
+}
 .site {
 	background-color: #151516;
 	& .home-service-header-title {
@@ -33,10 +36,16 @@
 	&-slider {
 		margin-top: 53px;
 		&-item{
+			max-width: 1440px;
+			padding: 0 75px;
+			margin: 0 auto;
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			@media(max-width:1023px){
+				padding: 0 16px;
+			}
 			&-contant {
 				display: block;
 				color: #fff;
@@ -119,8 +128,14 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			max-width: 1440px;
+			padding: 0 75px 48px;
+			margin: 0 auto;
 			margin-top: 56px;
-			padding-bottom: 48px;
+			width: 100%;
+			@media(max-width:1023px){
+				padding: 0 16px 48px;
+			}
 		}
 		&-nav {
 			width: 100%;
@@ -133,6 +148,7 @@
 				max-width: 220px;
 				color: #fff;
 				align-items: center;
+				
 
 				&-first {
 					margin-right: 12px;
@@ -687,15 +703,7 @@
 			& .slider {
 				width: 550px;
 			}
-			& .slider:before {
-				content: '';
-					position: absolute;
-					width: 2000px;
-					height: 600px;
-					left: -2000px;
-					background: #151516;
-					z-index: 200;
-			}
+
 			& .slick-list {
 				overflow: visible !important;
 			}

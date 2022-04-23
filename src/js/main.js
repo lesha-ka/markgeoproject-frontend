@@ -19,6 +19,7 @@ import sliderPreset from './modules/sliderPreset';
 
 ieFix();
 vhFix();
+preloader.init();
 imgShowAnimate.init();
 mapInteractive.init();
 sliderPreset.init();
@@ -29,6 +30,5 @@ licenseNav.init();
 googleMap.init();
 watchPopup.init();
 
-preloader.init();
 header.init();
 lazyLoading.init();

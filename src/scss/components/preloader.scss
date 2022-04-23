@@ -3,23 +3,84 @@
   width: 100vw;
   height: 100vh;
   z-index: 99999;
-  &-black {
-    position: absolute;
-    z-index: 2;
-    width: 100vw;
-    height: 100vh;
+  animation: preloaderOut 2s ease;
+  animation-delay: 3s;
+  display: none;
+  &.is-active {
+    display: block;
+    & .preloader{
+      &-white {
+        left: 0;
+        top: 0;
+        position: fixed;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+      }
+      &-black {
+        left: 0;
+        top: 0;
+        position: fixed;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+        background: url('../images/header/pattern.svg');
+        animation-delay: 1s;
+        animation: preloaderBlack 2s ease;
+      }
+      &-text {
+        position: fixed;
+        top: calc(50% - 70px);
+        left: calc(50% - 345px);
+        width: 690px;
+        height: 140px;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+        z-index: 3;
+        animation: preloaderText 1s ease;
+        animation-delay: 3s;
+        @media(max-width: 767px) {
+          font-size: 30px;
+          line-height: 120%;
+          width: 294px;
+          left: calc(50% - 147px);
+          top: calc(50% - 60px);
+          height: 120px;
+        }
+      }
+    }
   }
-  &-text {
-    position: absolute;
-    top: calc(50% - 70px);
-    left: calc(50% - 345px);
-    width: 690px;
-    height: 140px;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 120%;
-    text-align: center;
-    color: #FFFFFF;
-    z-index: 3;
+}
+@keyframes preloaderBlack {
+  0% {
+    transform: translate3d(-100%, 0px, 0px); 
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px); 
+  }
+}
+@keyframes preloaderText {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes preloaderOut {
+  0% {
+    display: block;
+    transform: translate3d(0px, 0px, 0px); 
+  }
+  99% {
+    transform: translate3d(0px, -100%, 0px); 
+  }
+  100% {
+    transform: translate3d(0px, -100%, 0px); 
+    display: none;
   }
 }

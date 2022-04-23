@@ -5,26 +5,20 @@ import 'slick-carousel'
 const init = () => {
   // header-slider start
   var slider = $('.home-header .slider');
-  var progressBar = $('.home-header .progress');
+  var sliderProgress = $('.home-slider-nav .progress');
   var progressBarLabel = $( '.home-header .slider__label' );
   var progressLast = $('.home-header .progress-last');
-  progressBar
-      .css('background-size', 20 + '% 100%')
-      .attr('aria-valuenow', 20 );
-  
-  slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100 + 20;
-    progressBar
-      .css('background-size', calc + '% 100%')
-      .attr('aria-valuenow', calc );
-  });
-  
+
+  sliderProgress.addClass('is-active');
+
   slider.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 800,
     dots: false,
-    arrows : false
+    arrows : false,
+    autoplay: true,
+    autoplaySpeed: 8000,
   });  
 
   $('.home-header .home-slider-btn-next').on('click', function() {
@@ -37,12 +31,21 @@ const init = () => {
   var quantitySlides = $(".home-header .slider").slick("getSlick").slideCount
 
   var sliderNav = function(event, slick, currentSlide, nextSlide) { 
+
     if (quantitySlides < 10) {
       progressLast.text('0' + quantitySlides);
     } else {
       progressLast.text(quantitySlides);
     }
   };
+  // progress bar 
+  slider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+      sliderProgress.removeClass('is-active');
+      setTimeout(function () {
+        sliderProgress.addClass('is-active');
+      }, 100);
+      
+  });
   sliderNav();
   // header-slider end
 

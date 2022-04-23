@@ -901,24 +901,112 @@ iframe {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 99999; }
-  .preloader-black {
-    position: absolute;
-    z-index: 2;
-    width: 100vw;
-    height: 100vh; }
-  .preloader-text {
-    position: absolute;
-    top: calc(50% - 70px);
-    left: calc(50% - 345px);
-    width: 690px;
-    height: 140px;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 120%;
-    text-align: center;
-    color: #FFFFFF;
-    z-index: 3; }
+  z-index: 99999;
+  -webkit-animation: preloaderOut 2s ease;
+          animation: preloaderOut 2s ease;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  display: none; }
+  .preloader.is-active {
+    display: block; }
+    .preloader.is-active .preloader-white {
+      left: 0;
+      top: 0;
+      position: fixed;
+      z-index: 2;
+      width: 100vw;
+      height: 100vh;
+      background: #fff; }
+    .preloader.is-active .preloader-black {
+      left: 0;
+      top: 0;
+      position: fixed;
+      z-index: 2;
+      width: 100vw;
+      height: 100vh;
+      background: url("../images/header/pattern.svg");
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
+      -webkit-animation: preloaderBlack 2s ease;
+              animation: preloaderBlack 2s ease; }
+    .preloader.is-active .preloader-text {
+      position: fixed;
+      top: calc(50% - 70px);
+      left: calc(50% - 345px);
+      width: 690px;
+      height: 140px;
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 120%;
+      text-align: center;
+      color: #FFFFFF;
+      z-index: 3;
+      -webkit-animation: preloaderText 1s ease;
+              animation: preloaderText 1s ease;
+      -webkit-animation-delay: 3s;
+              animation-delay: 3s; }
+      @media (max-width: 767px) {
+        .preloader.is-active .preloader-text {
+          font-size: 30px;
+          line-height: 120%;
+          width: 294px;
+          left: calc(50% - 147px);
+          top: calc(50% - 60px);
+          height: 120px; } }
+
+@-webkit-keyframes preloaderBlack {
+  0% {
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+            transform: translate3d(-100%, 0px, 0px); }
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px); } }
+
+@keyframes preloaderBlack {
+  0% {
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+            transform: translate3d(-100%, 0px, 0px); }
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px); } }
+
+@-webkit-keyframes preloaderText {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes preloaderText {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes preloaderOut {
+  0% {
+    display: block;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px); }
+  99% {
+    -webkit-transform: translate3d(0px, -100%, 0px);
+            transform: translate3d(0px, -100%, 0px); }
+  100% {
+    -webkit-transform: translate3d(0px, -100%, 0px);
+            transform: translate3d(0px, -100%, 0px);
+    display: none; } }
+
+@keyframes preloaderOut {
+  0% {
+    display: block;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px); }
+  99% {
+    -webkit-transform: translate3d(0px, -100%, 0px);
+            transform: translate3d(0px, -100%, 0px); }
+  100% {
+    -webkit-transform: translate3d(0px, -100%, 0px);
+            transform: translate3d(0px, -100%, 0px);
+    display: none; } }
 
 footer {
   position: relative;
@@ -1159,11 +1247,14 @@ footer {
   background-image: -o-linear-gradient(left, #D7592A, #D7592A);
   background-image: linear-gradient(to right, #D7592A, #D7592A);
   background-repeat: no-repeat;
-  background-size: 0 100%;
+  background-size: 100% 100%;
   -webkit-transition: background-size .4s ease-in-out;
   -o-transition: background-size .4s ease-in-out;
   transition: background-size .4s ease-in-out;
   margin-right: 12px; }
+  .progress.is-active {
+    -webkit-animation: timeSlider 8s linear;
+            animation: timeSlider 8s linear; }
   .progress-first {
     color: #fff;
     font-size: 18px;
@@ -1173,6 +1264,21 @@ footer {
     color: #fff;
     font-size: 18px;
     line-height: 18px; }
+
+@-webkit-keyframes timeSlider {
+  0% {
+    background-size: 0% 100%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@keyframes timeSlider {
+  0% {
+    background-size: 0% 100%; }
+  100% {
+    background-size: 100% 100%; } }
+
+body {
+  overflow: hidden; }
 
 .site {
   background-color: #151516; }
@@ -1205,6 +1311,9 @@ footer {
   .home-slider {
     margin-top: 53px; }
     .home-slider-item {
+      max-width: 1440px;
+      padding: 0 75px;
+      margin: 0 auto;
       width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1215,6 +1324,9 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+      @media (max-width: 1023px) {
+        .home-slider-item {
+          padding: 0 16px; } }
       .home-slider-item-contant {
         display: block;
         color: #fff;
@@ -1292,8 +1404,14 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      max-width: 1440px;
+      padding: 0 75px 48px;
+      margin: 0 auto;
       margin-top: 56px;
-      padding-bottom: 48px; }
+      width: 100%; }
+      @media (max-width: 1023px) {
+        .home-slider-footer {
+          padding: 0 16px 48px; } }
     .home-slider-nav {
       width: 100%;
       max-width: 220px;
@@ -1763,14 +1881,6 @@ footer {
       padding-top: 18px; }
       .home-otzyv-content .slider {
         width: 550px; }
-      .home-otzyv-content .slider:before {
-        content: '';
-        position: absolute;
-        width: 2000px;
-        height: 600px;
-        left: -2000px;
-        background: #151516;
-        z-index: 200; }
       .home-otzyv-content .slick-list {
         overflow: visible !important; }
       .home-otzyv-content-item {
