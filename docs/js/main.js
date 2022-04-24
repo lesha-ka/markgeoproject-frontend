@@ -175,7 +175,7 @@ var init = function init() {
     menuBox.toggleClass('is-active');
   }); // выпадающие блоки
 
-  $('.header-wrapper-nav-item-bar').hover(function () {
+  $('.header-wrapper-nav-item').hover(function () {
     $('.header-nav-bar-spot').removeClass('is-active');
     $(this).find('.header-nav-bar-spot').addClass('is-active');
   });

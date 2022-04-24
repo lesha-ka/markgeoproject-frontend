@@ -747,7 +747,10 @@ iframe {
         color: #fff;
         margin-right: 32px;
         font-size: 14px;
-        line-height: 19px; }
+        line-height: 19px;
+        opacity: 0.8; }
+        .header-wrapper-nav-item:hover {
+          opacity: 1; }
         .header-wrapper-nav-item-bar {
           position: relative;
           display: block;
@@ -775,6 +778,7 @@ iframe {
             top: 30px;
             left: 0;
             padding: 0px;
+            opacity: 1;
             width: 200px;
             min-height: 0px;
             height: 0px;
@@ -795,6 +799,7 @@ iframe {
               padding: 16px;
               width: 200px;
               min-height: 116px;
+              opacity: 1;
               z-index: 10; }
               .header-wrapper-nav-item-bar .header-nav-bar-spot.is-active .header-nav-bar-spot-item {
                 font-weight: 400;
@@ -802,6 +807,8 @@ iframe {
                 line-height: 140%;
                 color: #FFFFFF;
                 opacity: 0.8; }
+                .header-wrapper-nav-item-bar .header-nav-bar-spot.is-active .header-nav-bar-spot-item:hover {
+                  opacity: 1; }
             .header-wrapper-nav-item-bar .header-nav-bar-spot-item {
               display: block;
               position: relative;
@@ -809,6 +816,7 @@ iframe {
               margin-top: 12px;
               font-size: 0;
               line-height: 0;
+              opacity: 0.8;
               color: #1B1B1C; }
               .header-wrapper-nav-item-bar .header-nav-bar-spot-item:first-child {
                 margin-top: 0px; }
@@ -1358,7 +1366,7 @@ body {
   .home-slider {
     margin-top: 53px; }
     .home-slider-item {
-      max-width: 1290px;
+      max-width: 1440px;
       margin: 0 auto;
       width: 100%;
       display: -webkit-box;
@@ -1565,6 +1573,7 @@ body {
           .home-service-block-item-btn:hover {
             color: #D7592A; }
   .home-company {
+    background: #1B1B1C;
     border-top: 1px solid #4C4C4E;
     border-bottom: 1px solid #4C4C4E; }
     .home-company .home-wrapper {
@@ -1729,7 +1738,8 @@ body {
         margin-top: 30px;
         padding-bottom: 20px; } }
   .home-spot {
-    border-bottom: 1px solid #4C4C4E; }
+    border-bottom: 1px solid #4C4C4E;
+    background: #1B1B1C; }
     .home-spot-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1759,7 +1769,8 @@ body {
         line-height: 26px; }
   .home-geography {
     position: relative;
-    display: block; }
+    display: block;
+    background: #1B1B1C; }
     .home-geography-box {
       display: block;
       text-align: center; }
@@ -1888,7 +1899,8 @@ body {
   .home-otzyv {
     position: relative;
     display: block;
-    padding-top: 110px; }
+    padding-top: 110px;
+    background: #1B1B1C; }
     .home-otzyv-header {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1992,8 +2004,9 @@ body {
             color: #D7592A; }
   .home-contacts {
     position: relative;
-    margin-top: 120px;
-    padding-bottom: 100px; }
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background: #1B1B1C; }
     .home-contacts-wrapper {
       border: 1px solid #4C4C4E;
       -webkit-box-sizing: border-box;
