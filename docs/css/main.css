@@ -798,7 +798,7 @@ iframe {
               left: 0;
               padding: 16px;
               width: 264px;
-              min-height: 116px;
+              min-height: 146px;
               opacity: 1;
               z-index: 10; }
               .header-wrapper-nav-item-bar .header-nav-bar-spot.is-active .header-nav-bar-spot-item {
@@ -2227,36 +2227,42 @@ body {
         background-size: cover; }
 
 .js-img-show {
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  /** Chrome & Safari **/
-  -moz-transition: all 1s ease-in-out;
-  /** Firefox **/
-  -o-transition: all 1s ease-in-out;
-  /** Opera **/
-  -webkit-transform: translate(500px, 0);
-      -ms-transform: translate(500px, 0);
-          transform: translate(500px, 0);
-  opacity: 0; }
-  .js-img-show.show {
+  position: relative; }
+  .js-img-show .img-pattern {
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    -webkit-transform: translate(500px, 0);
+        -ms-transform: translate(500px, 0);
+            transform: translate(500px, 0);
+    opacity: 0;
+    position: absolute;
+    min-width: calc(100% + 100%);
+    height: 100%;
+    border-radius: 4px;
+    z-index: 1; }
+  .js-img-show .img-img {
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-transform: translate(1000px, 0);
+        -ms-transform: translate(1000px, 0);
+            transform: translate(1000px, 0);
+    position: relative;
+    border-radius: 4px;
+    z-index: 2;
+    -webkit-transition-delay: 1s;
+         -o-transition-delay: 1s;
+            transition-delay: 1s; }
+  .js-img-show.show .img-pattern {
+    width: 100%;
     -webkit-transform: translate(0px, 0);
         -ms-transform: translate(0px, 0);
             transform: translate(0px, 0);
-    opacity: 1; }
-
-.js-img-show-right {
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  /** Chrome & Safari **/
-  -moz-transition: all 1s ease-in-out;
-  /** Firefox **/
-  -o-transition: all 1s ease-in-out;
-  /** Opera **/
-  -webkit-transform: translate(-500px, 0);
-      -ms-transform: translate(-500px, 0);
-          transform: translate(-500px, 0);
-  opacity: 0; }
-  .js-img-show-right.show {
+    opacity: 1;
+    min-width: 100%; }
+  .js-img-show.show .img-img {
     -webkit-transform: translate(0px, 0);
         -ms-transform: translate(0px, 0);
             transform: translate(0px, 0);

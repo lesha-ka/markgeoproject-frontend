@@ -989,9 +989,9 @@ var init = function init() {
     slidesToScroll: 1,
     speed: 800,
     dots: false,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 8000
+    arrows: false // autoplay: true,
+    // autoplaySpeed: 8000,
+
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .home-slider-btn-next').on('click', function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .slider').slick('slickNext');
