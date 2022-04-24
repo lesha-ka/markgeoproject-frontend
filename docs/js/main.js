@@ -173,6 +173,14 @@ var init = function init() {
   menuImg.on('click', function () {
     menuImg.parent().toggleClass('is-active');
     menuBox.toggleClass('is-active');
+  }); // выпадающие блоки
+
+  $('.header-wrapper-nav-item-bar').hover(function () {
+    $('.header-nav-bar-spot').removeClass('is-active');
+    $(this).find('.header-nav-bar-spot').addClass('is-active');
+  });
+  $('.header').mouseleave(function () {
+    $('.header-nav-bar-spot').removeClass('is-active');
   });
 };
 
@@ -1011,15 +1019,7 @@ var init = function init() {
   sliderNav(); // header-slider end
   // company-slider start
 
-  var sliderCompany = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-company .slider');
-  var progressBarCompany = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-company .progress');
-  var progressBarLabelCompany = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-company .slider__label');
-  var progressLastCompany = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-company .progress-last');
-  progressBarCompany.css('background-size', 20 + '% 100%').attr('aria-valuenow', 20);
-  slider.on('beforeChangeCompany', function (event, slick, currentSlide, nextSlide) {
-    var calc = nextSlide / (slick.slideCount - 1) * 100 + 20;
-    progressBarCompany.css('background-size', calc + '% 100%').attr('aria-valuenow', calc);
-  });
+  var sliderCompany = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-company-item .slider');
   sliderCompany.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -1032,18 +1032,7 @@ var init = function init() {
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-company .home-slider-btn-prev').on('click', function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-company .slider').slick('slickPrev');
-  });
-  var quantitySlidesCompany = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".home-company .slider").slick("getSlick").slideCount;
-
-  var sliderNavCompany = function sliderNavCompany(event, slick, currentSlide, nextSlide) {
-    if (quantitySlides < 10) {
-      progressLastCompany.text('0' + quantitySlidesCompany);
-    } else {
-      progressLastCompany.text(quantitySlidesCompany);
-    }
-  };
-
-  sliderNavCompany(); // company-slider end
+  }); // company-slider end
   // otzyv-slider start
 
   var sliderOtzyv = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-otzyv .slider');
