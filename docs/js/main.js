@@ -989,9 +989,9 @@ var init = function init() {
     slidesToScroll: 1,
     speed: 800,
     dots: false,
-    arrows: false // autoplay: true,
-    // autoplaySpeed: 8000,
-
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 8000
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .home-slider-btn-next').on('click', function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .slider').slick('slickNext');
@@ -1061,17 +1061,14 @@ var init = function init() {
   var progressBarStep = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work .progress');
   var progressBarLabelStep = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work .slider__label');
   var progressLastStep = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work .progress-last');
-  progressBarStep.css('background-size', 20 + '% 100%').attr('aria-valuenow', 20);
-  sliderStep.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    var calc = nextSlide / (slick.slideCount - 1) * 100 + 20;
-    progressBarStep.css('background-size', calc + '% 100%').attr('aria-valuenow', calc);
-  });
   sliderStep.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 800,
     dots: false,
-    arrows: false
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 8000
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work .step-work-btn-next').on('click', function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work .slider').slick('slickNext');
@@ -1085,6 +1082,15 @@ var init = function init() {
     var tureCurentStep = curentStep + 1;
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work-progress-first-numb').text(tureCurentStep);
   });
+  sliderStep.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    var curentStep = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work .slider').slick('slickCurrentSlide');
+    var tureCurentStep = curentStep + 1;
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work-progress-first-numb').text(tureCurentStep);
+    setTimeout(function () {
+      progressBarStep.addClass('is-active');
+    }, 100);
+  });
+  sliderNav();
   var quantitySlidesStep = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".step-work .slider").slick("getSlick").slideCount;
 
   var sliderNav = function sliderNav(event, slick, currentSlide, nextSlide) {
@@ -1095,7 +1101,13 @@ var init = function init() {
     }
   };
 
-  sliderNav(); // work-step-slider ens
+  sliderNav();
+  sliderStep.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    sliderProgress.removeClass('is-active');
+    setTimeout(function () {
+      sliderProgress.addClass('is-active');
+    }, 100);
+  }); // work-step-slider ens
   // team-slider start
 
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() <= 1023) {
@@ -1201,10 +1213,10 @@ var init = function init() {
     arrows: false
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article-btn-next').on('click', function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article-header-wrapper .slider').slick('slickNext');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article .slider').slick('slickNext');
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article-btn-prev').on('click', function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article-header-wrapper .slider').slick('slickPrev');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article .slider').slick('slickPrev');
   }); // article-news-slider end
 };
 
