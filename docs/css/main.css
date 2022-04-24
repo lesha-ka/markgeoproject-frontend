@@ -1358,7 +1358,7 @@ body {
   .home-slider {
     margin-top: 53px; }
     .home-slider-item {
-      max-width: 1440px;
+      max-width: 1290px;
       margin: 0 auto;
       width: 100%;
       display: -webkit-box;
@@ -1387,7 +1387,7 @@ body {
           color: #fff; }
         .home-slider-item-contant-title {
           margin-top: 18px;
-          font-weight: 400;
+          font-weight: 600;
           font-size: 56px;
           line-height: 120%;
           color: #FFFFFF; }
@@ -1569,43 +1569,47 @@ body {
     border-bottom: 1px solid #4C4C4E; }
     .home-company .home-wrapper {
       padding: 0 0px 0 75px; }
-    .home-company-item-contant {
-      display: block;
-      max-width: 520px; }
-      @media (max-width: 1023px) {
-        .home-company-item-contant {
-          -webkit-box-ordinal-group: 3;
-              -ms-flex-order: 2;
-                  order: 2; } }
-      .home-company-item-contant-title {
-        color: #fff;
-        font-weight: 400;
-        font-size: 56px;
-        line-height: 120%;
-        color: #FFFFFF; }
-        .home-company-item-contant-title span {
-          color: #D7592A; }
-        @media (max-width: 1300px) {
-          .home-company-item-contant-title {
-            font-size: 28px;
-            line-height: 120%; } }
-      .home-company-item-contant-text {
-        margin-top: 20px;
-        color: #fff;
-        font-size: 20px;
-        line-height: 29px;
-        min-height: 193px; }
-        @media (max-width: 1300px) {
-          .home-company-item-contant-text {
-            font-size: 18px;
-            line-height: 120%; } }
-      .home-company-item-contant-btn {
-        margin-top: 20px;
-        color: #fff;
-        font-size: 16px;
-        line-height: 22px; }
-        .home-company-item-contant-btn:hover {
-          color: #D7592A; }
+    .home-company-item {
+      max-width: 1440px; }
+      .home-company-item-contant {
+        display: block;
+        max-width: 520px;
+        margin-top: 72px; }
+        @media (max-width: 1023px) {
+          .home-company-item-contant {
+            -webkit-box-ordinal-group: 3;
+                -ms-flex-order: 2;
+                    order: 2; } }
+        .home-company-item-contant-title {
+          color: #fff;
+          font-weight: 600;
+          font-size: 56px;
+          line-height: 120%;
+          color: #FFFFFF; }
+          .home-company-item-contant-title span {
+            color: #D7592A; }
+          @media (max-width: 1300px) {
+            .home-company-item-contant-title {
+              font-size: 28px;
+              line-height: 120%; } }
+        .home-company-item-contant-text {
+          font-weight: 400;
+          margin-top: 20px;
+          color: #fff;
+          font-size: 20px;
+          line-height: 29px;
+          min-height: 193px; }
+          @media (max-width: 1300px) {
+            .home-company-item-contant-text {
+              font-size: 18px;
+              line-height: 120%; } }
+        .home-company-item-contant-btn {
+          margin-top: 20px;
+          color: #fff;
+          font-size: 16px;
+          line-height: 22px; }
+          .home-company-item-contant-btn:hover {
+            color: #D7592A; }
     .home-company-item-preview-item {
       background: url("../images/main/company/company-slide-1.png");
       background-size: cover;
@@ -1630,7 +1634,7 @@ body {
     .home-company-item-preview-title {
       position: relative;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       font-size: 56px;
       line-height: 120%;
       color: #FFFFFF;
@@ -1761,6 +1765,7 @@ body {
       text-align: center; }
       .home-geography-box-title {
         padding-top: 120px;
+        font-weight: 600;
         font-size: 36px;
         line-height: 120%;
         color: #fff;
@@ -1892,7 +1897,7 @@ body {
           -ms-flex-pack: justify;
               justify-content: space-between; }
       .home-otzyv-header-title {
-        font-weight: 400;
+        font-weight: 600;
         font-size: 36px;
         line-height: 120%;
         color: #fff; }
@@ -1940,7 +1945,7 @@ body {
         border-radius: 4px;
         margin: 30px 30px 0 0; }
         .home-otzyv-content-item-title {
-          font-weight: 400;
+          font-weight: 600;
           font-size: 24px;
           line-height: 140%;
           color: #FFFFFF; }
@@ -2018,7 +2023,7 @@ body {
               -ms-flex-direction: column;
                   flex-direction: column; }
           .home-contacts-wrapper-flex-left-title-place {
-            font-weight: 400;
+            font-weight: 600;
             font-size: 36px;
             line-height: 120%;
             color: #FFFFFF;
@@ -2027,6 +2032,7 @@ body {
             text-decoration: none;
             color: #FFFFFF;
             font-size: 36px;
+            font-weight: 600;
             line-height: 120%;
             margin-top: 16px; }
         .home-contacts-wrapper-flex-left-btn {
@@ -2065,7 +2071,7 @@ body {
           -ms-flex-pack: justify;
               justify-content: space-between; }
       .home-news-header-title {
-        font-weight: 400;
+        font-weight: 600;
         font-size: 36px;
         line-height: 120%;
         color: #fff; }
