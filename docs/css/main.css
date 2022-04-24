@@ -2208,22 +2208,22 @@ body {
           color: #949FA3;
           text-decoration: none; }
       .home-news-content-item-1 {
-        background-image: url("../../images/main/news/item-1.png");
+        background-image: url("../images/main/news/item-1.png");
         background-size: cover; }
       .home-news-content-item-2 {
-        background-image: url("../../images/main/news/item-2.png");
+        background-image: url("../images/main/news/item-2.png");
         background-size: cover; }
       .home-news-content-item-3 {
-        background-image: url("../../images/main/news/item-3.png");
+        background-image: url("../images/main/news/item-3.png");
         background-size: cover; }
       .home-news-content-item-4 {
-        background-image: url("../../images/main/news/item-4.png");
+        background-image: url("../images/main/news/item-4.png");
         background-size: cover; }
       .home-news-content-item-5 {
-        background-image: url("../../images/main/news/item-5.png");
+        background-image: url("../images/main/news/item-5.png");
         background-size: cover; }
       .home-news-content-item-6 {
-        background-image: url("../../images/main/news/item-6.png");
+        background-image: url("../images/main/news/item-6.png");
         background-size: cover; }
 
 .js-img-show {
@@ -2538,6 +2538,9 @@ services .home-service {
   position: relative;
   display: block;
   overflow: hidden; }
+
+geological .home-section {
+  background-color: #1B1B1C; }
 
 geological .home-nav {
   z-index: 2; }
@@ -4023,27 +4026,27 @@ team .home-nav {
   margin-bottom: 120px; }
 
 .news .home-news-content-item-7 {
-  background-image: url(../../images/main/news/item-7.jpg);
+  background-image: url(../images/main/news/item-7.jpg);
   background-size: cover; }
 
 .news .home-news-content-item-8 {
-  background-image: url(../../images/main/news/item-8.jpg);
+  background-image: url(../images/main/news/item-8.jpg);
   background-size: cover; }
 
 .news .home-news-content-item-9 {
-  background-image: url(../../images/main/news/item-9.jpg);
+  background-image: url(../images/main/news/item-9.jpg);
   background-size: cover; }
 
 .news .home-news-content-item-10 {
-  background-image: url(../../images/main/news/item-10.jpg);
+  background-image: url(../images/main/news/item-10.jpg);
   background-size: cover; }
 
 .news .home-news-content-item-11 {
-  background-image: url(../../images/main/news/item-11.jpg);
+  background-image: url(../images/main/news/item-11.jpg);
   background-size: cover; }
 
 .news .home-news-content-item-12 {
-  background-image: url(../../images/main/news/item-12.jpg);
+  background-image: url(../images/main/news/item-12.jpg);
   background-size: cover; }
 
 .news-article-header {
