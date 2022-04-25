@@ -176,11 +176,12 @@ var init = function init() {
   }); // выпадающие блоки
 
   $('.header-wrapper-nav-item').hover(function () {
-    $('.header-nav-bar-spot').removeClass('is-active');
-    $(this).find('.header-nav-bar-spot').addClass('is-active');
+    $(this).find('.header-nav-bar-spot').fadeIn(400);
+    $(this).addClass('is-active');
   });
-  $('.header').mouseleave(function () {
-    $('.header-nav-bar-spot').removeClass('is-active');
+  $('.header-wrapper-nav-item').mouseleave(function () {
+    $(this).find('.header-nav-bar-spot').fadeOut(200);
+    $(this).removeClass('is-active');
   });
 };
 
