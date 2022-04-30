@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="./css/main.css?v=1650901488266">
+		<link rel="stylesheet" href="./css/main.css?v=1651325105549">
 	</head>
 	<body>
 		<div class="site">
@@ -35,7 +35,7 @@
 				</div>
 				<div class="header-mob">
 					<div class="header-mob-left"><a href="index.html"><img class="header-mob-left-img" src="images/header/main-logo.svg"></a></div>
-					<div class="header-mob-right"><a href="tel:88003555555"><img class="header-mob-right-tel" src="images/header/tel.svg"></a>
+					<div class="header-mob-right"><img class="header-mob-right-tel js-popup-contacts-watch" src="images/header/tel.svg">
 						<div class="header-mob-right-menu"><img class="header-mob-right-menu-img" src="images/header/menu.svg">
 							<div class="header-mob-right-menu-box">
 								<div class="header-mob-right-menu-box-wrapper">
@@ -51,7 +51,9 @@
 				</div>
 			</header>
 			<geological class="home"> 
-				<div class="home-nav home-wrapper"><a class="home-nav-prev" href="/index.html">Главная</a><img class="home-nav-arrow" src="images/services/header-arrow.svg"><a class="home-nav-prev" href="/services.html">Услуги</a><img class="home-nav-arrow" src="images/services/header-arrow.svg"><a class="home-nav-actual" href="/geological.html">Геологоразведочные работы</a></div>
+				<div class="home-nav home-wrapper">
+					<div class="home-nav-prev home-nav-prev-mob">...</div><a class="home-nav-prev" href="/index.html">Главная</a><img class="home-nav-arrow" src="images/services/header-arrow.svg"><a class="home-nav-prev" href="/services.html">Услуги</a><img class="home-nav-arrow home-nav-arrow-mob" src="images/services/header-arrow.svg"><a class="home-nav-actual" href="/geological.html">Геологоразведочные работы</a>
+				</div>
 				<div class="home-header">
 					<div class="home-slider">
 						<div class="home-slider-slide">
@@ -136,6 +138,9 @@
 						</div>
 					</div>
 				</div>
+				<div class="home-border-wrapper">
+					<div class="home-border"></div>
+				</div>
 				<div class="home-otzyv">
 					<div class="home-wrapper"> 
 						<div class="home-otzyv-header">
@@ -202,26 +207,24 @@
 					</div>
 				</div>
 				<div class="home-feedback">
-					<div class="home-wrapper">
-						<div class="home-feedback-flex"> 
-							<div class="home-feedback-flex-left">
-								<div class="home-feedback-flex-left-desc">Свяжитесь с нами</div>
-								<div class="home-feedback-flex-left-title">Мы перезвоним вам в течение одного дня</div>
-								<form class="home-feedback-flex-left-form">
-									<input class="home-feedback-flex-left-form-name" placeholder="Имя*" name="name">
-									<input class="home-feedback-flex-left-form-tel" placeholder="Телефон*" name="tel">
-									<input class="home-feedback-flex-left-form-mail" placeholder="E-mail*" name="email">
-									<div class="home-feedback-flex-left-form-rules">
-										<input class="home-feedback-flex-left-form-rules-checkbox" type="checkbox" value="0" id="form-checkbox">
-										<div class="home-feedback-flex-left-form-rules-text">Согласен на обработку <a href="#">персональных данных</a></div>
-									</div>
-									<div class="home-feedback-flex-left-form-btn btn-orange-hover btn-orange-hover" id="login-form-submit">Отправить заявку&nbsp;&nbsp;&rarr;</div>
-									<input class="home-feedback-flex-left-form-btn-post" type="submit" value="post" formmethod="post" id="login-form-submit-post">
-								</form>
-							</div>
-							<div class="home-feedback-flex-right">
-								<div class="company-team-flex-img js-img-show"><img class="img-pattern" src="images/header/pattern.jpg" alt=""><img class="img-img" src="images/services/services-from.png"></div>
-							</div>
+					<div class="home-feedback-flex"> 
+						<div class="home-feedback-flex-left">
+							<div class="home-feedback-flex-left-desc">Свяжитесь с нами</div>
+							<div class="home-feedback-flex-left-title">Мы перезвоним вам в течение одного дня</div>
+							<form class="home-feedback-flex-left-form">
+								<input class="home-feedback-flex-left-form-name" placeholder="Имя*" name="name">
+								<input class="home-feedback-flex-left-form-tel" placeholder="Телефон*" name="tel">
+								<input class="home-feedback-flex-left-form-mail" placeholder="E-mail*" name="email">
+								<div class="home-feedback-flex-left-form-rules">
+									<input class="home-feedback-flex-left-form-rules-checkbox" type="checkbox" value="0" id="form-checkbox">
+									<div class="home-feedback-flex-left-form-rules-text">Согласен на обработку <a href="#">персональных данных</a></div>
+								</div>
+								<div class="home-feedback-flex-left-form-btn btn-orange-hover btn-orange-hover" id="login-form-submit">Отправить заявку&nbsp;&nbsp;&rarr;</div>
+								<input class="home-feedback-flex-left-form-btn-post" type="submit" value="post" formmethod="post" id="login-form-submit-post">
+							</form>
+						</div>
+						<div class="home-feedback-flex-right">
+							<div class="company-team-flex-img js-img-show"><img class="img-pattern" src="images/header/pattern.jpg" alt=""><img class="img-img" src="images/services/services-from.png" alt=""></div>
 						</div>
 					</div>
 				</div>
@@ -256,7 +259,10 @@
 										<div class="home-faq-content-item-box-tab-point">&bull;</div>
 										<div class="home-faq-content-item-box-tab-text">Также среди компаний, которые пользовались нашими услугами, были такие как: Роскосмос, Центробанк, Газпром, Крокус групп.</div>
 									</div>
-									<div class="home-faq-content-item-box-text">Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:</div>
+									<div class="home-faq-content-item-box-tab"> 
+										<div class="home-faq-content-item-box-tab-text">
+											С&nbsp;другими проектами&nbsp;Вы можете ознакомится в&nbsp;разделе <a href="#">&laquo;Портфолио&raquo;</a></div>
+									</div>
 								</div>
 							</div>
 							<div class="home-faq-content-item">
@@ -299,32 +305,50 @@
 									</div>
 								</div>
 							</div>
+							<div class="home-faq-content-item">
+								<div class="home-faq-content-item-title">Если мы&nbsp;обратимся к&nbsp;вам, не&nbsp;будет&nbsp;ли у&nbsp;нас проблем с&nbsp;Мосгоргеотрестом?</div>
+								<div class="home-faq-content-item-box">
+									<div class="home-faq-content-item-box-text">Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:</div>
+									<div class="home-faq-content-item-box-tab">
+										<div class="home-faq-content-item-box-tab-point">&bull;</div>
+										<div class="home-faq-content-item-box-tab-text">Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.</div>
+									</div>
+								</div>
+							</div>
+							<div class="home-faq-content-item">
+								<div class="home-faq-content-item-title">Вы&nbsp;можете поучаствовать в&nbsp;тендере?</div>
+								<div class="home-faq-content-item-box">
+									<div class="home-faq-content-item-box-text">Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:</div>
+									<div class="home-faq-content-item-box-tab">
+										<div class="home-faq-content-item-box-tab-point">&bull;</div>
+										<div class="home-faq-content-item-box-tab-text">Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="home-proposal">
-					<div class="home-wrapper">
-						<div class="home-proposal-title">Специальные предложения</div>
-						<div class="slider"> 
-							<div class="home-proposal-item">
-								<div class="home-proposal-item-content"><a class="home-proposal-item-title" href="#">Маркшейдерский замер объёма</a>
-									<div class="home-proposal-item-sum">От 25 000 руб.</div>
-								</div>
+					<div class="home-proposal-title">Специальные предложения</div>
+					<div class="slider"> 
+						<div class="home-proposal-item">
+							<div class="home-proposal-item-content"><a class="home-proposal-item-title" href="#">Маркшейдерский замер объёма</a>
+								<div class="home-proposal-item-sum">От 25 000 руб.</div>
 							</div>
-							<div class="home-proposal-item">
-								<div class="home-proposal-item-content"><a class="home-proposal-item-title" href="#">Составление проекта на&nbsp;геологическое изучение и&nbsp;разведку месторождений общераспространённых полезных ископаемых</a>
-									<div class="home-proposal-item-sum">От 180 000 руб.</div>
-								</div>
+						</div>
+						<div class="home-proposal-item">
+							<div class="home-proposal-item-content"><a class="home-proposal-item-title" href="#">Составление проекта на&nbsp;геологическое изучение и&nbsp;разведку месторождений общераспространённых полезных ископаемых</a>
+								<div class="home-proposal-item-sum">От 180 000 руб.</div>
 							</div>
-							<div class="home-proposal-item">
-								<div class="home-proposal-item-content"><a class="home-proposal-item-title" href="#">Составление технического проекта разработки месторождений общераспространенных полезных ископаемых</a>
-									<div class="home-proposal-item-sum">От 450 000 руб.</div>
-								</div>
+						</div>
+						<div class="home-proposal-item">
+							<div class="home-proposal-item-content"><a class="home-proposal-item-title" href="#">Составление технического проекта разработки месторождений общераспространенных полезных ископаемых</a>
+								<div class="home-proposal-item-sum">От 450 000 руб.</div>
 							</div>
-							<div class="home-proposal-item">
-								<div class="home-proposal-item-content"><a class="home-proposal-item-title" href="#">Составление квартальной отчётности по форме: 2-гр и 7-гр</a>
-									<div class="home-proposal-item-sum">От 15 000 руб.</div>
-								</div>
+						</div>
+						<div class="home-proposal-item">
+							<div class="home-proposal-item-content"><a class="home-proposal-item-title" href="#">Составление квартальной отчётности по форме: 2-гр и 7-гр</a>
+								<div class="home-proposal-item-sum">От 15 000 руб.</div>
 							</div>
 						</div>
 					</div>
@@ -361,6 +385,10 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="footer-mob-social">
+					<div class="footer-mob-social-item"></div>
+					<div class="footer-mob-social-item"></div>
 				</div>
 				<div class="footer-mob">
 					<div class="footer-mob-item footer-mob-item-title">&copy;&nbsp;2022&nbsp;ООО &laquo;Маркгеопроджект&raquo;</div>
@@ -405,7 +433,7 @@
 				document.getElementsByTagName('head')[0].appendChild(script);
 			}
 		</script>
-		<script src="./js/vendor.js?v=1650901488266"></script>
-		<script src="./js/main.js?v=1650901488266"></script>
+		<script src="./js/vendor.js?v=1651325105549"></script>
+		<script src="./js/main.js?v=1651325105549"></script>
 	</body>
 </html>

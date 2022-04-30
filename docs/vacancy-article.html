@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="./css/main.css?v=1650901489354">
+		<link rel="stylesheet" href="./css/main.css?v=1651325106727">
 	</head>
 	<body>
 		<div class="site">
@@ -35,7 +35,7 @@
 				</div>
 				<div class="header-mob">
 					<div class="header-mob-left"><a href="index.html"><img class="header-mob-left-img" src="images/header/main-logo.svg"></a></div>
-					<div class="header-mob-right"><a href="tel:88003555555"><img class="header-mob-right-tel" src="images/header/tel.svg"></a>
+					<div class="header-mob-right"><img class="header-mob-right-tel js-popup-contacts-watch" src="images/header/tel.svg">
 						<div class="header-mob-right-menu"><img class="header-mob-right-menu-img" src="images/header/menu.svg">
 							<div class="header-mob-right-menu-box">
 								<div class="header-mob-right-menu-box-wrapper">
@@ -50,9 +50,11 @@
 					</div>
 				</div>
 			</header>
-			<vacancy class="vacancy">
+			<vacancyarticle class="vacancy">
 				<div class="home">
-					<div class="home-nav home-wrapper"><a class="home-nav-prev" href="/index.html">Главная</a><img class="home-nav-arrow" src="images/services/header-arrow.svg"><a class="home-nav-prev" href="/vacancy.html">Вакансии</a><img class="home-nav-arrow" src="images/services/header-arrow.svg"><a class="home-nav-actual" href="/vacancy-article.html">Инженер-программист</a></div>
+					<div class="home-nav home-wrapper">
+						<div class="home-nav-prev home-nav-prev-mob">...</div><a class="home-nav-prev" href="/index.html">Главная</a><img class="home-nav-arrow" src="images/services/header-arrow.svg"><a class="home-nav-prev" href="/vacancy.html">Вакансии</a><img class="home-nav-arrow home-nav-arrow-mob" src="images/services/header-arrow.svg"><a class="home-nav-actual" href="/vacancy-article.html">Инженер-программист</a>
+					</div>
 				</div>
 				<div class="vacancy">
 					<div class="vacancy-article-header-wrapper">
@@ -65,7 +67,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="vacancy-article-exp">
+					<div class="vacancy-article-exp vacancy-article-exp-top">
 						<div class="vacancy-article-exp-title">Основные компетенции</div>
 						<div class="vacancy-article-exp-flex" id="vacancy-article-exp-1">
 							<div class="vacancy-article-exp-flex-item">
@@ -86,6 +88,9 @@
 							</div>
 						</div>
 					</div>
+					<div class="vacancy-border">
+						<div class="vacancy-border-line"></div>
+					</div>
 					<div class="vacancy-article-exp">
 						<div class="vacancy-article-exp-title">Образование и опыт</div>
 						<div class="vacancy-article-exp-flex" id="vacancy-article-exp-1">
@@ -102,6 +107,9 @@
 								<div class="vacancy-article-exp-flex-item-text">Опыт проектирования и&nbsp;эксплуатации на&nbsp;действующем объекте считается преимуществом</div>
 							</div>
 						</div>
+					</div>
+					<div class="vacancy-border">
+						<div class="vacancy-border-line"></div>
 					</div>
 					<div class="vacancy-article-exp">
 						<div class="vacancy-article-exp-title">Чем предстоит заниматься</div>
@@ -140,15 +148,20 @@
 							</div>
 						</div>
 					</div>
+					<div class="vacancy-border">
+						<div class="vacancy-border-line"></div>
+					</div>
 					<div class="vacancy-article-proposal">
 						<div class="vacancy-article-proposal-text">
 							<div class="vacancy-article-proposal-text-title">Что мы предлагаем</div>
-							<div class="vacancy-article-proposal-text-desc">
-								Работа в&nbsp;старейшей и&nbsp;надежнейшей компании Дальнего Востока в&nbsp;области проектирования и&nbsp;геолого-маркшейдерского обеспечения месторождений.<br><br>Каждый член нашей небольшой команды имеет колосальный опыт в&nbsp;своей сфере, даже самый опытный профессионал получит дополнительные стимулы и&nbsp;возможности для развития своих навыков. Все сотрудники компании получает доступ расширенному страхованию по&nbsp;истечение испытательного срока. 
-								<br><br>Мы&nbsp;гордимся, уважаем и&nbsp;дорожим каждым совим сотрудником, стараемся держать оплату труда выше среднерыночной по&nbsp;региону. Возможен релакейт и&nbsp;помощь с&nbsp;поиском жилья в&nbsp;Хабаровске. Работа бок о&nbsp;бок с&nbsp;командой в&nbsp;современном офисе в&nbsp;историческом центре города, но&nbsp;если вам будет нужно покрапеть над проектом перед домашним монитором, мы&nbsp;всегда пойдем навстречу.
-							</div>
+							<div class="vacancy-article-proposal-text-desc">Работа в&nbsp;старейшей и&nbsp;надежнейшей компании Дальнего Востока в&nbsp;области проектирования и&nbsp;геолого-маркшейдерского обеспечения месторождений.</div>
+							<div class="vacancy-article-proposal-text-desc">Каждый член нашей небольшой команды имеет колосальный опыт в&nbsp;своей сфере, даже самый опытный профессионал получит дополнительные стимулы и&nbsp;возможности для развития своих навыков. Все сотрудники компании получает доступ расширенному страхованию по&nbsp;истечение испытательного срока. </div>
+							<div class="vacancy-article-proposal-text-desc">Мы&nbsp;гордимся, уважаем и&nbsp;дорожим каждым совим сотрудником, стараемся держать оплату труда выше среднерыночной по&nbsp;региону. Возможен релакейт и&nbsp;помощь с&nbsp;поиском жилья в&nbsp;Хабаровске. Работа бок о&nbsp;бок с&nbsp;командой в&nbsp;современном офисе в&nbsp;историческом центре города, но&nbsp;если вам будет нужно покрапеть над проектом перед домашним монитором, мы&nbsp;всегда пойдем навстречу.</div>
 						</div>
 						<div class="vacancy-article-proposal-img js-img-show"><img class="img-pattern" src="images/header/pattern.jpg" alt=""><img class="img-img" src="images/vacancy/proposal.jpg"></div>
+					</div>
+					<div class="vacancy-border">
+						<div class="vacancy-border-line"></div>
 					</div>
 					<div class="vacancy-advantages">
 						<div class="vacancy-advantages-title">Преимущества работы в&nbsp;нашей компании</div>
@@ -175,7 +188,7 @@
 										<div class="vacancy-advantages-box-right-item-bot-text">Опыт и&nbsp;имя на&nbsp;рынке позволяет нашей компании единовременно разрабатывать до&nbsp;3-ех крупных проектов, работа над которыми будет приносить профессиональное удовлетворение и&nbsp;гордость за&nbsp;собственный труд</div>
 									</div>
 								</div>
-								<div class="vacancy-advantages-box-right-item">
+								<div class="vacancy-advantages-box-right-item vacancy-advantages-box-right-item-last">
 									<div class="vacancy-advantages-box-right-item-top"></div>
 									<div class="vacancy-advantages-box-right-item-bot">
 										<div class="vacancy-advantages-box-right-item-bot-title">Мы&nbsp;ставим людей на&nbsp;первое место</div>
@@ -213,7 +226,7 @@
 						</div>
 					</div>
 				</div>
-			</vacancy>
+			</vacancyarticle>
 			<footer>
 				<div class="footer">
 					<div class="footer-top">
@@ -245,6 +258,10 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="footer-mob-social">
+					<div class="footer-mob-social-item"></div>
+					<div class="footer-mob-social-item"></div>
 				</div>
 				<div class="footer-mob">
 					<div class="footer-mob-item footer-mob-item-title">&copy;&nbsp;2022&nbsp;ООО &laquo;Маркгеопроджект&raquo;</div>
@@ -289,7 +306,7 @@
 				document.getElementsByTagName('head')[0].appendChild(script);
 			}
 		</script>
-		<script src="./js/vendor.js?v=1650901489354"></script>
-		<script src="./js/main.js?v=1650901489354"></script>
+		<script src="./js/vendor.js?v=1651325106727"></script>
+		<script src="./js/main.js?v=1651325106727"></script>
 	</body>
 </html>

@@ -168,11 +168,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var init = function init() {
+  var menu = $('.header-mob-right-menu');
   var menuImg = $('.header-mob-right-menu-img');
   var menuBox = $('.header-mob-right-menu-box');
-  menuImg.on('click', function () {
-    menuImg.parent().toggleClass('is-active');
-    menuBox.toggleClass('is-active');
+  menu.on('click', function () {
+    menu.toggleClass('is-active');
+    menuImg.toggleClass('is-active');
+    menuBox.fadeToggle(400);
   }); // выпадающие блоки
 
   $('.header-wrapper-nav-item').hover(function () {
@@ -1238,10 +1240,10 @@ var init = function init() {
 __webpack_require__.r(__webpack_exports__);
 var init = function init() {
   $('.popup-contacts-closer').on('click', function () {
-    $('.popup-contacts').hide();
+    $('.popup-contacts').fadeOut();
   });
   $('.js-popup-contacts-watch').on('click', function () {
-    $('.popup-contacts').show();
+    $('.popup-contacts').fadeIn();
   });
 };
 

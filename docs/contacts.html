@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="./css/main.css?v=1650901488046">
+		<link rel="stylesheet" href="./css/main.css?v=1651325105400">
 	</head>
 	<body>
 		<div class="site">
@@ -35,7 +35,7 @@
 				</div>
 				<div class="header-mob">
 					<div class="header-mob-left"><a href="index.html"><img class="header-mob-left-img" src="images/header/main-logo.svg"></a></div>
-					<div class="header-mob-right"><a href="tel:88003555555"><img class="header-mob-right-tel" src="images/header/tel.svg"></a>
+					<div class="header-mob-right"><img class="header-mob-right-tel js-popup-contacts-watch" src="images/header/tel.svg">
 						<div class="header-mob-right-menu"><img class="header-mob-right-menu-img" src="images/header/menu.svg">
 							<div class="header-mob-right-menu-box">
 								<div class="header-mob-right-menu-box-wrapper">
@@ -52,7 +52,9 @@
 			</header>
 			<contacts class="contacts">
 				<div class="home">
-					<div class="home-nav home-wrapper"><a class="home-nav-prev" href="/index.html">Главная</a><img class="home-nav-arrow" src="images/services/header-arrow.svg"><a class="home-nav-actual" href="/otzyv.html">Контакты</a></div>
+					<div class="home-nav home-wrapper">
+						<div class="home-nav-prev home-nav-prev-mob">...</div><a class="home-nav-prev" href="/index.html">Главная</a><img class="home-nav-arrow home-nav-arrow-mob" src="images/services/header-arrow.svg"><a class="home-nav-actual" href="/otzyv.html">Контакты</a>
+					</div>
 				</div>
 				<div class="vacancy">
 					<div class="vacancy-article-header-wrapper">
@@ -62,10 +64,7 @@
 							</div>
 							<div class="vacancy-article-header-right">
 								<div class="vacancy-article-header-right-text">Мы&nbsp;открыты к&nbsp;диалогу и&nbsp;работаем над любыми интересными для нас проектами</div>
-								<div class="vacancy-article-header-right-contact">
-									ул. Суворова, д. 80 офис 27<br><a href="mailto:contact@markgeoprojekt.ru">contact@markgeoprojekt.ru</a>
-									<br><a href="tel:88003555555">8 800 355-55-55</a>
-								</div>
+								<div class="vacancy-article-header-right-contact">ул. Суворова, д. 80 офис 27</div><a class="vacancy-article-header-right-contact-item" href="mailto:contact@markgeoprojekt.ru"> contact@markgeoprojekt.ru</a><a class="vacancy-article-header-right-contact-item" href="tel:88003555555">8 800 355-55-55</a>
 							</div>
 						</div>
 					</div>
@@ -75,8 +74,8 @@
 					<div class="home-feedback">
 						<div class="home-feedback-flex"> 
 							<div class="home-feedback-flex-left">
-								<div class="home-feedback-flex-left-desc">Не&nbsp;нашли подходящую вакансию?</div>
-								<div class="home-feedback-flex-left-title">Отправьте нам свое резюме и&nbsp;мы&nbsp;свяжемся с&nbsp;вами</div>
+								<div class="home-feedback-flex-left-desc">Свяжитесь с&nbsp;нами</div>
+								<div class="home-feedback-flex-left-title">Мы&nbsp;перезвоним вам в&nbsp;течение одного дня</div>
 								<form class="home-feedback-flex-left-form">
 									<input class="home-feedback-flex-left-form-name" placeholder="Имя*" name="name">
 									<input class="home-feedback-flex-left-form-tel" placeholder="Телефон*" name="tel">
@@ -128,6 +127,10 @@
 						</div>
 					</div>
 				</div>
+				<div class="footer-mob-social">
+					<div class="footer-mob-social-item"></div>
+					<div class="footer-mob-social-item"></div>
+				</div>
 				<div class="footer-mob">
 					<div class="footer-mob-item footer-mob-item-title">&copy;&nbsp;2022&nbsp;ООО &laquo;Маркгеопроджект&raquo;</div>
 					<div class="footer-mob-item">Персональные данные</div>
@@ -171,7 +174,7 @@
 				document.getElementsByTagName('head')[0].appendChild(script);
 			}
 		</script>
-		<script src="./js/vendor.js?v=1650901488046"></script>
-		<script src="./js/main.js?v=1650901488046"></script>
+		<script src="./js/vendor.js?v=1651325105400"></script>
+		<script src="./js/main.js?v=1651325105400"></script>
 	</body>
 </html>
