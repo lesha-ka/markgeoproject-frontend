@@ -504,6 +504,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_licenseNav__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./modules/licenseNav */ "./src/js/modules/licenseNav.js");
 /* harmony import */ var _modules_lazyLoading__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./modules/lazyLoading */ "./src/js/modules/lazyLoading.js");
 /* harmony import */ var _modules_sliderPreset__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./modules/sliderPreset */ "./src/js/modules/sliderPreset.js");
+/* harmony import */ var _modules_showNumbs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./modules/showNumbs */ "./src/js/modules/showNumbs.js");
+
 
 
 
@@ -533,6 +535,7 @@ _modules_faqInteractive__WEBPACK_IMPORTED_MODULE_11__["default"].init();
 _modules_licenseNav__WEBPACK_IMPORTED_MODULE_14__["default"].init();
 _modules_googleMap__WEBPACK_IMPORTED_MODULE_13__["default"].init();
 _modules_watchPopup__WEBPACK_IMPORTED_MODULE_12__["default"].init();
+_modules_showNumbs__WEBPACK_IMPORTED_MODULE_17__["default"].init();
 _components_header__WEBPACK_IMPORTED_MODULE_5__["default"].init();
 _modules_lazyLoading__WEBPACK_IMPORTED_MODULE_15__["default"].init();
 
@@ -556,6 +559,18 @@ var init = function init() {
     } else {
       faqPoint.removeClass('is-active');
       $(this).addClass('is-active');
+    }
+  }); //geological interactive
+
+  var geoPoint = $('.home-section-flex-right-table-text-item');
+  geoPoint.on('click', function () {
+    geoPoint.removeClass('is-active');
+    $(this).addClass('is-active');
+
+    if (geoPoint.last().hasClass('is-active')) {
+      $('.home-section-flex-right-table-img').addClass('short');
+    } else {
+      $('.home-section-flex-right-table-img').removeClass('short');
     }
   });
 };
@@ -882,18 +897,30 @@ var init = function init() {
 
     if (idLicense == 'id-license-1') {
       $('.company-license-nav-license').addClass('is-active');
+
+      if ($(window).width() < 1023) {
+        $('.company-license-nav-license').slick('setPosition');
+      }
     } else {
       $('.company-license-nav-license').removeClass('is-active');
     }
 
     if (idLicense == 'id-license-2') {
       $('.company-license-nav-sertificate').addClass('is-active');
+
+      if ($(window).width() < 1023) {
+        $('.company-license-nav-sertificate').slick('setPosition');
+      }
     } else {
       $('.company-license-nav-sertificate').removeClass('is-active');
     }
 
     if (idLicense == 'id-license-3') {
       $('.company-license-nav-evidence').addClass('is-active');
+
+      if ($(window).width() < 1023) {
+        $('.company-license-nav-evidence').slick('setPosition');
+      }
     } else {
       $('.company-license-nav-evidence').removeClass('is-active');
     }
@@ -956,6 +983,35 @@ var init = function init() {
   // };
   // hideOtzyvText();
 
+};
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  init: init
+});
+
+/***/ }),
+
+/***/ "./src/js/modules/showNumbs.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/showNumbs.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var init = function init() {
+  $(window).scroll(function () {
+    $('.js-numb-show').each(function () {
+      var numbPos = $(this).offset().top;
+      var windowHeight = $(window).height();
+      var topOfWindow = $(window).scrollTop();
+
+      if (numbPos < topOfWindow + windowHeight - 200) {
+        $(this).addClass("show");
+      }
+    });
+  });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1042,7 +1098,7 @@ var init = function init() {
   sliderOtzyv.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
     speed: 400,
     dots: false,
     arrows: false
@@ -1053,7 +1109,7 @@ var init = function init() {
   sliderServices.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
     speed: 800,
     dots: false,
     arrows: false
@@ -1205,22 +1261,50 @@ var init = function init() {
     }
   }); // team-slider end
   // article-news-slider start
+  // var sliderArticleNews = $('.news-article-slider');
+  // sliderArticleNews.slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   speed: 800,
+  //   dots: false,
+  //   infinite: false,
+  //   arrows : false
+  // });
+  // $('.news-article-btn-next').on('click', function() {
+  //   $('.news-article .slider').slick('slickNext');
+  // });
+  // $('.news-article-btn-prev').on('click', function() {
+  //   $('.news-article .slider').slick('slickPrev');
+  // });
+  // article-news-slider end
+  // company-slider start
 
-  var sliderArticleNews = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article-slider');
-  sliderArticleNews.slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    speed: 800,
-    dots: false,
-    infinite: false,
-    arrows: false
+  var sliderCompanySertif = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.company-license-box');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load resize', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 1023) {
+      sliderCompanySertif.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 800,
+        dots: false,
+        infinite: true,
+        arrows: false
+      });
+    }
   });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article-btn-next').on('click', function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article .slider').slick('slickNext');
-  });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article-btn-prev').on('click', function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article .slider').slick('slickPrev');
-  }); // article-news-slider end
+  var sliderCompanySertifNav = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.company-license-nav');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load resize', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 767) {
+      sliderCompanySertifNav.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 800,
+        dots: false,
+        infinite: false,
+        arrows: false
+      });
+    }
+  }); // company-slider end
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
