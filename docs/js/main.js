@@ -976,13 +976,7 @@ var init = function init() {
 
   for (var i = 0; i < sumStars; i++) {
     $('.js-otzyv-stars').append('<img src="images/main/otzyv/star.svg" alt="" class="home-otzyv-content-item-stars-star" />');
-  } // ограничение длинны отзыва
-  // function hideOtzyvText(){
-  //   $('.js-otzyv-text').text($('.js-otzyv-text').text().replace(/(\n|\r|\f)/g, ' '));
-  //   $('.js-otzyv-text').html($('.js-otzyv-text').text().replace(/(.{310}).{0,}/, '$1... <a href="#" class="home-otzyv-content-item-text-more">Читать&nbsp;полностью</a>'));
-  // };
-  // hideOtzyvText();
-
+  }
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1001,17 +995,39 @@ var init = function init() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var init = function init() {
+  var numbAnim;
+  var numbStop;
   $(window).scroll(function () {
-    $('.js-numb-show').each(function () {
-      var numbPos = $(this).offset().top;
-      var windowHeight = $(window).height();
-      var topOfWindow = $(window).scrollTop();
+    var numbPos = $('.js-numb-show').offset().top;
+    var windowHeight = $(window).height();
+    var topOfWindow = $(window).scrollTop();
 
-      if (numbPos < topOfWindow + windowHeight - 200) {
-        $(this).addClass("show");
-      }
-    });
+    if (numbPos < topOfWindow + windowHeight - 200 && numbStop != 2) {
+      numbStart();
+      console.log('srcoll', numbAnim);
+    }
   });
+
+  function numbStart() {
+    numbStop = 2;
+    var time = 1;
+    $('.js-numb-show-item span').each(function () {
+      var i = 1,
+          num = $(this).data('num'),
+          step = 1000 * time / num,
+          that = $(this),
+          _int = setInterval(function () {
+        if (i <= num) {
+          that.html(i);
+        } else {
+          clearInterval(_int);
+        }
+
+        i++;
+      }, step);
+    });
+    console.log('numbStart', numbAnim);
+  }
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
