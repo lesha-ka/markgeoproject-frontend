@@ -1330,6 +1330,44 @@ var init = function init() {
     infinite: false,
     arrows: false
   });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-section-flex-mob').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 800,
+    dots: false,
+    infinite: false,
+    arrows: false
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load resize', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 1023) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 800,
+        dots: false,
+        infinite: false,
+        arrows: false
+      });
+    }
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work-mob-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 800,
+    dots: false,
+    infinite: false,
+    arrows: false,
+    asNavFor: '.step-work-mob-nav'
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.step-work-mob-nav').slick({
+    asNavFor: '.step-work-mob-slider',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 800,
+    dots: false,
+    infinite: false,
+    arrows: false
+  });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({

@@ -1862,8 +1862,9 @@ body {
         margin-top: 20px;
         margin-right: 0px;
         max-width: 515px; } }
-    .site .home-service-wrapper {
-      padding: 0 0 0 16px; }
+    @media (max-width: 1023px) {
+      .site .home-service-wrapper {
+        padding: 0 0 0 16px; } }
     @media (max-width: 1023px) {
       .site .home-service-block-item {
         padding: 24px;
@@ -2094,6 +2095,12 @@ body {
           position: absolute;
           bottom: 263px; } }
       @media (max-width: 767px) {
+        .home-slider-footer {
+          bottom: 414px; } }
+      @media (max-width: 440px) {
+        .home-slider-footer {
+          bottom: 380px; } }
+      @media (max-width: 378px) {
         .home-slider-footer {
           bottom: 414px; } }
     .home-slider-nav {
@@ -3011,11 +3018,13 @@ body {
   .js-img-show.show .img-img-tab {
     -webkit-animation: show-img 2.5s linear;
             animation: show-img 2.5s linear;
-    opacity: 1; }
+    opacity: 1;
+    width: 100%; }
   .js-img-show.show .img-img-mob {
     -webkit-animation: show-img 2.5s linear;
             animation: show-img 2.5s linear;
-    opacity: 1; }
+    opacity: 1;
+    width: 100%; }
 
 @-webkit-keyframes show-pattern {
   0% {
@@ -3092,11 +3101,13 @@ body {
   .js-img-show-right.show .img-img-tab {
     -webkit-animation: show-img-r 2.5s linear;
             animation: show-img-r 2.5s linear;
-    opacity: 1; }
+    opacity: 1;
+    width: 100%; }
   .js-img-show-right.show .img-img-mob {
     -webkit-animation: show-img-r 2.5s linear;
             animation: show-img-r 2.5s linear;
-    opacity: 1; }
+    opacity: 1;
+    width: 100%; }
 
 @-webkit-keyframes show-pattern-r {
   0% {
@@ -3596,12 +3607,23 @@ geological .home-slider {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
+    @media (max-width: 1023px) {
+      geological .home-slider-item {
+        padding: 78px 0 0 0; } }
     geological .home-slider-item-contant {
       margin-top: 79px; }
+      @media (max-width: 1023px) {
+        geological .home-slider-item-contant {
+          margin-top: 23px;
+          max-width: 640px; } }
       geological .home-slider-item-contant-title {
         font-size: 48px;
         line-height: 120%;
         color: #fff; }
+        @media (max-width: 1023px) {
+          geological .home-slider-item-contant-title {
+            font-size: 28px;
+            line-height: 120%; } }
       geological .home-slider-item-contant-text {
         margin-top: 25px;
         font-size: 18px;
@@ -3609,14 +3631,47 @@ geological .home-slider {
         color: #fff;
         opacity: .92;
         max-width: 400px; }
+        @media (max-width: 1023px) {
+          geological .home-slider-item-contant-text {
+            font-size: 18px;
+            line-height: 140%;
+            max-width: 600px; } }
       geological .home-slider-item-contant-btn {
         margin-top: 79px; }
+        @media (max-width: 1023px) {
+          geological .home-slider-item-contant-btn {
+            margin-top: 31px; } }
+        @media (max-width: 1023px) {
+          geological .home-slider-item-contant-btn-orange {
+            max-width: 220px;
+            padding: 13px 20px 13px 20px; } }
     geological .home-slider-item-preview {
       border-radius: 4px; }
+      @media (max-width: 1023px) {
+        geological .home-slider-item-preview {
+          display: none; } }
+      geological .home-slider-item-preview-tab {
+        display: none;
+        width: 100%; }
+        @media (max-width: 1023px) {
+          geological .home-slider-item-preview-tab {
+            display: block; } }
+        @media (max-width: 767px) {
+          geological .home-slider-item-preview-tab {
+            display: none; } }
+      geological .home-slider-item-preview-mob {
+        width: 100%;
+        display: none; }
+        @media (max-width: 767px) {
+          geological .home-slider-item-preview-mob {
+            display: block; } }
 
 geological .home-wrapper {
   position: relative;
   padding: 0 0 0 75px; }
+  @media (max-width: 1023px) {
+    geological .home-wrapper {
+      padding: 0 16px; } }
 
 geological .home-otzyv {
   padding-top: 122px; }
@@ -3656,6 +3711,40 @@ geological .step-work {
     margin-right: 20px;
     margin-left: 0px; }
 
+@media (max-width: 1023px) {
+  geological .home-proposal {
+    padding: 16px 0 0 0;
+    margin-top: 40px; } }
+
+geological .home-proposal .slider {
+  max-width: 440px; }
+  @media (max-width: 1023px) {
+    geological .home-proposal .slider {
+      left: -1px;
+      max-width: 310px !important; } }
+
+@media (max-width: 1023px) {
+  geological .home-proposal-item-content {
+    padding: 20px 16px;
+    min-height: 228px; } }
+
+@media (max-width: 1023px) {
+  geological .home-proposal-item-title {
+    font-size: 18px;
+    line-height: 145%; } }
+
+@media (max-width: 1023px) {
+  geological .home-proposal-item-sum {
+    font-size: 18px;
+    line-height: 145%; } }
+
+@media (max-width: 1023px) {
+  geological .home-proposal-title {
+    padding-left: 16px;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 20px; } }
+
 .home-section {
   position: relative;
   display: block; }
@@ -3675,6 +3764,9 @@ geological .step-work {
             justify-content: space-between;
     width: 100%;
     margin-top: 48px; }
+    @media (max-width: 1023px) {
+      .home-section-flex {
+        display: none; } }
     .home-section-flex-left {
       width: 100%;
       max-width: 665px; }
@@ -3684,6 +3776,11 @@ geological .step-work {
         font-size: 36px;
         line-height: 120%;
         color: #FFFFFF; }
+        @media (max-width: 1023px) {
+          .home-section-flex-left-title {
+            font-size: 24px;
+            line-height: 120%;
+            padding-top: 28px; } }
       .home-section-flex-left-img {
         max-width: 630px;
         max-height: 400px;
@@ -3773,12 +3870,93 @@ geological .step-work {
           .home-section-flex-right-btn {
             position: relative;
             left: -5px; } }
+    .home-section-flex-mob {
+      display: none;
+      width: 100%;
+      position: relative;
+      max-width: 306px; }
+      @media (max-width: 1023px) {
+        .home-section-flex-mob {
+          display: block;
+          margin-top: 31px; } }
+      .home-section-flex-mob .slick-list {
+        overflow: visible !important; }
+      .home-section-flex-mob-item {
+        max-width: 306px;
+        display: block; }
+        .home-section-flex-mob-item-header {
+          display: block;
+          width: 100%;
+          padding-right: 16px;
+          padding-bottom: 20px; }
+        .home-section-flex-mob-item-line {
+          width: 100%; }
+        .home-section-flex-mob-item-point {
+          width: 12px;
+          height: 12px;
+          display: block;
+          position: relative;
+          background-image: url(../images/geological/item-passive.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin-bottom: -7px;
+          z-index: 1; }
+        .home-section-flex-mob-item-title {
+          border-top: 2px solid #4C4C4E;
+          padding-top: 26px;
+          padding-right: 16px;
+          font-family: 'Gilroy';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 140%;
+          color: #fff; }
+        .home-section-flex-mob-item-desc {
+          padding-right: 16px;
+          opacity: 0;
+          -webkit-transition: 1s;
+          -o-transition: 1s;
+          transition: 1s;
+          font-family: 'Gilroy';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 145%;
+          color: #fff;
+          margin-top: 16px; }
+      .home-section-flex-mob .slick-active .home-section-flex-mob-item-desc {
+        opacity: 0.92;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+      .home-section-flex-mob .slick-active .home-section-flex-mob-item-point {
+        background-image: url(../images/geological/item-active.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .home-section-flex-mob-btn {
+        display: none; }
+        @media (max-width: 1023px) {
+          .home-section-flex-mob-btn {
+            display: block;
+            background: #D7592A;
+            border-radius: 4px;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 13px 30px;
+            max-width: 220px;
+            margin-top: 24px;
+            margin-bottom: 48px; } }
 
 .home-step-work {
   display: block;
   max-width: 630px;
   width: 100%;
   margin-right: 30px; }
+  @media (max-width: 1023px) {
+    .home-step-work {
+      display: none; } }
   .home-step-work .home-slider-item {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -3856,6 +4034,10 @@ geological .step-work {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 75px; }
+  @media (max-width: 1023px) {
+    .home-faq {
+      padding: 0 16px;
+      max-width: 100%; } }
   .home-faq-bg {
     background: #1B1B1C; }
   .home-faq-header {
@@ -3866,6 +4048,15 @@ geological .step-work {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-bottom: 38px; }
+    @media (max-width: 1023px) {
+      .home-faq-header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
     .home-faq-header-title {
       max-width: 555px;
       font-weight: 400;
@@ -3873,6 +4064,10 @@ geological .step-work {
       line-height: 120%;
       color: #FFFFFF;
       margin-right: 30px; }
+      @media (max-width: 1023px) {
+        .home-faq-header-title {
+          font-size: 24px;
+          line-height: 120%; } }
     .home-faq-header-desc {
       max-width: 630px;
       font-weight: 400;
@@ -3880,6 +4075,11 @@ geological .step-work {
       line-height: 145%;
       color: #FFFFFF;
       opacity: 0.92; }
+      @media (max-width: 1023px) {
+        .home-faq-header-desc {
+          font-size: 18px;
+          line-height: 145%;
+          margin-top: 20px; } }
   .home-faq-content {
     display: block;
     position: relative;
@@ -3896,6 +4096,10 @@ geological .step-work {
         color: #FFFFFF;
         opacity: 0.6;
         max-width: 920px; }
+        @media (max-width: 1023px) {
+          .home-faq-content-item-title {
+            font-size: 20px;
+            line-height: 140%; } }
         .home-faq-content-item-title:hover {
           opacity: 1;
           cursor: pointer; }
@@ -4032,6 +4236,10 @@ geological .step-work {
     vertical-align: middle;
     border-radius: 4px; }
 
+@media (max-width: 1023px) {
+  .step-work {
+    display: none; } }
+
 .step-work .home-slider-item {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -4073,6 +4281,287 @@ geological .step-work {
   width: 48px;
   height: 48px;
   cursor: pointer; }
+
+.step-work-mob {
+  position: relative;
+  display: none;
+  margin-bottom: 48px; }
+  .step-work-mob .step-work-line {
+    width: calc(100% - 32px);
+    margin: 0 16px;
+    border: 1px solid #4C4C4E;
+    margin-bottom: 47px; }
+  @media (max-width: 1023px) {
+    .step-work-mob {
+      display: block; } }
+  .step-work-mob-title {
+    max-width: 100%;
+    padding: 0 16px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF; }
+  .step-work-mob-nav {
+    display: block;
+    max-width: 98px;
+    margin-left: 16px;
+    margin-top: 24px; }
+    .step-work-mob-nav .slick-list {
+      overflow: visible !important; }
+    .step-work-mob-nav-step {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 145%;
+      color: #FFFFFF;
+      background: #2D2D2E;
+      border-radius: 4px;
+      padding: 7px 14px;
+      max-width: 86px; }
+    .step-work-mob-nav .slick-active .step-work-mob-nav-step {
+      background: #58585A; }
+  .step-work-mob-slider {
+    max-width: calc(100% - 32px);
+    margin: 0 auto;
+    display: block;
+    margin-top: 32px; }
+    .step-work-mob-slider-item-header {
+      width: 100%;
+      display: block !important; }
+      @media (max-width: 767px) {
+        .step-work-mob-slider-item-header {
+          display: none !important; } }
+      .step-work-mob-slider-item-header-mob {
+        display: none !important; }
+        @media (max-width: 767px) {
+          .step-work-mob-slider-item-header-mob {
+            display: block !important;
+            width: 100%; } }
+    .step-work-mob-slider-item-title {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 140%;
+      color: #FFFFFF;
+      margin-top: 24px; }
+    .step-work-mob-slider-item-text {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 145%;
+      color: #FFFFFF;
+      opacity: 0.92;
+      margin-top: 16px; }
+
+@media (max-width: 1023px) {
+  .home .home-section .home-wrapper {
+    padding: 0 16px; } }
+
+@media (max-width: 1023px) {
+  .home-border {
+    display: none !important; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv {
+    padding-top: 0px !important; } }
+
+.home-otzyv-line {
+  display: none; }
+  @media (max-width: 1023px) {
+    .home-otzyv-line {
+      display: block;
+      width: calc(100% - 32px);
+      margin: 0 16px;
+      border: 1px solid #4C4C4E;
+      margin-bottom: 47px; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-header-title {
+    font-size: 24px;
+    line-height: 120%; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-header-right {
+    margin-top: 18px; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-header-right-text {
+    font-size: 18px;
+    line-height: 145%; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-header-right-all {
+    display: none; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-content {
+    padding-top: 2px;
+    max-width: 306px; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-content-item {
+    max-width: 290px;
+    padding: 25px 24px 19px; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-content-item-title {
+    font-size: 20px;
+    line-height: 140%;
+    position: relative;
+    top: -5px; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-content-item-desc {
+    font-size: 14px;
+    line-height: 145%; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-content-item-stars {
+    margin-top: 20px; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-content-item-stars-star {
+    width: 16px;
+    height: 16px; } }
+
+@media (max-width: 1023px) {
+  .home-otzyv-content-item-text {
+    font-size: 16px;
+    line-height: 145%;
+    font-weight: 400;
+    margin-top: 16px; } }
+
+.home-otzyv .otzyv-more-btn {
+  display: none; }
+  @media (max-width: 1023px) {
+    .home-otzyv .otzyv-more-btn {
+      width: 100%;
+      margin: 22px auto 0;
+      border: 1px solid #4C4C4E;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-radius: 4px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      padding: 16px;
+      color: #FFFFFF;
+      cursor: pointer; } }
+
+.home-proposal {
+  position: relative;
+  max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 0; }
+  @media (max-width: 1023px) {
+    .home-proposal {
+      padding: 16px;
+      margin-top: 40px; } }
+  .home-proposal .slider {
+    max-width: 410px;
+    width: 100%;
+    left: -1px; }
+    .home-proposal .slider:before {
+      content: '';
+      position: absolute;
+      left: -2000px;
+      top: 0px;
+      width: 2000px;
+      height: 400px;
+      background-color: #1B1B1C;
+      z-index: 2; }
+    @media (max-width: 550px) {
+      .home-proposal .slider {
+        width: 310px; } }
+  .home-proposal .slick-list {
+    overflow: visible !important; }
+  .home-proposal-title {
+    display: block;
+    padding-left: 75px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 48px; }
+    @media (max-width: 1023px) {
+      .home-proposal-title {
+        padding-left: 0px; } }
+  .home-proposal-item {
+    display: block;
+    max-width: 440px; }
+    @media (max-width: 1023px) {
+      .home-proposal-item {
+        width: 310px; } }
+    .home-proposal-item-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 40px 75px;
+      border: 1px solid #4C4C4E;
+      min-height: 290px; }
+      @media (max-width: 550px) {
+        .home-proposal-item-content {
+          width: 310px;
+          padding: 16px; } }
+    .home-proposal-item-title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 145%;
+      color: #FFFFFF;
+      text-decoration: none;
+      max-height: 174px;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis; }
+      @media (max-width: 550px) {
+        .home-proposal-item-title {
+          font-size: 18px;
+          line-height: 145%; } }
+    .home-proposal-item-sum {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 145%;
+      color: #D7592A; }
+
+.home-slider-btn-arrow {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  border-radius: 100%; }
+  .home-slider-btn-arrow:hover {
+    background: rgba(255, 255, 255, 0.16);
+    -webkit-box-shadow: 0px 15px 35px rgba(6, 23, 48, 0.1);
+            box-shadow: 0px 15px 35px rgba(6, 23, 48, 0.1); }
 
 company.home {
   background: #1B1B1C; }
@@ -5095,13 +5584,12 @@ vacancy.vacancy {
         border-radius: 4px; }
         .vacancy-advantages-box-left-hover {
           position: absolute;
-          opacity: 0;
           width: 100%;
           height: 100%;
           -webkit-transition: 1s;
           -o-transition: 1s;
           transition: 1s;
-          opacity: 0;
+          opacity: .1;
           background-image: url("../images/vacancy/vacancy-flex-v2.jpg");
           left: 0;
           top: 0;
@@ -5332,6 +5820,8 @@ vacancy.vacancy {
     background-position: right top;
     border-radius: 4px;
     border: 1px solid #4C4C4E; }
+    .vacancy-closer:hover {
+      border: 1px solid #4C4C4E; }
     @media (max-width: 1023px) {
       .vacancy-closer {
         background-image: url("../images/vacancy/vacancy-closer-tab.png");
@@ -5375,8 +5865,10 @@ vacancy.vacancy {
       font-weight: 400;
       font-size: 18px;
       line-height: 145%;
-      color: #D7592A;
+      color: #fff;
       margin-top: 36px; }
+      .vacancy-closer-btn:hover {
+        color: #D7592A; }
       @media (max-width: 1023px) {
         .vacancy-closer-btn {
           margin-top: 31px; } }
@@ -5471,6 +5963,8 @@ vacancyarticle .home {
         max-width: 220px;
         padding: 13px 44px;
         margin-top: 32px; }
+        .vacancy-article-header-right-btn:hover {
+          background: #E46C3F; }
   .vacancy-article-exp {
     display: block;
     width: 100%;
