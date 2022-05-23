@@ -185,6 +185,9 @@ var init = function init() {
     $(this).find('.header-nav-bar-spot').fadeOut(200);
     $(this).removeClass('is-active');
   });
+  $('.js-mob-menu-show-bar').on('click', function () {
+    $(this).parent().find('.header-mob-right-menu-box-wrapper-right-item-desc-wrap').fadeToggle();
+  });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
