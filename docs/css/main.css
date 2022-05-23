@@ -971,12 +971,13 @@ iframe {
                       -ms-flex-direction: column;
                           flex-direction: column;
                   max-width: 280px; }
+                  .header-mob-right-menu-box-wrapper-right li {
+                    padding-top: 16px; }
                   .header-mob-right-menu-box-wrapper-right-item {
                     font-weight: 400;
                     font-size: 20px;
                     line-height: 140%;
-                    color: #FFFFFF;
-                    padding-top: 15px; }
+                    color: #FFFFFF; }
                     .header-mob-right-menu-box-wrapper-right-item span img {
                       margin-left: 15px;
                       vertical-align: middle;
@@ -1004,7 +1005,8 @@ iframe {
                       -o-transition: 1s;
                       transition: 1s; }
                       .header-mob-right-menu-box-wrapper-right-item-desc-wrap {
-                        display: none; }
+                        display: none;
+                        padding-left: 12px; }
                     .header-mob-right-menu-box-wrapper-right-item.is-active .header-mob-right-menu-box-wrapper-right-item-desc {
                       line-height: 140%;
                       margin-top: 12px;
