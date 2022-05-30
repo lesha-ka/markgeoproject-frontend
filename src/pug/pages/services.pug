@@ -1,7 +1,8 @@
 services.home 
   .home-nav.home-wrapper
+    .home-nav-prev.home-nav-prev-mob ...
     a(href="/index.html").home-nav-prev Главная
-    img(src="images/services/header-arrow.svg").home-nav-arrow 
+    img(src="images/services/header-arrow.svg").home-nav-arrow.home-nav-arrow-mob 
     a(href="/services.html").home-nav-actual Услуги
 
   .home-service
@@ -68,8 +69,8 @@ services.home
     .home-feedback
       .home-feedback-flex 
         .home-feedback-flex-left
-          .home-feedback-flex-left-desc Не&nbsp;нашли подходящую вакансию?
-          .home-feedback-flex-left-title Отправьте нам свое резюме и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
+          .home-feedback-flex-left-desc Свяжитесь с нами
+          .home-feedback-flex-left-title Мы&nbsp;перезвоним вам в&nbsp;течение одного дня
           form.home-feedback-flex-left-form
             input(placeholder="Имя*" name="name").home-feedback-flex-left-form-name
             input(placeholder="Телефон*" name="tel").home-feedback-flex-left-form-tel
@@ -78,7 +79,7 @@ services.home
               input(type="checkbox" value="0").home-feedback-flex-left-form-rules-checkbox#form-checkbox
               .home-feedback-flex-left-form-rules-text Согласен на обработку 
                 a(href="#") персональных данных
-            #login-form-submit.home-feedback-flex-left-form-btn Отправить заявку&nbsp;&nbsp;&rarr;
+            #login-form-submit.home-feedback-flex-left-form-btn.btn-orange-hover Отправить заявку&nbsp;&nbsp;&rarr;
             input(type="submit" value="post" formmethod="post").home-feedback-flex-left-form-btn-post#login-form-submit-post
         .home-feedback-flex-right
           img(src="images/services/services-from.png").home-feedback-flex-right-img

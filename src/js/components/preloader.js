@@ -1,11 +1,11 @@
 const init = () => {
   if (!sessionStorage.alreadyClicked) {
-  	 $('body .preloader').addClass('is-active');
+  	$('body .preloader').addClass('is-active');
 
-  	 function hidePreloader() {
-  	 	$('body .preloader').removeClass('is-active');
-  	 }
-  	 setTimeout(hidePreloader, 5000);
+  	function hidePreloader() {
+  		$('body .preloader').removeClass('is-active');
+  	}
+  	setTimeout(hidePreloader, 5000);
   	sessionStorage.alreadyClicked = "true";
   }
 }

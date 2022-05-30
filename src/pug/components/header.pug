@@ -1,45 +1,75 @@
 script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8EsULGTOTR_oijQHZ_BDOLtsQl2PxM0k")
 header.header
 	.header-wrapper
-		.header-wrapper-nav
-			.header-wrapper-logo
+		ul.header-wrapper-nav
+			li.header-wrapper-logo
 				a(href="index.html").header-wrapper-logo-href
 					img(src="images/header/main-logo.svg").header-wrapper-logo-img
-			a(href="services.html").header-wrapper-nav-item.header-wrapper-nav-item-bar Услуги
-			a(href="company.html").header-wrapper-nav-item.header-wrapper-nav-item-bar Компания
-			a(href="otzyv.html").header-wrapper-nav-item Клиенты
-			a(href="project.html").header-wrapper-nav-item Наши проекты
-			a(href="news.html").header-wrapper-nav-item Новости
-			a(href="contacts.html").header-wrapper-nav-item Контакты
+			li.header-wrapper-nav-item.header-wrapper-nav-item-bar 
+				|#[a(href="services.html") Услуги]
+				.header-nav-bar-spot.header-nav-bar-spot-service
+					a(href="geological.html").header-nav-bar-spot-item Маркшейдерское обслуживание
+					a(href="geological.html").header-nav-bar-spot-item Разведка полезных ископаемых
+					a(href="geological.html").header-nav-bar-spot-item Составление документации для разработки месторождений
+					a(href="geological.html").header-nav-bar-spot-item Аудит деятельности недропользователей
+					a(href="geological.html").header-nav-bar-spot-item Геологическое сопровождение
+					a(href="geological.html").header-nav-bar-spot-item Составление пакета документов для оформления лицензии недропользования
+					
+			li.header-wrapper-nav-item.header-wrapper-nav-item-bar Компания
+				.header-nav-bar-spot.header-nav-bar-spot-company
+					a(href="/company.html").header-nav-bar-spot-item О компании
+					a(href="team.html").header-nav-bar-spot-item Команда 
+					a(href="otzyv.html").header-nav-bar-spot-item Отзывы
+					a(href="vacancy.html").header-nav-bar-spot-item Вакансии
+
+			li
+				a(href="project.html").header-wrapper-nav-item Наши проекты
+			li
+				a(href="news.html").header-wrapper-nav-item Новости
+			li
+				a(href="contacts.html").header-wrapper-nav-item Контакты
 		.header-wrapper-contacts
 			.header-wrapper-contacts-block 
 				a(href="tel:88003555555").header-wrapper-contacts-tel 8 800 355-55-55
 				.header-wrapper-contacts-grafic Работаем с 10:00-20:00
-			.header-wrapper-contacts-btn.js-popup-contacts-watch Связаться
+			.header-wrapper-contacts-btn.js-popup-contacts-watch.btn-silver-hover  Связаться
 	.header-mob
 		.header-mob-left
 			a(href="index.html")
 				img(src="images/header/main-logo.svg").header-mob-left-img
 		.header-mob-right
-			a(href="tel:88003555555")
-				img(src="images/header/tel.svg").header-mob-right-tel 
+			img(src="images/header/tel.svg").header-mob-right-tel.js-popup-contacts-watch 
 			.header-mob-right-menu
-				img(src="images/header/menu.svg").header-mob-right-menu-img
-				.header-mob-right-menu-box
-					.header-mob-right-menu-box-wrapper
-						.header-mob-right-menu-box-wrapper-right
-							a(href="services.html").header-mob-right-menu-box-wrapper-right-item Услуги
-								span
-									img(src="images/header/arrow-bot.svg")
-								.header-mob-right-menu-box-wrapper-right-item-sub
-									.header-mob-right-menu-box-wrapper-right-item-sub-point
-							a(href="company.html").header-mob-right-menu-box-wrapper-right-item Компания
-								span
-									img(src="images/header/arrow-bot.svg")
-								.header-mob-right-menu-box-wrapper-right-item-sub
-									a(href="geological.html").header-mob-right-menu-box-wrapper-right-item-sub-point Геологоразведочные работы
-							a(href="#").header-mob-right-menu-box-wrapper-right-item Клиенты
-							a(href="#").header-mob-right-menu-box-wrapper-right-item Наши проекты
-							a(href="#").header-mob-right-menu-box-wrapper-right-item Новости
-							a(href="#").header-mob-right-menu-box-wrapper-right-item Контакты
+				.header-mob-right-menu-img
+					.b1
+					.b3
+		.header-mob-right-menu-box
+			.header-mob-right-menu-box-wrapper
+				ul.header-mob-right-menu-box-wrapper-right
+					li.header-mob-right-menu-box-wrapper-right-item
+						|#[a(href="/services.html") Услуги]
+						.js-mob-menu-show-bar
+						.header-mob-right-menu-box-wrapper-right-item-desc-wrap
+							a(href="geological.html").header-mob-right-menu-box-wrapper-right-item-desc Маркшейдерское обслуживание
+							a(href="geological.html").header-mob-right-menu-box-wrapper-right-item-desc Разведка полезных ископаемых
+							a(href="geological.html").header-mob-right-menu-box-wrapper-right-item-desc Составление документации для разработки месторождений
+							a(href="geological.html").header-mob-right-menu-box-wrapper-right-item-desc Аудит деятельности недропользователей
+							a(href="geological.html").header-mob-right-menu-box-wrapper-right-item-desc Геологическое сопровождение
+							a(href="geological.html").header-mob-right-menu-box-wrapper-right-item-desc Составление пакета документов для оформления лицензии недропользования
+					li.header-mob-right-menu-box-wrapper-right-item Компания
+						.js-mob-menu-show-bar
+						.header-mob-right-menu-box-wrapper-right-item-desc-wrap
+								a(href="company.html").header-mob-right-menu-box-wrapper-right-item-desc О компании
+								a(href="team.html").header-mob-right-menu-box-wrapper-right-item-desc Команда 
+								a(href="otzyv.html").header-mob-right-menu-box-wrapper-right-item-desc Отзывы
+								a(href="vacancy.html").header-mob-right-menu-box-wrapper-right-item-desc Вакансии
+
+					li
+						a(href="#").header-mob-right-menu-box-wrapper-right-item Клиенты
+					li
+						a(href="#").header-mob-right-menu-box-wrapper-right-item Наши проекты
+					li
+						a(href="#").header-mob-right-menu-box-wrapper-right-item Новости
+					li
+						a(href="#").header-mob-right-menu-box-wrapper-right-item Контакты
 

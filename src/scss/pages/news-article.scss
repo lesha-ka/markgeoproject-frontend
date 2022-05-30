@@ -1,4 +1,28 @@
+newsarticle {
+  & .home {
+    background: #1B1B1C;
+  }
+  & .slick-slide {
+    text-align: center !important;
+  }
+  & .home-nav {
+    @media(max-width: 400px){
+      margin-top: 0px;
+    }
+  }
+}
 .news-article {
+  background: #1B1B1C;
+  &-slider-item {
+    max-width: 1440px;
+    padding: 0 75px;
+    margin: 41px auto 0;
+    text-align: left;
+    @media(max-width: 1023px){
+      padding: 0 16px;
+      margin: 0 auto;
+    }
+  }
   &-header{
     display: flex;
     justify-content: space-between;
@@ -13,13 +37,6 @@
     &-wrapper{
       position: relative;
       display: block;
-      max-width: 1440px;
-      padding: 0 75px;
-      margin: 48px auto 0;
-      @media(max-width: 1023px){
-        padding: 0 16px;
-        margin: 0 auto;
-      }
     }
     &-date {
       margin-right: 30px;
@@ -33,6 +50,9 @@
         max-width: 100%;
         margin-top: 20px;
         order: 3;
+      }
+      @media(max-width: 400px){
+        margin-top: 15px;
       }
     }
     &-preview {
@@ -50,7 +70,8 @@
           url(../images/main/news/article/article-gradient.png),
           url(../images/main/news/article/article-1.jpg);
         background-repeat: no-repeat, no-repeat;
-        background-position: bottom left, top left;
+        background-position: 20px left, top left;
+        background-size: 100% auto, 100% auto;
         min-height: 320px;
         display: flex;
         justify-content: end;
@@ -60,7 +81,11 @@
         max-width: 360px;
         border: 1px solid #4C4C4E;
         border-radius: 4px;
-
+      }
+      @media(max-width: 400px){
+        max-width: calc(100% + 34px);
+        margin-left: -17px;
+        width: calc(100% + 34px);
       }
       &-title {
         font-weight: 400;
@@ -74,18 +99,22 @@
         
       }
       &-text {
-        margin-top: 32px;
+        margin-top: 30px;
         font-weight: 400;
         font-size: 18px;
         line-height: 145%;
         color: #FFFFFF;
         opacity: 0.92;
+        @media(max-width: 400px){
+          margin-top: 18px;
+        }
       }
     }
     &-img {
       border-radius: 4px;
       width: 410px;
       height: 260px;
+      margin-top: -2px;
       @media(max-width: 1200px){
         order: 1;
       }
@@ -100,47 +129,66 @@
   &-content {
     position: relative;
     display: block;
-    max-width: 1440px;
     margin: 0 auto;
     padding: 60px 75px 0 110px;
     @media(max-width: 1023px){
       padding: 40px 0px 0 0px;
     }
     &-title {
+      max-width: 730px;
       font-weight: 400;
       font-size: 36px;
       line-height: 115%;
       color: #FFFFFF;
+      padding-bottom: 8px;
       @media(max-width: 1023px){
         font-size: 24px;
         line-height: 115%;
       }
     }
     &-text {
+      max-width: 730px;
       font-weight: 400;
       font-size: 18px;
       line-height: 145%;
       color: #FFFFFF;
       opacity: 0.92;
-      margin-top: 24px;
+      margin-top: 16px;
       & a {
         color: #D7592A;
       }
     }
     &-li {
+      max-width: 730px;
       font-weight: 400;
       font-size: 18px;
       line-height: 145%;
       color: #FFFFFF;
       opacity: 0.92;
-      padding-left: 30px;
+      padding-left: 28px;
       & li {
         list-style-type: disc; 
-        margin-top: 20px;
+        margin-top: 16px;
+        &:first-child {
+          margin-top: 27px;
+        }
+        &:last-child {
+          padding-bottom: 6px;
+        }
       }
     }
   }
   &-btn {
+    
+    &-wrapper{
+      max-width: 1440px;
+      padding: 0 75px;
+      margin: 0 auto;
+      @media(max-width: 1023px){
+        padding: 0 16px;
+      }
+    }
+    padding: 60px 75px 0 110px;
     display: flex;
     flex-wrap: nowrap;
     padding-bottom: 120px;
@@ -150,6 +198,7 @@
     @media(max-width: 767px){
       flex-direction: column;
       align-items: baseline;
+      padding: 40px 0 60px;
     }
     &-prev {
       font-weight: 400;
@@ -159,6 +208,7 @@
       color: #FFFFFF;
       margin-right: 40px;
       cursor: pointer;
+      transition: .5s;
       &:hover{
         color: #D7592A;
       }
@@ -170,6 +220,7 @@
       text-align: center;
       color: #FFFFFF;
       cursor: pointer;
+      transition: .5s;
       &:hover{
         color: #D7592A;
       }

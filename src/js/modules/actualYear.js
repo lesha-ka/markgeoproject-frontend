@@ -8,3 +8,11 @@ export const actualYear = () => {
 		document.querySelector('[data-actual-year]').textContent = year;
 	}
 };
+
+$(document).ready(){
+	
+}
+
+setTimeout(() => {
+	
+}, timeout);

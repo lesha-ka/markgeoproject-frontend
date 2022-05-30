@@ -51,20 +51,7 @@ const init = () => {
 
 
   // company-slider start
-  var sliderCompany = $('.home-company .slider');
-  var progressBarCompany = $('.home-company .progress');
-  var progressBarLabelCompany = $( '.home-company .slider__label' );
-  var progressLastCompany = $('.home-company .progress-last');
-  progressBarCompany
-      .css('background-size', 20 + '% 100%')
-      .attr('aria-valuenow', 20 );
-  
-  slider.on('beforeChangeCompany', function(event, slick, currentSlide, nextSlide) {   
-    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100 + 20;
-    progressBarCompany
-      .css('background-size', calc + '% 100%')
-      .attr('aria-valuenow', calc );
-  });
+  var sliderCompany = $('.home-company-item .slider');
   
   sliderCompany.slick({
     slidesToShow: 1,
@@ -80,17 +67,6 @@ const init = () => {
   $('.home-company .home-slider-btn-prev').on('click', function() {
     $('.home-company .slider').slick('slickPrev');
   });
-
-  var quantitySlidesCompany = $(".home-company .slider").slick("getSlick").slideCount
-
-  var sliderNavCompany = function(event, slick, currentSlide, nextSlide) { 
-    if (quantitySlides < 10) {
-      progressLastCompany.text('0' + quantitySlidesCompany);
-    } else {
-      progressLastCompany.text(quantitySlidesCompany);
-    }
-  };
-  sliderNavCompany();
   // company-slider end
 
 
@@ -100,7 +76,7 @@ const init = () => {
   sliderOtzyv.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
     speed: 400,
     dots: false,
     arrows : false,
@@ -114,7 +90,7 @@ const init = () => {
       sliderServices.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: false,
+        infinite: true,
         speed: 800,
         dots: false,
         arrows : false
@@ -128,23 +104,15 @@ const init = () => {
   var progressBarStep = $('.step-work .progress');
   var progressBarLabelStep = $( '.step-work .slider__label' );
   var progressLastStep = $('.step-work .progress-last');
-  progressBarStep
-      .css('background-size', 20 + '% 100%')
-      .attr('aria-valuenow', 20 );
-  
-  sliderStep.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100 + 20;
-    progressBarStep
-      .css('background-size', calc + '% 100%')
-      .attr('aria-valuenow', calc );
-  });
   
   sliderStep.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 800,
     dots: false,
-    arrows : false
+    arrows : false,
+    autoplay: true,
+    autoplaySpeed: 8000
   });  
 
   $('.step-work .step-work-btn-next').on('click', function() {
@@ -159,6 +127,18 @@ const init = () => {
     var tureCurentStep = curentStep + 1
     $('.step-work-progress-first-numb').text(tureCurentStep);
   });
+  
+    sliderStep.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+      var curentStep = $('.step-work .slider').slick('slickCurrentSlide');
+      var tureCurentStep = curentStep + 1
+      $('.step-work-progress-first-numb').text(tureCurentStep);
+    	setTimeout(function () {
+    		progressBarStep.addClass('is-active');
+        
+    	}, 100);
+
+    });
+    sliderNav();
 
   
 
@@ -173,6 +153,13 @@ const init = () => {
   };
   sliderNav();
 
+  sliderStep.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    sliderProgress.removeClass('is-active');
+    setTimeout(function () {
+      sliderProgress.addClass('is-active');
+    }, 100);
+
+  });
 
   // work-step-slider ens
 
@@ -285,23 +272,100 @@ const init = () => {
 
   // team-slider end
   // article-news-slider start
-  var sliderArticleNews = $('.news-article-slider');
+  // var sliderArticleNews = $('.news-article-slider');
   
-  sliderArticleNews.slick({
+  // sliderArticleNews.slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   speed: 800,
+  //   dots: false,
+  //   infinite: false,
+  //   arrows : false
+  // });
+  // $('.news-article-btn-next').on('click', function() {
+  //   $('.news-article .slider').slick('slickNext');
+  // });
+  // $('.news-article-btn-prev').on('click', function() {
+  //   $('.news-article .slider').slick('slickPrev');
+  // });
+  // article-news-slider end
+
+
+   // company-slider start
+  var sliderCompanySertif = $('.company-license-box');
+  $(window).on('load resize', function () {
+    if ($(window).width() < 1023) {
+    sliderCompanySertif.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 800,
+      dots: false,
+      infinite: true,
+      arrows: false
+    });
+  }
+  });
+  var sliderCompanySertifNav = $('.company-license-nav');
+  $(window).on('load resize', function () {
+  	if ($(window).width() < 767) {
+  		sliderCompanySertifNav.slick({
+  			slidesToShow: 1,
+  			slidesToScroll: 1,
+  			speed: 800,
+  			dots: false,
+  			infinite: false,
+  			arrows: false
+  		});
+  	}
+  });
+   // company-slider end
+
+  $('.home-geography-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 800,
     dots: false,
     infinite: false,
-    arrows : false
+    arrows: false
   });
-  $('.news-article-btn-next').on('click', function() {
-    $('.news-article-header-wrapper .slider').slick('slickNext');
+  $('.home-section-flex-mob').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 800,
+    dots: false,
+    infinite: false,
+    arrows: false
   });
-  $('.news-article-btn-prev').on('click', function() {
-    $('.news-article-header-wrapper .slider').slick('slickPrev');
+  $(window).on('load resize', function () {
+  	if ($(window).width() < 1023) {
+      $('.step-work').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 800,
+        dots: false,
+        infinite: false,
+        arrows: false
+      });
+    }
   });
-  // article-news-slider end
+  $('.step-work-mob-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 800,
+    dots: false,
+    infinite: false,
+    arrows: false,
+    asNavFor: '.step-work-mob-nav'
+  });
+  $('.step-work-mob-nav').slick({
+    asNavFor: '.step-work-mob-slider',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 800,
+    dots: false,
+    infinite: false,
+    arrows: false
+  });
 };
 
 export default {

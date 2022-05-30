@@ -1,9 +1,9 @@
 const init = () => {
   $('.popup-contacts-closer').on('click', function(){
-    $('.popup-contacts').hide();
+    $('.popup-contacts').fadeOut();
   });
   $('.js-popup-contacts-watch').on('click', function () {
-  	$('.popup-contacts').show();
+  	$('.popup-contacts').fadeIn();
   });
 };
 

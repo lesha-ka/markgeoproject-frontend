@@ -1,11 +1,12 @@
 geological.home 
   .home-nav.home-wrapper
+    .home-nav-prev.home-nav-prev-mob ...
     a(href="/index.html").home-nav-prev Главная
     img(src="images/services/header-arrow.svg").home-nav-arrow 
     a(href="/services.html").home-nav-prev Услуги
-    img(src="images/services/header-arrow.svg").home-nav-arrow 
+    img(src="images/services/header-arrow.svg").home-nav-arrow.home-nav-arrow-mob  
     a(href="/geological.html").home-nav-actual Геологоразведочные работы
-  .home-header.home-wrapper
+  .home-header
     .home-slider
       .home-slider-slide
         .home-slider-item
@@ -13,27 +14,72 @@ geological.home
             .home-slider-item-contant-title Геологоразведочные работы по обнаружению месторождений
             .home-slider-item-contant-text Комплекс специальных геологических и&nbsp;других работ, производимых с&nbsp;целью поиска, обнаружения и&nbsp;подготовки к&nbsp;промышленному освоению месторождений полезных ископаемых.
             .home-slider-item-contant-btn
-              a(href="#").home-slider-item-contant-btn-orange Обсудить проект&nbsp;&nbsp;&rarr;
+              a(href="#").home-slider-item-contant-btn-orange.btn-orange-hover Обсудить проект&nbsp;&nbsp;&rarr;
           img(src="images/geological/header.png").home-slider-item-preview
+          img(src="images/geological/header-tab.png").home-slider-item-preview-tab
+          img(src="images/geological/header-mob.png").home-slider-item-preview-mob
   .home-section.home-section-bg
     .home-wrapper
       .home-section-flex-left-title В геологоразведочные работы входит:
+
         .home-section-flex 
           .home-section-flex-left
-            img(src="images/geological/content.jpg").home-section-flex-left-img.js-img-show-right
+            .home-section-flex-left-img.js-img-show-right
+              .img-pattern
+              img(src="images/geological/content.jpg").img-img
           .home-section-flex-right
             .home-section-flex-right-table 
-              img(src="images/geological/flex-line.png").home-section-flex-right-table-img
-              .home-section-flex-right-table-text   
-                .home-section-flex-right-table-text-title Работы общегеологического и&nbsp;минералогического назначения
-                .home-section-flex-right-table-text-desc Региональное геологическое изучение недр и прогнозирование полезных ископаемых.
-                .home-section-flex-right-table-text-desc Разработка топографической карты проекта
-                .home-section-flex-right-table-text-text Поиски и оценка месторождений
-                .home-section-flex-right-table-text-text Разведка и освоение месторождения
-            a(href="#").home-section-flex-right-btn Обсудить проект&nbsp;&nbsp;&rarr;
+              img(src="images/geological/line.png").home-section-flex-right-table-img
+              .home-section-flex-right-table-text
+                .home-section-flex-right-table-text-item.is-active
+                  .home-section-flex-right-table-text-item-point
+                  .home-section-flex-right-table-text-item-cont
+                    .home-section-flex-right-table-text-title Работы общегеологического и&nbsp;минералогического назначения
+                    .home-section-flex-right-table-text-desc Региональное геологическое изучение недр и прогнозирование полезных ископаемых.
+                    .home-section-flex-right-table-text-desc Разработка топографической карты проекта
+                .home-section-flex-right-table-text-item
+                  .home-section-flex-right-table-text-item-point
+                  .home-section-flex-right-table-text-item-cont
+                    .home-section-flex-right-table-text-title Поиски и оценка месторождений
+                    .home-section-flex-right-table-text-desc Региональное геологическое изучение недр и прогнозирование полезных ископаемых.
+                    .home-section-flex-right-table-text-desc Разработка топографической карты проекта
+                .home-section-flex-right-table-text-item 
+                  .home-section-flex-right-table-text-item-point
+                  .home-section-flex-right-table-text-item-cont
+                    .home-section-flex-right-table-text-title Разведка и освоение месторождения
+                    .home-section-flex-right-table-text-desc Региональное геологическое изучение недр и прогнозирование полезных ископаемых.
+                    .home-section-flex-right-table-text-desc Разработка топографической карты проекта
+            a(href="#").home-section-flex-right-btn.btn-orange-hover Обсудить проект&nbsp;&nbsp;&rarr;
+
+        .home-section-flex-mob
+          .home-section-flex-mob-item
+            img(src="images/geological/content-mob.png").home-section-flex-mob-item-header 
+            .home-section-flex-mob-item-point 
+            .home-section-flex-mob-item-line
+            .home-section-flex-mob-item-title Работы общегеологического и&nbsp;минералогического назначения
+            .home-section-flex-mob-item-desc  Региональное геологическое изучение недр и прогнозирование полезных ископаемых.
+            .home-section-flex-mob-item-desc Разработка топографической карты проекта
+
+          .home-section-flex-mob-item
+            img(src="images/geological/content-mob.png").home-section-flex-mob-item-header 
+            .home-section-flex-mob-item-point 
+            .home-section-flex-mob-item-line
+            .home-section-flex-mob-item-title Поиски и оценка месторождений
+            .home-section-flex-mob-item-desc  Региональное геологическое изучение недр и прогнозирование полезных ископаемых.
+            .home-section-flex-mob-item-desc Разработка топографической карты проекта
+
+          .home-section-flex-mob-item
+            img(src="images/geological/content-mob.png").home-section-flex-mob-item-header 
+            .home-section-flex-mob-item-point 
+            .home-section-flex-mob-item-line
+            .home-section-flex-mob-item-title Разведка и освоение месторождения
+            .home-section-flex-mob-item-desc  Региональное геологическое изучение недр и прогнозирование полезных ископаемых.
+            .home-section-flex-mob-item-desc Разработка топографической карты проекта
+
+        a(href="#").home-section-flex-mob-btn.btn-orange-hover Обсудить проект&nbsp;&nbsp;&rarr;
 
   .home-section.step-work
-    .home-wrapper
+    .slider-wrapper-step-work
       .slider
         .home-slider-slide
           .home-slider-item
@@ -42,7 +88,9 @@ geological.home
               .home-step-work-title-step Этап 1
               .home-step-work-desc Разрабатываем карту проведения работ
               .home-step-work-text На&nbsp;первом этапе мы&nbsp;создаем фундаментальную геологическую основу, результатом корой являются комплекты обязательных и&nbsp;специальных геологических карт различного назначения масштабов 1:1000000, 1:200&nbsp;000 и&nbsp;1:50000; сводные и&nbsp;обзорные карты геологического содержания масштабов 1:500&nbsp;000 и&nbsp;мельче, комплект карт, схем и&nbsp;разрезов глубинного строения недр; комплексная оценка перспектив изученных территорий с&nbsp;выделением рудных районов и&nbsp;узлов, зон, угленосных бассейнов; определение прогнозных ресурсов категорий Р3&nbsp;и&nbsp;Р2; оценка состояния геологической среды и&nbsp;прогноз ее&nbsp;изменения.
-            img(src="images/geological/spet-work-1.jpg").home-slider-item-preview.js-img-show
+            .home-slider-item-preview.js-img-show
+              .img-pattern
+              img(src="images/geological/spet-work-1.jpg").img-img
         .home-slider-slide    
           .home-slider-item
             .home-step-work 
@@ -60,38 +108,68 @@ geological.home
               .home-step-work-desc Разрабатываем карту проведения работ
               .home-step-work-text На&nbsp;первом этапе мы&nbsp;создаем фундаментальную геологическую основу, результатом корой являются комплекты обязательных и&nbsp;специальных геологических карт различного назначения масштабов 1:1000000, 1:200&nbsp;000 и&nbsp;1:50000; сводные и&nbsp;обзорные карты геологического содержания масштабов 1:500&nbsp;000 и&nbsp;мельче, комплект карт, схем и&nbsp;разрезов глубинного строения недр; комплексная оценка перспектив изученных территорий с&nbsp;выделением рудных районов и&nbsp;узлов, зон, угленосных бассейнов; определение прогнозных ресурсов категорий Р3&nbsp;и&nbsp;Р2; оценка состояния геологической среды и&nbsp;прогноз ее&nbsp;изменения.
             img(src="images/geological/spet-work-1.jpg").home-slider-item-preview
-
+            
+    
+    .home-wrapper
       .home-step-work-footer
         .home-step-work-footer-left
         .home-step-work-footer-right
-          .home-step-work-nav
+          .home-step-work-nav.home-slider-nav
             .step-work-progress-first Этап&nbsp;
               span.step-work-progress-first-numb 1
             .step-work-progress.progress(role="progressbar" aria-valuemin="0" aria-valuemax="100")
               span.slider__label(sr-only)
           .home-step-work-btn 
-            img(src="images/main/slider/slider-btn-left.png" alt="").step-work-btn-prev
-            img(src="images/main/slider/slider-btn-right.png" alt="").step-work-btn-next
+            img(src="images/main/slider/slider-btn-right-opacity.png" alt="").step-work-btn-prev.home-slider-btn-arrow
+            img(src="images/main/slider/slider-btn-left-opacity.png" alt="").step-work-btn-next.home-slider-btn-arrow
 
-  .home-otzyv.home-wrapper 
-    .home-otzyv-header
-      .home-otzyv-header-title Отзывы о нашей работе
-      .home-otzyv-header-right 
-        .home-otzyv-header-right-text Мы доказываем компетентность в реальных проектах от крупных игроков рынка нефте- и газодобычи
-        .home-otzyv-header-right-all Все отзывы
-    .home-otzyv-content
-      .slider
-        .home-otzyv-content-item
-          .home-otzyv-content-item-title ООО "Абрис"
-          .home-otzyv-content-item-desc
-            .home-otzyv-content-item-desc-sity г. Хабаровск
-            .home-otzyv-content-item-desc-line -
-            .home-otzyv-content-item-desc-time 24.02.2014
-          .home-otzyv-content-item-stars.js-otzyv-stars
-          .home-otzyv-content-item-text.js-otzyv-text Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт но...
-          a(href="#").home-otzyv-content-item-text-more Читать полностью
+  .step-work-mob
+    .step-work-line
+    .step-work-mob-title Этапы проведения работ
+    .step-work-mob-nav
+      .step-work-mob-nav-step Этап 1
+      .step-work-mob-nav-step Этап 2
+      .step-work-mob-nav-step Этап 3
+      .step-work-mob-nav-step Этап 4
+    .step-work-mob-slider
+      .step-work-mob-slider-item
+        img(src="images/geological/step-header-tab.png" alt="").step-work-mob-slider-item-header
+        img(src="images/geological/step-header-mob.png" alt="").step-work-mob-slider-item-header-mob
+        .step-work-mob-slider-item-title Разрабатываем карту проведения работ
+        .step-work-mob-slider-item-text На первом этапе мы создаем фундаментальную геологическую основу, результатом корой являются комплекты обязательных и специальных геологических карт различного назначения масштабов 1:1000000, 1:200 000 и 1:50000; сводные и обзорные карты геологического содержания масштабов 1:500 000 и мельче, комплект карт, схем и разрезов глубинного строения недр; комплексная оценка перспектив изученных территорий с выделением рудных районов и узлов, зон, угленосных бассейнов; определение прогнозных ресурсов категорий Р3 и Р2; оценка состояния геологической среды и прогноз ее изменения. 
 
-        .home-otzyv-content-item
+      .step-work-mob-slider-item
+        img(src="images/geological/step-header-tab.png" alt="").step-work-mob-slider-item-header
+        img(src="images/geological/step-header-mob.png" alt="").step-work-mob-slider-item-header-mob
+        .step-work-mob-slider-item-title Разрабатываем карту проведения работ
+        .step-work-mob-slider-item-text На первом этапе мы создаем фундаментальную геологическую основу, результатом корой являются комплекты обязательных и специальных геологических карт различного назначения масштабов 1:1000000, 1:200 000 и 1:50000; сводные и обзорные карты геологического содержания масштабов 1:500 000 и мельче, комплект карт, схем и разрезов глубинного строения недр; комплексная оценка перспектив изученных территорий с выделением рудных районов и узлов, зон, угленосных бассейнов; определение прогнозных ресурсов категорий Р3 и Р2; оценка состояния геологической среды и прогноз ее изменения. 
+
+      .step-work-mob-slider-item
+        img(src="images/geological/step-header-tab.png" alt="").step-work-mob-slider-item-header
+        img(src="images/geological/step-header-mob.png" alt="").step-work-mob-slider-item-header-mob
+        .step-work-mob-slider-item-title Разрабатываем карту проведения работ
+        .step-work-mob-slider-item-text На первом этапе мы создаем фундаментальную геологическую основу, результатом корой являются комплекты обязательных и специальных геологических карт различного назначения масштабов 1:1000000, 1:200 000 и 1:50000; сводные и обзорные карты геологического содержания масштабов 1:500 000 и мельче, комплект карт, схем и разрезов глубинного строения недр; комплексная оценка перспектив изученных территорий с выделением рудных районов и узлов, зон, угленосных бассейнов; определение прогнозных ресурсов категорий Р3 и Р2; оценка состояния геологической среды и прогноз ее изменения. 
+
+      .step-work-mob-slider-item
+        img(src="images/geological/step-header-tab.png" alt="").step-work-mob-slider-item-header
+        img(src="images/geological/step-header-mob.png" alt="").step-work-mob-slider-item-header-mob
+        .step-work-mob-slider-item-title Разрабатываем карту проведения работ
+        .step-work-mob-slider-item-text На первом этапе мы создаем фундаментальную геологическую основу, результатом корой являются комплекты обязательных и специальных геологических карт различного назначения масштабов 1:1000000, 1:200 000 и 1:50000; сводные и обзорные карты геологического содержания масштабов 1:500 000 и мельче, комплект карт, схем и разрезов глубинного строения недр; комплексная оценка перспектив изученных территорий с выделением рудных районов и узлов, зон, угленосных бассейнов; определение прогнозных ресурсов категорий Р3 и Р2; оценка состояния геологической среды и прогноз ее изменения. 
+
+
+  .home-border-wrapper
+    .home-border
+    .home-otzyv-line
+  .home-otzyv
+    .home-wrapper
+      .home-otzyv-header
+        .home-otzyv-header-title Отзывы о нашей работе
+        .home-otzyv-header-right 
+          .home-otzyv-header-right-text Мы доказываем компетентность в реальных проектах от крупных игроков рынка нефте- и газодобычи
+          .home-otzyv-header-right-all Все отзывы
+      .home-otzyv-content
+        .slider
+          .home-otzyv-content-item
             .home-otzyv-content-item-title ООО "Абрис"
             .home-otzyv-content-item-desc
               .home-otzyv-content-item-desc-sity г. Хабаровск
@@ -101,37 +179,51 @@ geological.home
             .home-otzyv-content-item-text.js-otzyv-text Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт но...
             a(href="#").home-otzyv-content-item-text-more Читать полностью
 
-        .home-otzyv-content-item
-            .home-otzyv-content-item-title ООО "Абрис"
-            .home-otzyv-content-item-desc
-              .home-otzyv-content-item-desc-sity г. Хабаровск
-              .home-otzyv-content-item-desc-line -
-              .home-otzyv-content-item-desc-time 24.02.2014
-            .home-otzyv-content-item-stars.js-otzyv-stars
-            .home-otzyv-content-item-text.js-otzyv-text Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт но...
-            a(href="#").home-otzyv-content-item-text-more Читать полностью
+          .home-otzyv-content-item
+              .home-otzyv-content-item-title ООО "Абрис"
+              .home-otzyv-content-item-desc
+                .home-otzyv-content-item-desc-sity г. Хабаровск
+                .home-otzyv-content-item-desc-line -
+                .home-otzyv-content-item-desc-time 24.02.2014
+              .home-otzyv-content-item-stars.js-otzyv-stars
+              .home-otzyv-content-item-text.js-otzyv-text Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт но...
+              a(href="#").home-otzyv-content-item-text-more Читать полностью
 
-        .home-otzyv-content-item
-            .home-otzyv-content-item-title ООО "Абрис"
-            .home-otzyv-content-item-desc
-              .home-otzyv-content-item-desc-sity г. Хабаровск
-              .home-otzyv-content-item-desc-line -
-              .home-otzyv-content-item-desc-time 24.02.2014
-            .home-otzyv-content-item-stars.js-otzyv-stars
-            .home-otzyv-content-item-text.js-otzyv-text Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт но...
-            a(href="#").home-otzyv-content-item-text-more Читать полностью
+          .home-otzyv-content-item
+              .home-otzyv-content-item-title ООО "Абрис"
+              .home-otzyv-content-item-desc
+                .home-otzyv-content-item-desc-sity г. Хабаровск
+                .home-otzyv-content-item-desc-line -
+                .home-otzyv-content-item-desc-time 24.02.2014
+              .home-otzyv-content-item-stars.js-otzyv-stars
+              .home-otzyv-content-item-text.js-otzyv-text Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт но...
+              a(href="#").home-otzyv-content-item-text-more Читать полностью
 
-        .home-otzyv-content-item
-            .home-otzyv-content-item-title ООО "Абрис"
-            .home-otzyv-content-item-desc
-              .home-otzyv-content-item-desc-sity г. Хабаровск
-              .home-otzyv-content-item-desc-line -
-              .home-otzyv-content-item-desc-time 24.02.2014
-            .home-otzyv-content-item-stars.js-otzyv-stars
-            .home-otzyv-content-item-text.js-otzyv-text Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт но...
-            a(href="#").home-otzyv-content-item-text-more Читать полностью
+          .home-otzyv-content-item
+              .home-otzyv-content-item-title ООО "Абрис"
+              .home-otzyv-content-item-desc
+                .home-otzyv-content-item-desc-sity г. Хабаровск
+                .home-otzyv-content-item-desc-line -
+                .home-otzyv-content-item-desc-time 24.02.2014
+              .home-otzyv-content-item-stars.js-otzyv-stars
+              .home-otzyv-content-item-text.js-otzyv-text Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт но...
+              a(href="#").home-otzyv-content-item-text-more Читать полностью
+
+          .home-otzyv-content-item
+              .home-otzyv-content-item-title ООО "Абрис"
+              .home-otzyv-content-item-desc
+                .home-otzyv-content-item-desc-sity г. Хабаровск
+                .home-otzyv-content-item-desc-line -
+                .home-otzyv-content-item-desc-time 24.02.2014
+              .home-otzyv-content-item-stars.js-otzyv-stars
+              .home-otzyv-content-item-text.js-otzyv-text Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт но...
+              a(href="#").home-otzyv-content-item-text-more Читать полностью
+
+      .otzyv-more-btn.btn-silver-hover
+        .otzyv-more-btn-item Все отзывы
+        .otzyv-more-btn-item +
   
-  .home-feedback.home-wrapper
+  .home-feedback
     .home-feedback-flex 
       .home-feedback-flex-left
         .home-feedback-flex-left-desc Свяжитесь с нами
@@ -144,70 +236,91 @@ geological.home
             input(type="checkbox" value="0").home-feedback-flex-left-form-rules-checkbox#form-checkbox
             .home-feedback-flex-left-form-rules-text Согласен на обработку 
               a(href="#") персональных данных
-          #login-form-submit.home-feedback-flex-left-form-btn Отправить заявку&nbsp;&nbsp;&rarr;
+          #login-form-submit.home-feedback-flex-left-form-btn.btn-orange-hover.btn-orange-hover Отправить заявку&nbsp;&nbsp;&rarr;
           input(type="submit" value="post" formmethod="post").home-feedback-flex-left-form-btn-post#login-form-submit-post
       .home-feedback-flex-right
-        img(src="images/services/services-from.png").js-img-show
-  
-  .home-faq
-    .home-faq-header
-      .home-faq-header-title Ответы на популярные вопросы
-      .home-faq-header-desc Мы&nbsp;доказываем компетентность в&nbsp;реальных проектах от&nbsp;крупных игроков рынка нефте- и&nbsp;газодобычи
-    .home-faq-content
-      .home-faq-content-item.is-active
-        .home-faq-content-item-title На каких похожих объектах работали? Есть ли у вас кейсы?
-        .home-faq-content-item-box
-          .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
-          .home-faq-content-item-box-tab
-            .home-faq-content-item-box-tab-point &bull;
-            .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
-          .home-faq-content-item-box-tab
-            .home-faq-content-item-box-tab-point &bull;
-            .home-faq-content-item-box-tab-text Полный комплекс инженерных изысканий с мониторингом за деформациями оползневого участка в районе Москворечье-Сабурово для департамента правительства г. Москвы.
-          .home-faq-content-item-box-tab
-            .home-faq-content-item-box-tab-point &bull;
-            .home-faq-content-item-box-tab-text Строительство Керченского моста.
-          .home-faq-content-item-box-tab
-            .home-faq-content-item-box-tab-point &bull;
-            .home-faq-content-item-box-tab-text Было множество крупных проектов по инженерным изысканиям и по геодезическому сопровождению строительства с крупными компаниями-застройщиками, такими как: «Самолет Девелопмент», «Пик», «Мортон», «Китай строй» (Кстати, совместно с ними наши инженеры сопровождали строительство китайского делового центра «Хуамин», который был признан лучшим объектом строительства Москвы 2017 года и крупнейшим коммерческим проектом с китайскими инвестициями в сфере недвижимости на территории России) и другими.
-          .home-faq-content-item-box-tab
-            .home-faq-content-item-box-tab-point &bull;
-            .home-faq-content-item-box-tab-text Также среди компаний, которые пользовались нашими услугами, были такие как: Роскосмос, Центробанк, Газпром, Крокус групп.
-          .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
-    
-      .home-faq-content-item
-        .home-faq-content-item-title Имеются ли у вас: СРО; Лицензии; Актуальные поверки на приборы; Подтверждение, что у инженера есть диплом по данной специальности и т.д.
-        .home-faq-content-item-box
-          .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
-          .home-faq-content-item-box-tab
-            .home-faq-content-item-box-tab-point &bull;
-            .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
+        .company-team-flex-img.js-img-show
+          .img-pattern
+          img(src="images/services/services-from.png" alt="").img-img
 
-      .home-faq-content-item
-        .home-faq-content-item-title Вы можете поучаствовать в тендере?
-        .home-faq-content-item-box
-          .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
-          .home-faq-content-item-box-tab
-            .home-faq-content-item-box-tab-point &bull;
-            .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
+  .home-faq-bg
+    .home-faq
+      .home-faq-header
+        .home-faq-header-title Ответы на популярные вопросы
+        .home-faq-header-desc Мы&nbsp;доказываем компетентность в&nbsp;реальных проектах от&nbsp;крупных игроков рынка нефте- и&nbsp;газодобычи
+      .home-faq-content
+        .home-faq-content-item
+          .home-faq-content-item-title На каких похожих объектах работали? Есть ли у вас кейсы?
+          .home-faq-content-item-box
+            .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Полный комплекс инженерных изысканий с мониторингом за деформациями оползневого участка в районе Москворечье-Сабурово для департамента правительства г. Москвы.
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Строительство Керченского моста.
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Было множество крупных проектов по инженерным изысканиям и по геодезическому сопровождению строительства с крупными компаниями-застройщиками, такими как: «Самолет Девелопмент», «Пик», «Мортон», «Китай строй» (Кстати, совместно с ними наши инженеры сопровождали строительство китайского делового центра «Хуамин», который был признан лучшим объектом строительства Москвы 2017 года и крупнейшим коммерческим проектом с китайскими инвестициями в сфере недвижимости на территории России) и другими.
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Также среди компаний, которые пользовались нашими услугами, были такие как: Роскосмос, Центробанк, Газпром, Крокус групп.
+            .home-faq-content-item-box-tab 
+              .home-faq-content-item-box-tab-text С&nbsp;другими проектами&nbsp;Вы можете ознакомится в&nbsp;разделе 
+                |#[a(href="#") &laquo;Портфолио&raquo;]
+      
+        .home-faq-content-item
+          .home-faq-content-item-title Имеются ли у вас: СРО; Лицензии; Актуальные поверки на приборы; Подтверждение, что у инженера есть диплом по данной специальности и т.д.
+          .home-faq-content-item-box
+            .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
 
-      .home-faq-content-item
-        .home-faq-content-item-title Какая точность ваших работ?
-        .home-faq-content-item-box
-          .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
-          .home-faq-content-item-box-tab
-            .home-faq-content-item-box-tab-point &bull;
-            .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
+        .home-faq-content-item
+          .home-faq-content-item-title Вы можете поучаствовать в тендере?
+          .home-faq-content-item-box
+            .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
 
-      .home-faq-content-item
-        .home-faq-content-item-title Можно ли ускорить сроки проведения работ?
-        .home-faq-content-item-box
-          .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
-          .home-faq-content-item-box-tab
-            .home-faq-content-item-box-tab-point &bull;
-            .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
+        .home-faq-content-item
+          .home-faq-content-item-title Какая точность ваших работ?
+          .home-faq-content-item-box
+            .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
+
+        .home-faq-content-item
+          .home-faq-content-item-title Можно ли ускорить сроки проведения работ?
+          .home-faq-content-item-box
+            .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
+
+        .home-faq-content-item
+          .home-faq-content-item-title Если мы&nbsp;обратимся к&nbsp;вам, не&nbsp;будет&nbsp;ли у&nbsp;нас проблем с&nbsp;Мосгоргеотрестом?
+          .home-faq-content-item-box
+            .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
+
+        .home-faq-content-item
+          .home-faq-content-item-title Вы&nbsp;можете поучаствовать в&nbsp;тендере?
+          .home-faq-content-item-box
+            .home-faq-content-item-box-text Да, есть. Часть кейсов вы можете посмотреть на данном сайте, полный список проектов вам может отправить наш менеджер. Мы проводили работы с разным уровнем сложности. Среди примечательных объектов были такие:
+            .home-faq-content-item-box-tab
+              .home-faq-content-item-box-tab-point &bull;
+              .home-faq-content-item-box-tab-text Изыскания под проектирование ветки метро 15 км с согласованием с ГБУ Мосгоргеотрестом и государственной экспертизой.
             
-  .home-proposal.home-wrapper
+  .home-proposal
     .home-proposal-title Специальные предложения
     .slider 
       .home-proposal-item

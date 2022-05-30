@@ -1,10 +1,11 @@
 team.team
   .home
     .home-nav.home-wrapper
+      .home-nav-prev.home-nav-prev-mob ...
       a(href="/index.html").home-nav-prev Главная
       img(src="images/services/header-arrow.svg").home-nav-arrow 
       a(href="/company.html").home-nav-prev Компания
-      img(src="images/services/header-arrow.svg").home-nav-arrow 
+      img(src="images/services/header-arrow.svg").home-nav-arrow.home-nav-arrow-mob 
       a(href="/team.html").home-nav-actual Команда
   .team
     .team-header
@@ -36,9 +37,9 @@ team.team
             .team-team-item-text
               .team-team-item-text-top
                 .team-team-item-text-name Фисов Михаил Михайлович
-                .team-team-item-text-vacancy Главный маркшейдер
+                .team-team-item-text-vacancy Главный инженер
               .team-team-item-text-bot
-                .team-team-item-text-exp Стаж: 12 лет
+                .team-team-item-text-exp Стаж: 15 лет
             img(src="images/team/team-1.jpg").team-team-item-img
             img(src="images/team/team-1.jpg").team-team-item-img-mob
             
@@ -46,9 +47,9 @@ team.team
             .team-team-item-text
               .team-team-item-text-top
                 .team-team-item-text-name Фисов Михаил Михайлович
-                .team-team-item-text-vacancy Главный маркшейдер
+                .team-team-item-text-vacancy Главный геолог
               .team-team-item-text-bot
-                .team-team-item-text-exp Стаж: 12 лет
+                .team-team-item-text-exp Стаж: 15 лет
             img(src="images/team/team-1.jpg").team-team-item-img
             img(src="images/team/team-1.jpg").team-team-item-img-mob
     
@@ -57,11 +58,12 @@ team.team
         .team-vacancy-text
           .team-vacancy-text-tilte Мы всегда находимся в поиске молодых и талантливых специалистов
           .team-vacancy-text-text Наша разнообразная команда состоит из лучших и самых ярких представителей мира геологии, технологий и бизнеса.
-            |
-            br
-            |
-            br 
-            | Мы стремимся разрабатывать, создавать и эксплуатировать технологии, которые упрощают наше взаимодействие с энергией. Маркгеопроект - это то, что равзивает нас в это сложное время.
+          .team-vacancy-text-text Мы стремимся разрабатывать, создавать и эксплуатировать технологии, которые упрощают наше взаимодействие с энергией. Маркгеопроект - это то, что равзивает нас в это сложное время.
           a(href="vacancy.html").team-vacancy-text-btn К вакансиям
-        img(src="images/team/team-vacancy.jpg").team-vacancy-img
+        .team-vacancy-img.js-img-show
+          .img-pattern.img-pattern-team
+          img(src="images/team/team-vacancy.jpg").img-img
+          img(src="images/team/team-vacancy768.jpg").img-img.img-img-mob
+
+  .team-footer-place
 

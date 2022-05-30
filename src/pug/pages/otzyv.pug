@@ -1,10 +1,11 @@
 otzyv.otzyv
   .home
     .home-nav.home-wrapper
+      .home-nav-prev.home-nav-prev-mob ...
       a(href="/index.html").home-nav-prev Главная
       img(src="images/services/header-arrow.svg").home-nav-arrow 
       a(href="/company.html").home-nav-prev Компания
-      img(src="images/services/header-arrow.svg").home-nav-arrow 
+      img(src="images/services/header-arrow.svg").home-nav-arrow.home-nav-arrow-mob  
       a(href="/otzyv.html").home-nav-actual Отзывы
   .vacancy
     .vacancy-article-header-wrapper
@@ -97,7 +98,7 @@ otzyv.otzyv
         .home-otzyv-content-item-text.js-otzyv-text Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт но...
         a(href="#").home-otzyv-content-item-text-more Читать полностью
 
-  .otzyv-more-btn
+  .otzyv-more-btn.btn-silver-hover
     .otzyv-more-btn-item Загрузить ещё
     .otzyv-more-btn-item +
 
@@ -128,8 +129,8 @@ otzyv.otzyv
     .home-feedback
       .home-feedback-flex 
         .home-feedback-flex-left
-          .home-feedback-flex-left-desc Не&nbsp;нашли подходящую вакансию?
-          .home-feedback-flex-left-title Отправьте нам свое резюме и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
+          .home-feedback-flex-left-desc Свяжитесь с&nbsp;нами
+          .home-feedback-flex-left-title Мы&nbsp;перезвоним вам в&nbsp;течение одного дня
           form.home-feedback-flex-left-form
             input(placeholder="Имя*" name="name").home-feedback-flex-left-form-name
             input(placeholder="Телефон*" name="tel").home-feedback-flex-left-form-tel
@@ -138,7 +139,9 @@ otzyv.otzyv
               input(type="checkbox" value="0").home-feedback-flex-left-form-rules-checkbox#form-checkbox
               .home-feedback-flex-left-form-rules-text Согласен на обработку 
                 a(href="#") персональных данных
-            #login-form-submit.home-feedback-flex-left-form-btn Отправить заявку&nbsp;&nbsp;&rarr;
+            #login-form-submit.home-feedback-flex-left-form-btn.btn-orange-hover  Отправить заявку&nbsp;&nbsp;&rarr;
             input(type="submit" value="post" formmethod="post").home-feedback-flex-left-form-btn-post#login-form-submit-post
         .home-feedback-flex-right
-          img(src="images/services/services-from.png").home-feedback-flex-right-img
+          .home-feedback-flex-right-img.js-img-show
+            .img-pattern
+            img(src="images/services/services-from.png").img-img

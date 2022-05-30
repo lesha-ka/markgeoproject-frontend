@@ -1,33 +1,187 @@
-services{
+services {
+  &.home{
+    background: #1B1B1C;
+    &-service {
+      background: none;
+      padding: 40px 0;
+    }
+  }
   & .home{
     &-service {
       background: none;
       padding: 40px 0;
+      padding-top: 42px;
+      @media(max-width: 1023px){
+        padding: 19px 0 0 0;
+      }
+      &-wrapper {
+        @media(max-width: 1023px){
+          padding: 0 0 0 16px;
+        }
+      }
       &-header-title {
-        font-weight: 400;
+        font-weight: 600 !important;
+        font-size: 48px !important;
+        line-height: 120% !important;
+        color: #FFFFFF;
+        @media(max-width: 1023px){
+          font-size: 28px !important;
+          line-height: 120% !important;
+        }
+      }
+      &-block{
+        @media(max-width: 1023px){
+          margin-top: 21px;
+        }
+        &-item{
+          @media(max-width: 1023px){
+            margin: 13px 16px 0 0;
+            max-width: 360px;
+            min-height: 286px;
+            padding: 24px;
+          }
+          &-logo {
+            @media(max-width: 1023px) {
+              width: 46px;
+              height: 46px;
+              margin-bottom: 28px;
+            }
+            @media(max-width: 1023px) {
+              margin-bottom: 24px;
+            }
+          }
+          &-text {
+            @media(max-width: 1023px) {
+              font-size: 20px;
+              line-height: 140%;
+            }
+          }
+          &-btn {
+            @media(max-width: 1023px) {
+              margin-top: 41px;
+            }
+          }
+        }
+      }
+    }
+    &-proposal {
+      @media(max-width: 1023px){
+        padding: 16px 0 0 0;
+        margin-top: 40px;
+      }
+      & .slider {
+        max-width: 440px;
+        @media(max-width: 1023px){
+          left: -1px;
+          max-width: 310px;
+        }
+      }
+      &-item {
+        &-content {
+          @media(max-width: 1023px){
+            padding: 20px 16px;
+            min-height: 228px;
+          }
+        }
+        &-title {
+          @media(max-width: 1023px){
+            font-size: 18px;
+            line-height: 145%;
+          }
+        }
+        &-sum {
+          @media(max-width: 1023px){
+            font-size: 18px;
+            line-height: 145%;
+          }
+        }
+      }
+      &-title {
+        @media(max-width: 1023px){
+          padding-left: 16px;
+          font-size: 24px;
+          line-height: 140%;
+          margin-bottom: 20px;
+        }
       }
     }
   }
-  
+  & .vacancy {
+      & .home-feedback {
+        margin: 121px auto 120px;
+        @media(max-width: 1023px){
+          margin-top: 60px;
+        }
+        @media(max-width: 767px){
+          margin-bottom: 60px;
+        }
+        &-flex{
+          &-left{
+            &-form{
+              margin-top: 69px;
+              @media(max-width: 1023px){
+                margin-top: -5px;
+              }
+              & input {
+                @media(max-width: 1023px){
+                  margin-top: 41px;
+                }
+              }
+              &-rules{
+                @media(max-width: 1023px){
+                  margin-top: 39px;
+                }
+              }
+              &-btn {
+                @media(max-width: 1023px){
+                  margin-top: 24px;
+                  max-width: 280px;
+                  margin-left: 0px;
+                }
+              }
+            }
+          }
+        }
+      } 
+  }
 }
+
 .home{
   &-nav {
     display: flex;
     align-items: center;
     margin-top: 36px;
-    
+    @media(max-width: 1023px){
+      margin-top: 0px;
+    }
+    @media(max-width: 767px){
+      margin-top: 4px;
+    }
+    &-points {
+      display: none;
+      @media(max-width: 767px){
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        line-height: 140%;
+        opacity: .4;
+      }
+    }
     &-prev {
       color: #fff;
       font-size: 14px;
       line-height: 140%;
       opacity: .4;
       margin-right: 10px;
+      @media(max-width: 767px){
+        display: none;
+      }
     }
 
     &-arrow {
       color: #fff;
       opacity: .4;
-      margin-right: 10px;
+      margin-right: 8px;
       width: 6px;
       height: 8px;
     }
@@ -68,7 +222,7 @@ services{
         top: 0px;
         width: 2000px;
         height: 400px;
-        background-color: #151516;
+        background-color: #1B1B1C;
         z-index: 2;
       }
       @media(max-width: 550px){
@@ -163,7 +317,7 @@ services{
           opacity: 0.92;
         }
         &-title {
-          font-weight: 400;
+          font-weight: 600;
           font-size: 36px;
           line-height: 120%;
           color: #FFFFFF;
@@ -183,6 +337,7 @@ services{
             margin-top: 48px;
             outline: none;
             color: #fff;
+            padding-bottom: 16px;
           }
           & input:active, input:hover, input:focus {
             background: transparent !important;

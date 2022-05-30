@@ -1,39 +1,217 @@
 geological{
+  &.home {
+    background-color: #1B1B1C;
+  }
   & .home {
+    &-header {
+      background-color: #151516;
+    }
+    &-section {
+      background-color: #1B1B1C;
+      &-flex {
+        padding-bottom: 117px;
+        border-bottom: 1px solid #4C4C4E;
+        &-right {
+          margin-top: 24px;
+        }
+      }
+    }
+    &-nav {
+      z-index: 2;
+    }
+    &-border {
+      display: block;
+      max-width: 1290px;
+      width: 100%;
+      margin: 0 auto;
+      border-top: 1px solid #4C4C4E;
+      &-wrapper {
+        background-color: #1B1B1C;
+      }
+    }
     &-slider {
       margin-top: -56px;
+      &-item {
+        max-width: 1440px;
+        padding: 0 0 0 75px;
+        align-items: flex-start;
+        @media(max-width: 1023px){
+          padding: 78px 0 0 0;
+        }
+        &-contant {
+          margin-top: 79px;
+          @media(max-width: 1023px){
+            margin-top: 23px;
+            max-width: 640px;
+          }
+          &-title {
+            font-size: 48px;
+            line-height: 120%;
+            color: #fff;
+            @media(max-width: 1023px){
+              font-size: 28px;
+              line-height: 120%;
+            }
+          }
+          &-text {
+            margin-top: 25px;
+            font-size: 18px;
+            line-height: 25px;
+            color: #fff;
+            opacity: .92;
+            max-width: 400px;
+            @media(max-width: 1023px){
+              font-size: 18px;
+              line-height: 140%;
+              max-width: 600px;
+
+            }
+          }
+          &-btn {
+            margin-top: 79px;
+            @media(max-width: 1023px){
+              margin-top: 31px;
+            }
+            &-orange {
+              @media(max-width: 1023px){
+                max-width: 220px;
+                padding: 13px 20px 13px 20px;
+              }
+            }
+          }
+        }
+        &-preview {
+          border-radius: 4px;
+          @media(max-width: 1023px){
+            display: none;
+          }
+          &-tab{
+            display: none;
+            width: 100%;
+            @media(max-width: 1023px){
+              display: block;
+              
+            }
+            @media(max-width: 767px){
+              display: none;
+            }
+          }
+          &-mob{
+            width: 100%;
+            display: none;
+            @media(max-width: 767px){
+              display: block;
+            }
+          }
+        }
+      }
     }
     &-wrapper {
+      position: relative;
       padding: 0 0 0 75px;
-    }
-    &-slider-item-contant{
-      &-title {
-        font-size: 48px;
-        line-height: 120%;
-        color: #fff;
-      }
-      &-text {
-        font-size: 18px;
-        line-height: 25px;
-        color: #fff;
-        opacity: .92;
+      @media(max-width: 1023px){
+        padding: 0 16px;
       }
     }
 
     &-otzyv {
-      margin-top: 80px;
+      padding-top: 122px;
+      &-header {
+        &-right {
+          margin-right: 85px;
+          &-all {
+            margin-top: 30px;
+          }
+        }
+      }
     }
-    &-otzyv.home-wrapper {
-      padding: 0 75px;
+    &-otzyv{
+      &.home-wrapper {
+        padding: 0 75px;
+      }
     }
     &-feedback {
-      margin-top: 90px;
+      padding-top: 120px;
+      background: #1B1B1C;
     }
     &-proposal{
-      margin-bottom: 120px;
+      padding: 120px 0;
+      margin-top: 0;
+      background-color: #1B1B1C;
+      & .slider {
+        position: relative;
+        left: -1px;
+        max-width: 440px;
+      }
+    }
+    &-step{
+      &-work{
+        margin-top: 16px;
+        &-title {
+          &-step {
+            margin-top: 39px;
+          }
+        }
+      }
     }
   }
-  
+  & .step {
+    &-work {
+      padding-top: 13px;
+      & .home-slider-item {
+        margin-top: 104px;
+        padding: 0 75px;
+        margin-bottom: 83px;
+      }
+      &-progress {
+        &-first {
+          margin-right: 20px;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  & .home-proposal {
+    @media(max-width: 1023px){
+      padding: 16px 0 0 0;
+      margin-top: 40px;
+    }
+    & .slider {
+      max-width: 440px;
+      @media(max-width: 1023px){
+        left: -1px;
+        max-width: 310px !important;
+      }
+    }
+    &-item {
+      &-content {
+        @media(max-width: 1023px){
+          padding: 20px 16px;
+          min-height: 228px;
+        }
+      }
+      &-title {
+        @media(max-width: 1023px){
+          font-size: 18px;
+          line-height: 145%;
+        }
+      }
+      &-sum {
+        @media(max-width: 1023px){
+          font-size: 18px;
+          line-height: 145%;
+        }
+      }
+    }
+    &-title {
+      @media(max-width: 1023px){
+        padding-left: 16px;
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 .home {
   &-section {
@@ -53,7 +231,10 @@ geological{
       justify-content: space-between;
       width: 100%;
       margin-top: 48px;
-
+      @media(max-width: 1023px){
+        display: none;
+      }
+      
       &-left {
         width: 100%;
         max-width: 665px;
@@ -64,15 +245,22 @@ geological{
           font-size: 36px;
           line-height: 120%;
           color: #FFFFFF;
+          @media(max-width: 1023px){
+            font-size: 24px;
+            line-height: 120%;
+            padding-top: 28px;
+          }
         }
 
         &-img {
+          max-width: 630px;
+          max-height: 400px;
           border-radius: 4px;
         }
       }
 
       &-right {
-        max-width: 520px;
+        max-width: 515px;
         width: 100%;
 
         &-table {
@@ -80,30 +268,76 @@ geological{
           flex-wrap: nowrap;
           width: 100%;
           &-img {
-            width: 14px;
+            width: 1px;
             height: 311px;
+            &.short{
+              height: 190px;
+            }
           }
           &-text {
             margin-top: -11px;
-            margin-left: 20px;
+            margin-left: 14px;
+            &-item {
+              display: flex;
+              flex-wrap: nowrap;
+              margin-top: 40px;
+              &:first-child{
+                margin-top: 0;
+              }
+              &:last-child{
+                &.is-active{
+                  body.home-section-flex-right-table-img {
+                    height: 190px;
+                  }
+                }
+              }
+              &-point {
+                position: relative;
+                left: -20px;
+                top: 10px;
+                display: block;
+                width: 12px;
+                height: 12px;
+                min-width: 12px;
+                min-height: 12px;
+                background-image: url(../images/geological/item-passive.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+              }
+              &.is-active {
+                & .home-section-flex-right-table-text-item-point {
+                  background-image: url(../images/geological/item-active.png);
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                }
+              }
+               &.is-active {
+                & .home-section-flex-right-table-text-desc {
+                  display: block;
+                }
+              }
+            }
             &-title {
-              font-weight: 400;
+              font-weight: 600;
               font-size: 24px;
               line-height: 140%;
               color: #FFFFFF;
+              cursor: pointer;
             }
             &-desc {
               display: block;
-              font-weight: 400;
+              font-weight: 600;
               font-size: 18px;
               line-height: 145%;
               color: #FFFFFF;
               opacity: 0.92;
               margin-top: 20px;
+              display: none;
             }
+           
             &-text {
               display: block;
-              font-weight: 400;
+              font-weight: 600;
               font-size: 24px;
               line-height: 140%;
               color: #FFFFFF;
@@ -124,6 +358,98 @@ geological{
           padding: 13px 30px;
           max-width: 220px;
           margin-top: 48px;
+          @media(min-width: 1300px){
+            position: relative;
+            left: -5px;
+          }
+        }
+      }
+      &-mob {
+        display: none;
+        width: 100%;
+        position: relative;
+        max-width: 306px;
+        @media(max-width:1023px){
+          display: block;
+          margin-top: 31px;
+        }
+        & .slick-list {
+          overflow: visible !important;
+        }
+        &-item {
+          max-width: 306px;
+          display: block;
+          &-header{
+            display: block;
+            width: 100%;
+            padding-right: 16px;
+            padding-bottom: 20px;
+          }
+          &-line{
+            width: 100%;
+          }
+          &-point{
+            width: 12px;
+            height: 12px;
+            display: block;
+            position: relative;
+            background-image: url(../images/geological/item-passive.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: -7px;
+            z-index: 1;
+          }
+          &-title{
+            border-top: 2px solid #4C4C4E;
+            padding-top: 26px;
+            padding-right: 16px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            color: #fff;
+          }
+          &-desc{
+            padding-right: 16px;
+            opacity: 0;
+            transition: 1s;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 145%;
+            color: #fff;
+            margin-top: 16px;
+          }
+          
+        }
+        & .slick-active {
+          & .home-section-flex-mob-item-desc{
+            opacity: 0.92;
+            transition: 1s;
+          }
+          & .home-section-flex-mob-item-point {
+            background-image: url(../images/geological/item-active.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+        &-btn {
+          display: none;
+          @media(max-width: 1023px){
+            display: block;
+            background: #D7592A;
+            border-radius: 4px;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 13px 30px;
+            max-width: 220px;
+            margin-top: 24px;
+            margin-bottom: 48px;
+          }
         }
       }
     }
@@ -133,6 +459,9 @@ geological{
     max-width: 630px;
     width: 100%;
     margin-right: 30px;
+    @media(max-width: 1023px){
+      display: none;
+    }
     & .home-slider-item {
       align-items: flex-start;
     }
@@ -174,12 +503,13 @@ geological{
       position: relative;
       display: flex;
       justify-content: space-between;
-      top: -150px;
+      top: -119px;
 
       &-right{
         display: flex;
         justify-content: space-between;
         max-width: 520px;
+        width: 100%;
         align-items: center;
       }
     }
@@ -187,6 +517,8 @@ geological{
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
+      max-width: 392px;
+      background-size: 100% 100%;
     }
     
     &-btn {
@@ -199,13 +531,21 @@ geological{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 75px;
-    margin-top: 120px;
-    
+    @media(max-width: 1023px){
+      padding: 0 16px;
+      max-width: 100%;
+    }
+    &-bg {
+      background: #1B1B1C;
+    }
     &-header {
       display: flex;
       justify-content: space-between;
-      padding-bottom: 60px;
-
+      padding-bottom: 38px;
+      @media(max-width: 1023px){
+        flex-direction: column;
+        justify-content: flex-start;
+      }
       &-title {
         max-width: 555px;
         font-weight: 400;
@@ -213,6 +553,10 @@ geological{
         line-height: 120%;
         color: #FFFFFF;
         margin-right: 30px;
+        @media(max-width: 1023px){
+          font-size: 24px;
+          line-height: 120%;
+        }
       }
       &-desc {
         max-width: 630px;
@@ -221,6 +565,11 @@ geological{
         line-height: 145%;
         color: #FFFFFF;
         opacity: 0.92;
+        @media(max-width: 1023px){
+          font-size: 18px;
+          line-height: 145%;
+          margin-top: 20px;
+        }
       }
     }
 
@@ -231,8 +580,8 @@ geological{
       padding-top: 20px;
       &-item {
         border-top: 1px solid #4C4C4E;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
 
         &-title {
           font-weight: 400;
@@ -240,6 +589,11 @@ geological{
           line-height: 140%;
           color: #FFFFFF;
           opacity: 0.6;
+          max-width: 920px;
+          @media(max-width: 1023px){
+            font-size: 20px;
+            line-height: 140%;
+          }
           &:hover {
             opacity: 1;
             cursor: pointer;
@@ -248,14 +602,16 @@ geological{
 
         &-box {
           display: none;
-
+          max-width: 920px;
           &-text {
             font-weight: 400;
             font-size: 18px;
             line-height: 145%;
             color: #FFFFFF;
             opacity: 0.6;
-            margin-top: 24px;
+            margin-top: 31px;
+            padding-bottom: 8px;
+            
           }
           &-tab {
             display: flex;
@@ -265,8 +621,16 @@ geological{
             line-height: 145%;
             color: #FFFFFF;
             opacity: 0.6;
-            margin-top: 20px;
-
+            margin-top: 16px;
+            &:last-child {
+              margin-top: 22px;
+            }
+            &-text {
+              & a {
+                color: #D7592A;
+                text-decoration: none;
+              }
+            }
             &-point {
               display: block;
               margin: 0 10px;
@@ -279,6 +643,130 @@ geological{
           }
           & .home-faq-content-item-box{
             display: block;
+            &-text {
+              opacity: 1;
+            }
+            &-tab {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  & .home {
+    &-feedback{
+      display: block;
+      max-width: 1440px;
+      padding: 0 75px;
+      margin: 118px auto 120px;
+
+      @media(max-width: 1023px){
+        padding: 0 16px;
+        margin: 60px auto 60px;
+      }
+      &-flex {
+        @media(max-width: 1023px){
+          padding: 24px;
+        }
+        &-left {
+          margin-right: 30px;
+          @media(max-width: 1023px){
+            margin-right: 0px;
+          }
+          &-desc {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 145%;
+            color: #FFFFFF;
+            opacity: 0.92;
+            @media(max-width: 1023px){
+              font-size: 14px;
+              line-height: 145%;
+            }
+          }
+          &-title {
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 120%;
+            color: #FFFFFF;
+            opacity: 0.92;
+            @media(max-width: 1023px){
+              font-size: 24px;
+              line-height: 120%;
+              margin-top: 16px;
+            }
+          }
+          &-form {
+            margin-top: 12px;
+            @media(max-width: 1023px){
+              margin-top: 0px;
+            }
+            &-name{
+              @media(max-width: 1023px){
+                margin-top: 39px;
+              }
+            }
+            &-docs {
+              position: relative;
+              width: 0;
+              height: 0;
+              opacity: 0;
+              z-index: 0;
+            }
+            &-lable {
+              position: relative;
+              height: 38px;
+              border: none;
+              border-bottom: 1px solid #4C4C4E;
+              background: transparent;
+              margin-top: 48px;
+              outline: none;
+              color: #6E6E71;
+              cursor: pointer;
+              @media(max-width: 1023px){
+                margin-top: 40px;
+              }
+              &-img {
+                position: absolute;
+                right: 0px;
+                top: calc(50% - 18px);
+                width: 16px;
+                height: 18px;
+              }
+            }
+            &-tel {
+              @media(max-width: 1023px){
+                margin-top: 40px;
+              }
+            }
+            &-mail {
+              @media(max-width: 1023px){
+                margin-top: 40px;
+              }
+            }
+            &-rules {
+              @media(max-width: 1023px){
+                margin-top: 40px;
+              }
+            }
+            &-btn {
+              @media(max-width: 1023px){
+                margin-top: 24px;
+                max-width: 230px;
+                margin-left: 0px;
+                max-width: 280px;
+              }
+            }
+          }
+        }
+        &-right{
+          @media(max-width: 1365px){
+            display: none;
+          }
+          &-img {
+            vertical-align: middle;
+            border-radius: 4px;
           }
         }
       }
@@ -286,13 +774,13 @@ geological{
   }
 }
 .step-work {
+  @media(max-width: 1023px){
+    display: none;
+  }
   & .home-slider-item {
     align-items: flex-start;
     margin-top: 120px;
     margin-bottom: 120px;
-  }
-  & .slider {
-    border-bottom: 1px solid #4C4C4E;
   }
   &-progress {
       display: block;
@@ -303,7 +791,7 @@ geological{
       background-image: -o-linear-gradient(left, #D7592A, #D7592A);
       background-image: linear-gradient(to right, #D7592A, #D7592A);
       background-repeat: no-repeat;
-      background-size: 0 100%;
+      background-size: 100% 100%;
       -webkit-transition: background-size .4s ease-in-out;
       -o-transition: background-size .4s ease-in-out;
       transition: background-size .4s ease-in-out;
@@ -330,5 +818,312 @@ geological{
     width: 48px;
     height: 48px;
     cursor: pointer;
+  }
+}
+.step-work-mob {
+  position: relative;
+  display: none;
+  margin-bottom: 48px;
+  & .step-work-line{
+    width: calc(100% - 32px);
+    margin: 0 16px;
+    border: 1px solid #4C4C4E;
+    margin-bottom: 47px;
+  }
+  @media(max-width: 1023px){
+    display: block;
+  }
+  &-title{
+    max-width: 100%;
+    padding: 0 16px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+  &-nav{
+    display: block;
+    max-width: 98px;
+    margin-left: 16px;
+    margin-top: 24px;
+    & .slick-list {
+      overflow: visible !important;
+    }
+    &-step {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 145%;
+      color: #FFFFFF;
+      background: #2D2D2E;
+      border-radius: 4px;
+      padding: 7px 14px;
+      max-width: 86px;
+    }
+    & .slick-active {
+      & .step-work-mob-nav-step {
+        background: #58585A;
+      }
+    }
+  }
+  &-slider{
+    max-width: calc(100% - 32px);
+    margin: 0 auto;
+    display: block;
+    margin-top: 32px;
+    &-item{
+      &-header {
+        width: 100%;
+        display: block !important;
+        @media(max-width: 767px){
+          display: none !important;
+        }
+        &-mob{
+          display: none !important;
+          @media(max-width: 767px){
+            display: block !important;
+            width: 100%;
+          }
+        }
+      }
+      &-title{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-top: 24px;
+      }
+      &-text {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 145%;
+        color: #FFFFFF;
+        opacity: 0.92;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+.home {
+  & .home-section{
+    & .home-wrapper {
+      @media(max-width: 1023px){
+        padding: 0 16px;
+      }
+    }
+  }
+}
+.home-border{
+  @media(max-width: 1023px){
+    display: none !important;
+  }
+}
+.home-otzyv {
+  @media(max-width: 1023px){
+    padding-top: 0px !important;
+  }
+  &-line{
+    display: none;
+    @media(max-width: 1023px){
+      display: block;
+      width: calc(100% - 32px);
+      margin: 0 16px;
+      border: 1px solid #4C4C4E;
+      margin-bottom: 47px;
+    }
+  }
+  &-header{
+    @media(max-width: 1023px){
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &-title{
+      @media(max-width: 1023px){
+        font-size: 24px;
+        line-height: 120%;
+      }
+    }
+    &-right {
+      @media(max-width: 1023px){
+        margin-top: 18px;
+      }
+      &-text{
+        @media(max-width: 1023px){
+          font-size: 18px;
+          line-height: 145%;
+        }
+      }
+      &-all{
+        @media(max-width: 1023px){
+          display: none;
+        }
+      }
+    }
+  }
+  &-content {
+    @media(max-width: 1023px){
+      padding-top: 2px;
+      max-width: 306px;
+    }
+    &-item {
+      @media(max-width: 1023px){
+        max-width: 290px;
+        padding: 25px 24px 19px;
+      }
+      &-title{
+        @media(max-width: 1023px){
+          font-size: 20px;
+          line-height: 140%;
+          position: relative;
+          top: -5px;
+        }
+      }
+      &-desc{
+        @media(max-width: 1023px){
+          font-size: 14px;
+          line-height: 145%;
+        }
+      }
+      &-stars {
+        @media(max-width: 1023px){
+          margin-top: 20px;
+        }
+        &-star {
+          @media(max-width: 1023px){
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+      &-text {
+        @media(max-width: 1023px){
+          font-size: 16px;
+          line-height: 145%;
+          font-weight: 400;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  & .otzyv-more-btn {
+    display: none;
+    @media(max-width: 1023px){
+      width: 100%;
+      margin: 22px auto 0;
+      border: 1px solid #4C4C4E;
+      box-sizing: border-box;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      padding: 16px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+}
+.home-proposal {
+  position: relative;
+  max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 0;
+  @media(max-width: 1023px){
+      padding: 16px;
+      margin-top: 40px;
+    }
+  & .slider {
+    max-width: 410px;
+    width: 100%;
+    left: -1px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -2000px;
+      top: 0px;
+      width: 2000px;
+      height: 400px;
+      background-color: #1B1B1C;
+      z-index: 2;
+    }
+    @media(max-width: 550px){
+      width: 310px;
+    }
+  }
+  & .slick-list {
+    overflow: visible !important;
+  }
+  &-title {
+    display: block;
+    padding-left: 75px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+    @media(max-width: 1023px){
+      padding-left: 0px;
+    }
+  }
+
+  &-item {
+    display: block;
+    max-width: 440px;
+    @media(max-width: 1023px){
+      width: 310px;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 40px 75px;
+      border: 1px solid #4C4C4E;
+      min-height: 290px;
+      @media(max-width: 550px){
+        width: 310px;
+        padding: 16px;
+      }
+      
+    }
+
+    &-title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 145%;
+      color: #FFFFFF;
+      text-decoration: none;
+      max-height: 174px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @media(max-width: 550px){
+        font-size: 18px;
+        line-height: 145%;
+      }
+    }
+    &-sum {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 145%;
+      color: #D7592A;
+    }
+  }
+}
+.home-slider-btn-arrow{
+  transition: 1s;
+  border-radius: 100%;
+  &:hover{
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0px 15px 35px rgba(6, 23, 48, 0.1);
   }
 }

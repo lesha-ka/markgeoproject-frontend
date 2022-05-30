@@ -11,6 +11,19 @@ const init = () => {
       $(this).addClass('is-active');
     }
   });
+
+  //geological interactive
+  var geoPoint = $('.home-section-flex-right-table-text-item');
+  geoPoint.on('click', function () {
+    geoPoint.removeClass('is-active');
+    $(this).addClass('is-active');
+
+    if (geoPoint.last().hasClass('is-active')) {
+      $('.home-section-flex-right-table-img').addClass('short');
+    } else {
+      $('.home-section-flex-right-table-img').removeClass('short');
+    }
+  });
 }
 
 export default {

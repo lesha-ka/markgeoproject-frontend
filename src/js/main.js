@@ -15,6 +15,7 @@ import googleMap from './modules/googleMap';
 import licenseNav from './modules/licenseNav';
 import lazyLoading from './modules/lazyLoading';
 import sliderPreset from './modules/sliderPreset';
+import showNumbs from './modules/showNumbs';
 
 
 ieFix();
@@ -29,6 +30,7 @@ faqInteractive.init();
 licenseNav.init();
 googleMap.init();
 watchPopup.init();
+showNumbs.init();
 
 header.init();
 lazyLoading.init();

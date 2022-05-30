@@ -1,4 +1,69 @@
+contacts {
+  & .home{
+    background: #1B1B1C;
+    &-nav {
+      @media(max-width: 767px){
+        margin-top: 0px;
+      }
+    }
+  }
+  & .vacancy-article-header{
+    margin: 19px auto 0;
+  }
+  & .vacancy-article-header-left {
+    max-width: 300px;
+    &-title {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 115%;
+      @media(max-width: 1023px){
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+  }
+  & .vacancy-article-header-right{
+    width: 100%;
+    &-text {
+      max-width: 400px;
+      @media(max-width: 1023px){
+        font-size: 18px;
+        line-height: 140%;
+      }
+    }
+    &-contact{
+      &-item {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 145%;
+        color: #FFFFFF;
+        display: block;
+        margin-top: 11px;
+        @media(max-width: 1023px){
+          margin-top: 8px;
+        }
+      }
+    } 
+  }
+  & .vacancy{
+    & .home-feedback{
+      margin-top: 120px;
+      &-flex-left-form {
+        margin-top: 70px;
+        @media(max-width: 1023px){
+          margin-top: 0px;
+        }
+      }
+      @media(max-width: 1023px){
+        margin-top: 60px;
+      }
+    }
+  }
+   
+}
+
 .contacts {
+  background: #1B1B1C;
   & .vacancy-article-header{
     @media(max-width: 1023px) {
       flex-direction: row;
@@ -10,12 +75,16 @@
       border: none;
     }
     &-right {
+      @media(max-width: 1023px) {
+        max-width: 400px;
+      }
       &-text {
         @media(max-width: 1023px) {
           margin-top: 0px;
+          margin-right: 0px;
         }
         @media(max-width: 767px){
-          margin-top: 20px;
+          margin-top: 34px;
         }
       }
       &-contact{
@@ -25,12 +94,25 @@
         font-size: 36px;
         line-height: 145%;
         color: #FFFFFF;
+        @media(max-width: 1200px){
+          font-size: 24px;
+          line-height: 145%;
+        }
         @media(max-width: 1023px){
           margin-top: 32px;
           font-weight: 400;
           font-size: 24px;
           line-height: 145%;
           color: #FFFFFF;
+        }
+        @media(max-width: 1023px){
+          margin-top: 31px;
+        }
+        &-item {
+          @media(max-width: 1200px){
+            font-size: 24px;
+            line-height: 145%;
+          }
         }
       }
     }

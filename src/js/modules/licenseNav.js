@@ -10,18 +10,27 @@ const init = () => {
 
     if (idLicense == 'id-license-1'){
       $('.company-license-nav-license').addClass('is-active');
+      	if ($(window).width() < 1023) {
+          $('.company-license-nav-license').slick('setPosition');
+        }
     } else {
       $('.company-license-nav-license').removeClass('is-active');
     }
 
     if (idLicense == 'id-license-2'){
       $('.company-license-nav-sertificate').addClass('is-active');
+      if ($(window).width() < 1023) {
+        $('.company-license-nav-sertificate').slick('setPosition');
+      }
     } else {
       $('.company-license-nav-sertificate').removeClass('is-active');
     }
 
     if (idLicense == 'id-license-3'){
       $('.company-license-nav-evidence').addClass('is-active');
+      	if ($(window).width() < 1023) {
+          $('.company-license-nav-evidence').slick('setPosition');
+        }
     } else {
       $('.company-license-nav-evidence').removeClass('is-active');
     }

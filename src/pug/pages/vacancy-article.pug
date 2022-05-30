@@ -1,10 +1,11 @@
-vacancy.vacancy
+vacancyarticle.vacancy
   .home
     .home-nav.home-wrapper
+      .home-nav-prev.home-nav-prev-mob ...
       a(href="/index.html").home-nav-prev Главная
       img(src="images/services/header-arrow.svg").home-nav-arrow 
       a(href="/vacancy.html").home-nav-prev Вакансии
-      img(src="images/services/header-arrow.svg").home-nav-arrow 
+      img(src="images/services/header-arrow.svg").home-nav-arrow.home-nav-arrow-mob
       a(href="/vacancy-article.html").home-nav-actual Инженер-программист
   .vacancy
     .vacancy-article-header-wrapper
@@ -13,9 +14,9 @@ vacancy.vacancy
           .vacancy-article-header-left-title Ведущий инженер по георазработке месторождений
         .vacancy-article-header-right
           .vacancy-article-header-right-text Краткое описание открытой вакансии, желательно не больше чем в две строки (около 100 символов)
-          a(href="contacts.html").vacancy-article-header-right-btn Откликнуться&nbsp;&nbsp;&rarr;
+          a(href="#resume").vacancy-article-header-right-btn Откликнуться&nbsp;&nbsp;&rarr;
 
-    .vacancy-article-exp
+    .vacancy-article-exp.vacancy-article-exp-top
       .vacancy-article-exp-title Основные компетенции
       #vacancy-article-exp-1.vacancy-article-exp-flex
         .vacancy-article-exp-flex-item
@@ -34,6 +35,9 @@ vacancy.vacancy
           .vacancy-article-exp-flex-item-line
           .vacancy-article-exp-flex-item-text Уверенный пользователь основных пакетов MS&nbsp;Office, умение работать с&nbsp;табличными данными
 
+    .vacancy-border
+      .vacancy-border-line
+
     .vacancy-article-exp
       .vacancy-article-exp-title Образование и опыт
       #vacancy-article-exp-1.vacancy-article-exp-flex
@@ -48,7 +52,10 @@ vacancy.vacancy
         .vacancy-article-exp-flex-item
           .vacancy-article-exp-flex-item-line
           .vacancy-article-exp-flex-item-text Опыт проектирования и&nbsp;эксплуатации на&nbsp;действующем объекте считается преимуществом
-            
+    
+    .vacancy-border
+      .vacancy-border-line
+
     .vacancy-article-exp
       .vacancy-article-exp-title Чем предстоит заниматься
       #vacancy-article-exp-1.vacancy-article-exp-flex
@@ -84,24 +91,30 @@ vacancy.vacancy
           .vacancy-article-exp-flex-item-line
           .vacancy-article-exp-flex-item-text Подготовка технические отчетов
 
+    .vacancy-border
+      .vacancy-border-line
+
     .vacancy-article-proposal
       .vacancy-article-proposal-text
         .vacancy-article-proposal-text-title Что мы предлагаем
         .vacancy-article-proposal-text-desc Работа в&nbsp;старейшей и&nbsp;надежнейшей компании Дальнего Востока в&nbsp;области проектирования и&nbsp;геолого-маркшейдерского обеспечения месторождений.
-          |
-          br
-          br
-          | Каждый член нашей небольшой команды имеет колосальный опыт в&nbsp;своей сфере, даже самый опытный профессионал получит дополнительные стимулы и&nbsp;возможности для развития своих навыков. Все сотрудники компании получает доступ расширенному страхованию по&nbsp;истечение испытательного срока. 
-          |
-          br
-          br
-          | Мы&nbsp;гордимся, уважаем и&nbsp;дорожим каждым совим сотрудником, стараемся держать оплату труда выше среднерыночной по&nbsp;региону. Возможен релакейт и&nbsp;помощь с&nbsp;поиском жилья в&nbsp;Хабаровске. Работа бок о&nbsp;бок с&nbsp;командой в&nbsp;современном офисе в&nbsp;историческом центре города, но&nbsp;если вам будет нужно покрапеть над проектом перед домашним монитором, мы&nbsp;всегда пойдем навстречу.
-      img(src="images/vacancy/proposal.jpg").vacancy-article-proposal-img
+
+        .vacancy-article-proposal-text-desc Каждый член нашей небольшой команды имеет колосальный опыт в&nbsp;своей сфере, даже самый опытный профессионал получит дополнительные стимулы и&nbsp;возможности для развития своих навыков. Все сотрудники компании получает доступ расширенному страхованию по&nbsp;истечение испытательного срока. 
+
+        .vacancy-article-proposal-text-desc Мы&nbsp;гордимся, уважаем и&nbsp;дорожим каждым совим сотрудником, стараемся держать оплату труда выше среднерыночной по&nbsp;региону. Возможен релакейт и&nbsp;помощь с&nbsp;поиском жилья в&nbsp;Хабаровске. Работа бок о&nbsp;бок с&nbsp;командой в&nbsp;современном офисе в&nbsp;историческом центре города, но&nbsp;если вам будет нужно покрапеть над проектом перед домашним монитором, мы&nbsp;всегда пойдем навстречу.
+
+      .vacancy-article-proposal-img.js-img-show
+        .img-pattern
+        img(src="images/vacancy/proposal.jpg").img-img
+
+    .vacancy-border
+      .vacancy-border-line
 
     .vacancy-advantages
       .vacancy-advantages-title Преимущества работы в&nbsp;нашей компании
       .vacancy-advantages-box
         .vacancy-advantages-box-left 
+          .vacancy-advantages-box-left-hover
           .vacancy-advantages-box-left-top
           .vacancy-advantages-box-left-bot
             .vacancy-advantages-box-left-bot-title Мнение каждого сотрудника имеет значение
@@ -120,13 +133,14 @@ vacancy.vacancy
               .vacancy-advantages-box-right-item-bot-title Мы&nbsp;пользуемся доверием у&nbsp;лидеров рынка
               .vacancy-advantages-box-right-item-bot-text Опыт и&nbsp;имя на&nbsp;рынке позволяет нашей компании единовременно разрабатывать до&nbsp;3-ех крупных проектов, работа над которыми будет приносить профессиональное удовлетворение и&nbsp;гордость за&nbsp;собственный труд
 
-          .vacancy-advantages-box-right-item
+          .vacancy-advantages-box-right-item.vacancy-advantages-box-right-item-last
             .vacancy-advantages-box-right-item-top
             .vacancy-advantages-box-right-item-bot
               .vacancy-advantages-box-right-item-bot-title Мы&nbsp;ставим людей на&nbsp;первое место
               .vacancy-advantages-box-right-item-bot-text Мы&nbsp;считаем наших сотрудников и&nbsp;их&nbsp;личные качества нашим самым большим достоянием, поэтому вкладываем в&nbsp;их&nbsp;обучение значительные средства и&nbsp;обеспечиваем профессиональный рост. Благодаря этому многие члены нашей комнды работют с&nbsp;нами уже более 10&nbsp;лет.
 
-  .home-feedback#resume
+  .home-feedback
+    .ancor-feedback#resume
     .home-feedback-flex 
       .home-feedback-flex-left
         .home-feedback-flex-left-desc Не&nbsp;нашли подходящую вакансию?
@@ -144,9 +158,11 @@ vacancy.vacancy
             input(type="checkbox" value="0").home-feedback-flex-left-form-rules-checkbox#form-checkbox
             .home-feedback-flex-left-form-rules-text Согласен на обработку 
               a(href="#") персональных данных
-          #login-form-submit.home-feedback-flex-left-form-btn Отправить заявку&nbsp;&nbsp;&rarr;
+          #login-form-submit.home-feedback-flex-left-form-btn.btn-orange-hover Отправить заявку&nbsp;&nbsp;&rarr;
           input(type="submit" value="post" formmethod="post").home-feedback-flex-left-form-btn-post#login-form-submit-post
       .home-feedback-flex-right
-        img(src="images/vacancy/form.jpg").home-feedback-flex-right-img
+        .home-feedback-flex-right-img.js-img-show
+          .img-pattern
+          img(src="images/vacancy/form.jpg").img-img
 
 

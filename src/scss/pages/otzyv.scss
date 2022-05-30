@@ -1,4 +1,22 @@
+otzyv {
+  & .home {
+    background: #1B1B1C;
+    &-proposal {
+      margin-top: 120px;
+      & .slider {
+        left: -1px;
+        max-width: 440px;
+      }
+    }
+    &-feedback-flex-left-title {
+      padding-bottom: 58px;
+    }
+  }
+}
+
 .otzyv{
+  background: #1B1B1C;
+  
   & .vacancy-article-header-wrapper{
     border: none;
     padding-bottom: 10px;
@@ -15,6 +33,7 @@
     &-flex{
       display: flex;
       flex-wrap: wrap;
+      margin-top: 7px;
       @media(max-width: 1023px){
         max-width: 440px;
         width: 100%;

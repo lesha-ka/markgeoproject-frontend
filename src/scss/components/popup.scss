@@ -3,29 +3,46 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(16, 16, 17, 0.6);
   z-index: 10001;
   &-closer {
     position: absolute;
     width: 40px;
     height: 40px;
-    right: 15px;
-    top: -70px;
+    right: 12px;
+    top: 12px;
     cursor: pointer;
-    @media(max-width: 767px){
-      right: 15px;
-      top: -55px;
+    @media(min-width: 1450px){
+      right: 35px;
     }
+    @media(max-width: 767px){
+      right: 12px;
+      top: 12px;
+    }
+  }
+  & .vacancy {
+    height: 100%;
+    width: 100%;
+    background: transparent;
   }
   & .home{
     &-feedback{
       position: relative;
-      margin-top: 120px;
+      margin-top: 88px;
+      @media(max-width: 1023px){
+        margin-top: 55px;
+      }
       &-flex{
         background-color: #1B1B1C;
         &-left{
           &-form {
             margin-top: 0px;
+          }
+          &-title {
+            padding-bottom: 12px;
+            @media(max-width: 1023px){
+              padding-bottom: 1px;
+            }
           }
         }
         &-right {

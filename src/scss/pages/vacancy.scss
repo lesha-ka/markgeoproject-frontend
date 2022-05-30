@@ -1,3 +1,17 @@
+vacancy{
+  &.vacancy {
+    background: #1B1B1C;
+    & .home {
+      background: #1B1B1C;
+    }
+  }
+  & .home-nav {
+    @media(max-width: 767px) {
+      margin-top: -1px;
+    }
+  }
+}
+
 .vacancy {
   position: relative;
   display: block;
@@ -9,7 +23,9 @@
     margin: 40px auto 0;
     @media(max-width: 1023px){
       padding: 0 16px;
+      margin: 20px auto 0;
     }
+    
     &-title {
       font-weight: 400;
       font-size: 48px;
@@ -31,7 +47,7 @@
       @media(max-width: 1023px){
         font-size: 24px;
         line-height: 120%;
-        margin-top: 20px;
+        margin-top: 40px;
       }
     }
   }
@@ -41,7 +57,7 @@
     flex-wrap: wrap;
     max-width: 1440px;
     padding: 0 45px 0 75px;
-    margin: 48px auto 0;
+    margin: 18px auto 0;
     @media(max-width: 1023px) {
       padding: 0 16px;
       margin: 8px auto 0;
@@ -50,7 +66,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 32px;
+      padding: 31px;
       background-color: #212122;
       border: 1px solid #4C4C4E;
       box-sizing: border-box;
@@ -59,9 +75,13 @@
       max-width: 630px;
       margin: 30px 30px 0 0;
       @media(max-width: 1023px) {
-        margin: 16px 16px 0 0;
-        max-width: 350px;
+        margin: 16px 0 0 0;
+        max-width: 100%;
+        padding: 24px;
         width: 100%;
+      }
+      @media(max-width: 767px) {
+        min-height: 200px;
       }
       
       &-title {
@@ -73,9 +93,10 @@
         max-width: 400px;
         min-height: 134px;  
         @media(max-width: 1023px) {
+          max-width: 100%;
           font-size: 20px;
           line-height: 140%;
-          min-height: 126px;  
+          min-height: 63px;  
         }
       }
 
@@ -96,12 +117,12 @@
     display: block;
     position: relative;
     max-width: 1440px;
-    padding: 0 45px 0 75px;
+    padding: 0 20px 0 75px;
     margin: 48px auto 0;
     margin-top: 120px;
     @media(max-width: 1023px){
       padding: 0 16px 0 16px;
-      margin-top: 60px;
+      margin-top: 63px;
     }
 
     &-title {
@@ -113,6 +134,7 @@
       @media(max-width: 1023px){
         font-size: 24px;
         line-height: 120%;
+        max-width: 100%;
       }
     }
 
@@ -121,26 +143,44 @@
       flex-wrap: nowrap;
       width: 100%;
       margin-top: 18px;
-
+      @media (max-width: 1023px){
+        margin-top: 7px;
+      }
       &-left {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         max-width: 410px;
         padding: 32px;
-        background: -moz-linear-gradient(180deg, rgba(33, 33, 34, 0) 15.98%, #212122 85.34%);
-        background: -webkit-linear-gradient(180deg, rgba(33, 33, 34, 0) 15.98%, #212122 85.34%);
-        background: -o-linear-gradient(180deg, rgba(33, 33, 34, 0) 15.98%, #212122 85.34%);
-        background: -ms-linear-gradient(180deg, rgba(33, 33, 34, 0) 15.98%, #212122 85.34%);
-        background: linear-gradient(180deg, rgba(33, 33, 34, 0) 15.98%, #212122 85.34%);
-        background-image: url('../images/vacancy/vacancy-flex.png');
+        position: relative;
         background-size: cover;
+        background: #212122;
+        border: 1px solid #4C4C4E;
         margin: 30px 30px 0 0;
+        width: 100%;
+        border-radius: 4px;
+        &-hover {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transition: 1s;
+          opacity: .1;
+          background-image: url('../images/vacancy/vacancy-flex-v2.jpg');
+          left: 0;
+          top: 0;
+          z-index: 2;
+        }
+        &:hover {
+          & .vacancy-advantages-box-left-hover{
+            opacity: 1;
+          }
+        }
         @media(max-width: 1430px){
           display: none;
         }
         &-bot {
           display: block;
+          z-index: 3;
 
           &-title {
             font-weight: 400;
@@ -170,15 +210,16 @@
           width: 2000px;
           height: 600px;
           left: -2000px;
-          background: #151516;
+          background: #1B1B1C;
           z-index: 200;
         }
         @media(max-width: 1430px){
           max-width: 410px;
           width: 100%;
         }
-        @media(max-width: 550px){
-          max-width: 310px;
+        @media(max-width: 1023px){
+          max-width: 326px;
+          width: 100%;
         }
         & .slick-list {
           overflow: visible !important;
@@ -198,9 +239,11 @@
           box-sizing: border-box;
           border-radius: 4px;
           padding: 30px;
-          &:last-child {
+
+          &-last {
             height: 244px;
-            max-width: 100%;
+            max-width: 850px;
+            width: 100%;
             @media(max-width: 1430px){
               height: 410px;
               max-width: 410px;
@@ -209,6 +252,17 @@
               height: 350px;
               max-width: 310px;
             }
+            & .vacancy-advantages-box-right-item-bot{
+              max-width: 500px;
+            }
+          }
+          @media(max-width: 1023px){
+            height: auto;
+            min-height: 350px;
+            max-width: 310px;
+            width: 100%;
+            margin: 16px 16px 0 0;
+            padding: 24px;
           }
           @media(max-width: 550px){
             height: 350px;
@@ -222,7 +276,7 @@
               font-size: 24px;
               line-height: 140%;
               color: #FFFFFF;
-              @media(max-width: 550px){
+              @media(max-width: 1023px){
                 font-size: 20px;
                 line-height: 140%;
               }
@@ -234,7 +288,7 @@
               line-height: 145%;
               color: #FFFFFF;
               opacity: 0.8;
-              @media(max-width: 550px){
+              @media(max-width: 1023px){
                 font-size: 16px;
                 line-height: 145%;
                 max-height: 210px;
@@ -252,7 +306,7 @@
       display: block;
       max-width: 1440px;
       padding: 0 75px;
-      margin: 60px auto 120px;
+      margin: 118px auto 120px;
 
       @media(max-width: 1023px){
         padding: 0 16px;
@@ -287,16 +341,17 @@
             @media(max-width: 1023px){
               font-size: 24px;
               line-height: 120%;
+              margin-top: 16px;
             }
           }
           &-form {
-            margin-top: 60px;
+            margin-top: 12px;
             @media(max-width: 1023px){
               margin-top: 0px;
             }
             &-name{
               @media(max-width: 1023px){
-                margin-top: 40px;
+                margin-top: 39px;
               }
             }
             &-docs {
@@ -316,12 +371,38 @@
               outline: none;
               color: #6E6E71;
               cursor: pointer;
+              @media(max-width: 1023px){
+                margin-top: 40px;
+              }
               &-img {
                 position: absolute;
                 right: 0px;
                 top: calc(50% - 18px);
                 width: 16px;
                 height: 18px;
+              }
+            }
+            &-tel {
+              @media(max-width: 1023px){
+                margin-top: 40px;
+              }
+            }
+            &-mail {
+              @media(max-width: 1023px){
+                margin-top: 40px;
+              }
+            }
+            &-rules {
+              @media(max-width: 1023px){
+                margin-top: 40px;
+              }
+            }
+            &-btn {
+              @media(max-width: 1023px){
+                margin-top: 24px;
+                max-width: 230px;
+                margin-left: 0px;
+                max-width: 280px;
               }
             }
           }
@@ -350,16 +431,26 @@
     background-image: url('../images/vacancy/vacancy-closer.png');
     background-size: cover;
     background-position: right top;
+    border-radius: 4px;
+    border: 1px solid #4C4C4E;
+    &:hover {
+      border: 1px solid #4C4C4E;
+    }
     @media(max-width: 1023px){
-      background-image: url('../images/vacancy/vacancy-closer-mob.png');
+      background-image: url('../images/vacancy/vacancy-closer-tab.png');
       background-size: cover;
       background-position: left top;
+      margin-left: 16px;
+      margin-top: 23px;
+      width: calc(100% - 32px);
     }
     &-wrapper {
-      padding: 32px;
-      max-width: 520px;
+      padding: 31px;
+      max-width: 550px;
+      
       @media(max-width: 1023px){
-        padding: 24px;
+        padding: 24px 17px 24px 24px;
+        max-width: 100%;
       }
     }
     &-title {
@@ -384,6 +475,7 @@
       @media(max-width: 1023px){
         font-size: 18px;
         line-height: 145%;
+        margin-top: 15px;
       }
     }
     &-btn {
@@ -391,9 +483,19 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 145%;
-      color: #D7592A;
+      color: #fff;
       margin-top: 36px;
+      &:hover {
+        color: #D7592A;
+      }
+      @media(max-width: 1023px){
+        margin-top: 31px;
+      }
     }
   }
+  
 }
-
+.ancor-feedback{
+  position: absolute;
+  top: -90px;
+}
