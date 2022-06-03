@@ -23,9 +23,15 @@ const init = () => {
 
   $('.home-header .home-slider-btn-next').on('click', function() {
     $('.home-header .slider').slick('slickNext');
+    var curentStep = $('.home-header .slider').slick('slickCurrentSlide');
+    var tureCurentStep = curentStep + 1
+    $('.progress-first').text("0" + tureCurentStep);
   });
   $('.home-header .home-slider-btn-prev').on('click', function() {
     $('.home-header .slider').slick('slickPrev');
+    var curentStep = $('.home-header .slider').slick('slickCurrentSlide');
+    var tureCurentStep = curentStep + 1
+    $('.progress-first').text("0" + tureCurentStep);
   });
 
   var quantitySlides = $(".home-header .slider").slick("getSlick").slideCount
@@ -41,6 +47,9 @@ const init = () => {
   // progress bar 
   slider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
       sliderProgress.removeClass('is-active');
+      var curentStep = $('.home-header .slider').slick('slickCurrentSlide');
+      var tureCurentStep = curentStep + 1
+      $('.progress-first').text("0" + tureCurentStep);
       setTimeout(function () {
         sliderProgress.addClass('is-active');
       }, 100);

@@ -1001,13 +1001,14 @@ var init = function init() {
   var numbAnim;
   var numbStop;
   $(window).scroll(function () {
-    var numbPos = $('.js-numb-show').offset().top;
-    var windowHeight = $(window).height();
-    var topOfWindow = $(window).scrollTop();
+    if ($('.js-numb-show').length) {
+      var numbPos = $('.js-numb-show').offset().top;
+      var windowHeight = $(window).height();
+      var topOfWindow = $(window).scrollTop();
 
-    if (numbPos < topOfWindow + windowHeight - 200 && numbStop != 2) {
-      numbStart();
-      console.log('srcoll', numbAnim);
+      if (numbPos < topOfWindow + windowHeight - 200 && numbStop != 2) {
+        numbStart();
+      }
     }
   });
 
@@ -1029,7 +1030,6 @@ var init = function init() {
         i++;
       }, step);
     });
-    console.log('numbStart', numbAnim);
   }
 };
 
@@ -1073,9 +1073,15 @@ var init = function init() {
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .home-slider-btn-next').on('click', function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .slider').slick('slickNext');
+    var curentStep = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .slider').slick('slickCurrentSlide');
+    var tureCurentStep = curentStep + 1;
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.progress-first').text("0" + tureCurentStep);
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .home-slider-btn-prev').on('click', function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .slider').slick('slickPrev');
+    var curentStep = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .slider').slick('slickCurrentSlide');
+    var tureCurentStep = curentStep + 1;
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.progress-first').text("0" + tureCurentStep);
   });
   var quantitySlides = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".home-header .slider").slick("getSlick").slideCount;
 
@@ -1090,6 +1096,9 @@ var init = function init() {
 
   slider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
     sliderProgress.removeClass('is-active');
+    var curentStep = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.home-header .slider').slick('slickCurrentSlide');
+    var tureCurentStep = curentStep + 1;
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.progress-first').text("0" + tureCurentStep);
     setTimeout(function () {
       sliderProgress.addClass('is-active');
     }, 100);
