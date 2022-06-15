@@ -7165,6 +7165,108 @@ contacts .vacancy .home-feedback {
 .js-popup-contacts-watch {
   cursor: pointer; }
 
+.popup {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(16, 16, 17, 0.6);
+  z-index: 10000;
+  overflow-y: scroll; }
+  .popup-close {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 12px;
+    top: 12px;
+    cursor: pointer;
+    z-index: 100000; }
+    @media (min-width: 1450px) {
+      .popup-close {
+        right: 35px; } }
+    @media (max-width: 767px) {
+      .popup-close {
+        right: 12px;
+        top: 12px; } }
+  .popup-inner {
+    height: 100%;
+    min-width: 100%;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 16px;
+    overflow: hidden; }
+  .popup-review {
+    width: 760px;
+    max-height: 100%;
+    overflow-y: scroll;
+    background: #1B1B1C;
+    border: 1px solid #4C4C4E;
+    border-radius: 4px;
+    padding: 40px 45px;
+    color: #fff;
+    overflow: scroll; }
+    @media (max-width: 768px) {
+      .popup-review {
+        width: 100%;
+        padding: 24px 24px 27px; } }
+    @media (max-width: 414px) {
+      .popup-review {
+        padding: 24px 24px 24px; } }
+  .popup h5 {
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.45; }
+    @media (max-width: 414px) {
+      .popup h5 {
+        margin: 0 0 16px; } }
+  .popup h4 {
+    margin: 0 0 16px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2; }
+  .popup h6 {
+    margin: 0 0 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.45;
+    color: #949FA3; }
+    @media (max-width: 414px) {
+      .popup h6 {
+        margin: 0 0 16px; } }
+  .popup p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.45;
+    color: #fff;
+    margin-bottom: 24px; }
+  .popup a {
+    display: inline-block;
+    margin-top: 8px;
+    background: #D7592A;
+    border-radius: 4px;
+    padding: 12.5px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    color: #FFFFFF; }
+    .popup a span {
+      margin-left: 10px;
+      vertical-align: middle; }
+
 .notfound {
   position: relative;
   display: block;
