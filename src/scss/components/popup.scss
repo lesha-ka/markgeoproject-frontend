@@ -92,18 +92,31 @@
     justify-content: center;
     align-items: center;
     padding: 20px 16px;
-    overflow: hidden;
   }
   &-review {
     width: 760px;
     max-height: 100%;
-    overflow-y: scroll;
     background: #1B1B1C;
     border: 1px solid #4C4C4E;
     border-radius: 4px;
     padding: 40px 45px;
     color: #fff;
-    overflow: scroll;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #282829 transparent;
+    /* для Chrome/Edge/Safari */
+    &::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent ;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #282829;
+      border-radius: 7px;
+      border: 0 solid #282829 ;
+    }
     @media(max-width: 768px){
       width: 100%;
       padding: 24px 24px 27px;
